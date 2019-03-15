@@ -1,0 +1,26 @@
+{% extends "_layouts/base" %}
+
+{% block body %}
+      
+<main id="main" role="main">
+{% block main %}{% endblock %}
+</main>
+
+<!-- Footer -->
+<footer>
+<!-- Newsletter -->
+{% include "_includes/footer/footer" %}
+<!-- End Newsletter -->
+
+<!-- Copyright -->
+{% include "_includes/footer/copyright" %}
+<!-- End Copyright -->
+</footer>
+<!-- End Footer -->
+
+{% endblock %}
+
+{% block foot %}
+{% include "_includes/scripts/scripts" %}
+
+{% endblock %}

@@ -397,6 +397,33 @@
 		"oAP": "/vendor/cebe/markdown/tests/bootstrap.php",
 		"oF": 0
 		},
+	"/vendor/cebe/markdown/tests/extra-data/code_in_lists.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/extra-data/code_in_lists.html",
+		"oF": 0
+		},
+	"/vendor/cebe/markdown/tests/extra-data/code_in_lists.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/extra-data/code_in_lists.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/vendor/cebe/markdown/tests/extra-data/fenced-code.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -416,6 +443,33 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/cebe/markdown/tests/extra-data/fenced-code.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/cebe/markdown/tests/extra-data/non-tables.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/extra-data/non-tables.html",
+		"oF": 0
+		},
+	"/vendor/cebe/markdown/tests/extra-data/non-tables.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/extra-data/non-tables.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -497,6 +551,33 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/cebe/markdown/tests/extra-data/test_precedence.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/cebe/markdown/tests/github-data/code_in_lists.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/github-data/code_in_lists.html",
+		"oF": 0
+		},
+	"/vendor/cebe/markdown/tests/github-data/code_in_lists.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/github-data/code_in_lists.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -713,6 +794,33 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/cebe/markdown/tests/github-data/issue-38.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/cebe/markdown/tests/github-data/issue-50.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/github-data/issue-50.html",
+		"oF": 0
+		},
+	"/vendor/cebe/markdown/tests/github-data/issue-50.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/github-data/issue-50.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -1342,6 +1450,33 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/cebe/markdown/tests/markdown-data/list-marker-in-paragraph.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/cebe/markdown/tests/markdown-data/list-separated-by-hr.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/markdown-data/list-separated-by-hr.html",
+		"oF": 0
+		},
+	"/vendor/cebe/markdown/tests/markdown-data/list-separated-by-hr.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/cebe/markdown/tests/markdown-data/list-separated-by-hr.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -6662,6 +6797,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/vendor/craftcms/cms/docs/extend/environmental-settings.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/extend/environmental-settings.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/vendor/craftcms/cms/docs/extend/extending-twig.md": {
 		"cB": 0,
 		"cS": 0,
@@ -6738,6 +6892,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/vendor/craftcms/cms/docs/extend/plugin-editions.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/extend/plugin-editions.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/vendor/craftcms/cms/docs/extend/plugin-guide.md": {
 		"cB": 0,
 		"cS": 0,
@@ -6795,6 +6968,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/vendor/craftcms/cms/docs/extend/project-config.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/extend/project-config.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/vendor/craftcms/cms/docs/extend/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -6825,6 +7017,25 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/docs/extend/services.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/craftcms/cms/docs/extend/soft-deletes.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/extend/soft-deletes.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -7004,6 +7215,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/vendor/craftcms/cms/docs/gc.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/gc.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/vendor/craftcms/cms/docs/globals.md": {
 		"cB": 0,
 		"cS": 0,
@@ -7058,6 +7288,28 @@
 		"iS": 70357,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/docs/images/categories-edit-popup.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/vendor/craftcms/cms/docs/images/cli-update-info.png": {
+		"ft": 32768,
+		"iS": 20762,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/images/cli-update-info.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/vendor/craftcms/cms/docs/images/cli-update-plugin.png": {
+		"ft": 32768,
+		"iS": 31012,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/images/cli-update-plugin.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -7218,6 +7470,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/vendor/craftcms/cms/docs/images/save-component--class.png": {
+		"ft": 32768,
+		"iS": 38006,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/images/save-component--class.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/vendor/craftcms/cms/docs/images/save-component--interface.png": {
+		"ft": 32768,
+		"iS": 51365,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/images/save-component--interface.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/vendor/craftcms/cms/docs/images/searching-search-bar.png": {
 		"ft": 32768,
 		"iS": 2599,
@@ -7251,15 +7525,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/vendor/craftcms/cms/docs/images/volume-settings-with-aliases.png": {
-		"ft": 32768,
-		"iS": 37592,
+	"/vendor/craftcms/cms/docs/images/volume-base-url-setting.jpg": {
+		"ft": 16384,
+		"iS": 37005,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/docs/images/volume-settings-with-aliases.png",
+		"oAP": "/vendor/craftcms/cms/docs/images/volume-base-url-setting.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/vendor/craftcms/cms/docs/installation.md": {
@@ -9909,6 +10183,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/vendor/craftcms/cms/docs/project-config.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/docs/project-config.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/vendor/craftcms/cms/docs/radio-buttons-fields.md": {
 		"cB": 0,
 		"cS": 0,
@@ -11736,6 +12029,25 @@
 		"oAP": "/vendor/craftcms/cms/lib/velocity/velocity.js.map",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/lib/vue-autosuggest/vue-autosuggest.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/lib/vue-autosuggest/vue-autosuggest-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/vendor/craftcms/cms/lib/vue-autosuggest/vue-autosuggest.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/lib/vue-autosuggest/vue-autosuggest.js.map",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/lib/vue-router/vue-router.js": {
 		"bF": 0,
 		"ft": 64,
@@ -11848,6 +12160,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/lib/yii2-pjax/jquery.pjax.js.map",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/lib/yii2/helpers/Inflector.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/lib/yii2/helpers/Inflector.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/lib/yii2/Yii.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/lib/yii2/Yii.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/LICENSE.md": {
@@ -12216,6 +12544,14 @@
 		"oAP": "/vendor/craftcms/cms/src/behaviors/ElementQueryBehavior.php.template",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/behaviors/EnvAttributeParserBehavior.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/behaviors/EnvAttributeParserBehavior.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/behaviors/FieldLayoutBehavior.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -12276,6 +12612,22 @@
 		"oAP": "/vendor/craftcms/cms/src/console/controllers/ClearCachesController.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/console/controllers/GcController.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/console/controllers/GcController.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/console/controllers/IndexAssetsController.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/console/controllers/IndexAssetsController.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/console/controllers/InstallController.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -12290,6 +12642,30 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/console/controllers/MigrateController.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/console/controllers/ProjectConfigController.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/console/controllers/ProjectConfigController.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/console/controllers/ResaveController.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/console/controllers/ResaveController.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/console/controllers/ServeController.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/console/controllers/ServeController.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/console/controllers/SetupController.php": {
@@ -12388,6 +12764,14 @@
 		"oAP": "/vendor/craftcms/cms/src/controllers/ChartsController.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/controllers/ConfigSyncController.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/controllers/ConfigSyncController.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/controllers/DashboardController.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -12458,6 +12842,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/controllers/InstallController.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/controllers/LivePreviewController.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/controllers/LivePreviewController.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/controllers/NotFoundController.php": {
@@ -12740,12 +13132,28 @@
 		"oAP": "/vendor/craftcms/cms/src/db/QueryAbortedException.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/db/SoftDeleteTrait.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/db/SoftDeleteTrait.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/db/StructuredElementQuery.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/db/StructuredElementQuery.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/db/Table.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/db/Table.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/db/TableSchema.php": {
@@ -12882,6 +13290,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/elements/actions/ReplaceFile.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/elements/actions/Restore.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/elements/actions/Restore.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/elements/actions/SetStatus.php": {
@@ -13148,6 +13564,14 @@
 		"oAP": "/vendor/craftcms/cms/src/errors/DbConnectException.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/errors/DeprecationException.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/errors/DeprecationException.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/errors/ElementNotFoundException.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -13388,6 +13812,14 @@
 		"oAP": "/vendor/craftcms/cms/src/errors/UserGroupNotFoundException.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/errors/UserLockedException.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/errors/UserLockedException.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/errors/UserNotFoundException.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -13500,6 +13932,14 @@
 		"oAP": "/vendor/craftcms/cms/src/events/CategoryGroupEvent.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/events/ConfigEvent.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/events/ConfigEvent.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/events/DefineBehaviorsEvent.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -13516,12 +13956,36 @@
 		"oAP": "/vendor/craftcms/cms/src/events/DefineComponentsEvent.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/events/DefineEagerLoadingMapEvent.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/events/DefineEagerLoadingMapEvent.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/events/DefineRulesEvent.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/events/DefineRulesEvent.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/events/DefineUserContentSummaryEvent.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/events/DefineUserContentSummaryEvent.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/events/DeleteElementEvent.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/events/DeleteElementEvent.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/events/DeleteSiteEvent.php": {
@@ -13770,6 +14234,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/events/RegisterCpNavItemsEvent.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/events/RegisterCpSettingsEvent.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/events/RegisterCpSettingsEvent.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/events/RegisterElementActionsEvent.php": {
@@ -14380,6 +14852,14 @@
 		"oAP": "/vendor/craftcms/cms/src/helpers/Image.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/helpers/Install.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/helpers/Install.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/helpers/Json.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -14428,6 +14908,14 @@
 		"oAP": "/vendor/craftcms/cms/src/helpers/Path.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/helpers/ProjectConfig.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/helpers/ProjectConfig.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/helpers/Search.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -14474,6 +14962,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/helpers/UrlHelper.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/helpers/User.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/helpers/User.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/i18n/FormatConverter.php": {
@@ -15394,14 +15890,6 @@
 		"oAP": "/vendor/craftcms/cms/src/migrations/m170306_150500_asset_temporary_uploads.php",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/migrations/m170414_162429_rich_text_config_setting.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/migrations/m170414_162429_rich_text_config_setting.php",
-		"oF": 0
-		},
 	"/vendor/craftcms/cms/src/migrations/m170523_190652_element_field_layout_ids.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -15424,6 +15912,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/migrations/m170621_195237_format_plugin_handles.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m170630_161027_deprecation_line_nullable.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m170630_161027_deprecation_line_nullable.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/migrations/m170630_161028_deprecation_changes.php": {
@@ -15488,14 +15984,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/migrations/m170816_133741_delete_compiled_behaviors.php",
-		"oF": 0
-		},
-	"/vendor/craftcms/cms/src/migrations/m170821_180624_deprecation_line_nullable.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/migrations/m170821_180624_deprecation_line_nullable.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/migrations/m170903_192801_longblob_for_queue_jobs.php": {
@@ -15722,6 +16210,78 @@
 		"oAP": "/vendor/craftcms/cms/src/migrations/m180418_205713_widget_cleanup.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/migrations/m180425_203349_searchable_fields.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180425_203349_searchable_fields.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180516_153000_uids_in_field_settings.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180516_153000_uids_in_field_settings.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180517_173000_user_photo_volume_to_uid.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180517_173000_user_photo_volume_to_uid.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180518_173000_permissions_to_uid.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180518_173000_permissions_to_uid.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180520_173000_matrix_context_to_uids.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180520_173000_matrix_context_to_uids.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180521_173000_initial_yml_and_snapshot.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180521_173000_initial_yml_and_snapshot.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180731_162030_soft_delete_sites.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180731_162030_soft_delete_sites.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180810_214427_soft_delete_field_layouts.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180810_214427_soft_delete_field_layouts.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180810_214439_soft_delete_elements.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180810_214439_soft_delete_elements.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/migrations/m180824_193422_case_sensitivity_fixes.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -15738,12 +16298,244 @@
 		"oAP": "/vendor/craftcms/cms/src/migrations/m180901_151639_fix_matrixcontent_tables.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/migrations/m180904_112109_permission_changes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180904_112109_permission_changes.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m180910_142030_soft_delete_sitegroups.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m180910_142030_soft_delete_sitegroups.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181011_160000_soft_delete_asset_support.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181011_160000_soft_delete_asset_support.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181016_183648_set_default_user_settings.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181016_183648_set_default_user_settings.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181017_225222_system_config_settings.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181017_225222_system_config_settings.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181018_222343_drop_userpermissions_from_config.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181018_222343_drop_userpermissions_from_config.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181029_130000_add_transforms_routes_to_config.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181029_130000_add_transforms_routes_to_config.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/migrations/m181112_203955_sequences_table.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/migrations/m181112_203955_sequences_table.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181121_001712_cleanup_field_configs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181121_001712_cleanup_field_configs.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181128_193942_fix_project_config.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181128_193942_fix_project_config.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181130_143040_fix_schema_version.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181130_143040_fix_schema_version.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181211_143040_fix_entry_type_uids.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181211_143040_fix_entry_type_uids.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181213_102500_config_map_aliases.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181213_102500_config_map_aliases.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m181217_153000_fix_structure_uids.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m181217_153000_fix_structure_uids.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190104_152725_store_licensed_plugin_editions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190104_152725_store_licensed_plugin_editions.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190108_110000_cleanup_project_config.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190108_110000_cleanup_project_config.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190108_113000_asset_field_setting_change.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190108_113000_asset_field_setting_change.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190109_172845_fix_colspan.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190109_172845_fix_colspan.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190110_150000_prune_nonexisting_sites.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190110_150000_prune_nonexisting_sites.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190110_214819_soft_delete_volumes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190110_214819_soft_delete_volumes.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190112_124737_fix_user_settings.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190112_124737_fix_user_settings.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190112_131225_fix_field_layouts.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190112_131225_fix_field_layouts.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190112_201010_more_soft_deletes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190112_201010_more_soft_deletes.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190114_143000_more_asset_field_setting_changes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190114_143000_more_asset_field_setting_changes.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190121_120000_rich_text_config_setting.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190121_120000_rich_text_config_setting.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190125_191628_fix_email_transport_password.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190125_191628_fix_email_transport_password.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190128_181422_cleanup_volume_folders.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190128_181422_cleanup_volume_folders.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190205_140000_fix_asset_soft_delete_index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190205_140000_fix_asset_soft_delete_index.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190208_140000_reset_project_config_mapping.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190208_140000_reset_project_config_mapping.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/migrations/m190218_143000_element_index_settings_uid.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/migrations/m190218_143000_element_index_settings_uid.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/models/AssetIndexData.php": {
@@ -15976,22 +16768,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/models/Updates.php",
-		"oF": 0
-		},
-	"/vendor/craftcms/cms/src/models/UpgradeInfo.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/models/UpgradeInfo.php",
-		"oF": 0
-		},
-	"/vendor/craftcms/cms/src/models/UpgradePurchase.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/models/UpgradePurchase.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/models/Url.php": {
@@ -16402,14 +17178,6 @@
 		"oAP": "/vendor/craftcms/cms/src/records/SystemMessage.php",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/records/SystemSettings.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/records/SystemSettings.php",
-		"oF": 0
-		},
 	"/vendor/craftcms/cms/src/records/Tag.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -16650,6 +17418,14 @@
 		"oAP": "/vendor/craftcms/cms/src/services/Fields.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/services/Gc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/services/Gc.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/services/Globals.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -16696,6 +17472,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/services/PluginStore.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/services/ProjectConfig.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/services/ProjectConfig.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/services/Relations.php": {
@@ -17112,6 +17896,14 @@
 		"oAP": "/vendor/craftcms/cms/src/utilities/SearchIndexes.php",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/utilities/SystemMessages.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/utilities/SystemMessages.php",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/utilities/SystemReport.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -17214,6 +18006,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/validators/StringValidator.php",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/validators/TemplateValidator.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/validators/TemplateValidator.php",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/validators/UniqueValidator.php": {
@@ -20193,23 +20993,63 @@
 		"oAP": "/vendor/craftcms/cms/src/web/assets/plugins/PluginsAsset.php",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/css/main.css": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/.env.example": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/.env.example",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/.eslintrc.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/.eslintrc-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/.gitignore",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/babel.config.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/babel.config-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/css/app.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/css/main-min.css",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/css/app-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/css/main.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/css/chunk-vendors.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/css/main.css.map",
-		"oF": 0
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/css/chunk-vendors-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/images/craft.svg": {
 		"ft": 2097152,
@@ -20285,48 +21125,92 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/main.js": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/img/invalid-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/img/invalid-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/img/valid-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/img/valid-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/index.html",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/app.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/main-min.js",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/app-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/main.js.map": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/app.js.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/main.js.map",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/app.js.map",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/main.min.js": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/chunk-vendors.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/main.min-min.js",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/chunk-vendors-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/main.min.js.map": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/chunk-vendors.js.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/main.min.js.map",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/js/chunk-vendors.js.map",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/mix-manifest.json": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/dist/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/mix-manifest-min.json",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/dist/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/package-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -20339,25 +21223,81 @@
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/PluginStoreAsset.php",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/craft.svg": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/postcss.config.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/postcss.config-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/public/images/craft.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/craft.svg",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/public/images/craft.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/default-plugin.svg": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/public/images/default-plugin.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/default-plugin.svg",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/public/images/default-plugin.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/public/images/powered_by_stripe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/public/images/powered_by_stripe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/public/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/public/index.html",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/App.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/App.vue",
+		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/error.png": {
 		"ft": 32768,
@@ -20381,11 +21321,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/powered_by_stripe.svg": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/invalid-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/powered_by_stripe.svg",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/invalid-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -20412,6 +21352,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/valid-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/images/valid-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/api/cart.js": {
 		"bF": 0,
@@ -20446,6 +21396,30 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/CategorySelector.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/CategorySelector.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/ChangelogRelease.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/ChangelogRelease.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/CopyPackage.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/CopyPackage.vue",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/CreditCard.vue": {
 		"cB": 0,
 		"ft": 8192,
@@ -20454,60 +21428,28 @@
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/CreditCard.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/fields/CheckboxField.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/EditionBadge.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/fields/CheckboxField.vue",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/EditionBadge.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/fields/TextareaField.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/InfoHud.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/fields/TextareaField.vue",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/InfoHud.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/fields/TextField.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/LicenseStatus.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/fields/TextField.vue",
-		"oF": 0
-		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/inputs/LightswitchInput.vue": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/inputs/LightswitchInput.vue",
-		"oF": 0
-		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/inputs/SelectInput.vue": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/inputs/SelectInput.vue",
-		"oF": 0
-		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/inputs/TextareaInput.vue": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/inputs/TextareaInput.vue",
-		"oF": 0
-		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/inputs/TextInput.vue": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/inputs/TextInput.vue",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/LicenseStatus.vue",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/modal/Modal.vue": {
@@ -20550,14 +21492,6 @@
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/modal/steps/Payment.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/modal/steps/PluginDetails.vue": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/modal/steps/PluginDetails.vue",
-		"oF": 0
-		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/modal/steps/ThankYou.vue": {
 		"cB": 0,
 		"ft": 8192,
@@ -20566,12 +21500,44 @@
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/modal/steps/ThankYou.vue",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginActions.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginActions.vue",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginCard.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginCard.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginChangelog.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginChangelog.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginEdition.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginEdition.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginEditions.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginEditions.vue",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginGrid.vue": {
@@ -20590,6 +21556,14 @@
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginIndex.vue",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginScreenshots.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginScreenshots.vue",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginSearch.vue": {
 		"cB": 0,
 		"ft": 8192,
@@ -20598,12 +21572,36 @@
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/PluginSearch.vue",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/ScreenshotModal.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/ScreenshotModal.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/Sidebar.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/Sidebar.vue",
+		"oF": 0
+		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/SortMenuBtn.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/SortMenuBtn.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/SortPlugins.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/SortPlugins.vue",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/StatusMessage.vue": {
@@ -20620,6 +21618,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/upgradecraft/BuyBtn.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/upgradecraft/CmsEdition.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/upgradecraft/CmsEdition.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/upgradecraft/CmsEditions.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/upgradecraft/CmsEditions.vue",
 		"oF": 0
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/components/upgradecraft/StatusBadge.vue": {
@@ -20652,80 +21666,129 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/main.js": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/helpers/plugins.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/main-min.js",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/helpers/plugins-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Buy.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/_handle/index.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Buy.vue",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/_handle/index.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Category.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/_not-found.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Category.vue",
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/_not-found.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Developer.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/buy/_handle.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Developer.vue",
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/buy/_handle.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/FeaturedPlugins.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/categories/_id.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/FeaturedPlugins.vue",
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/categories/_id.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Index.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/developer/_id.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Index.vue",
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/developer/_id.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/NotFound.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/featured/_id.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/NotFound.vue",
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/featured/_id.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Tests.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/index.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/Tests.vue",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/index.vue",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/UpgradeCraft.vue": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/search.vue": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/UpgradeCraft.vue",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/search.vue",
 		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/tests.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/tests.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/upgrade-craft.vue": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/pages/upgrade-craft.vue",
+		"oF": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/plugins/craftui.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/plugins/craftui-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/plugins/shave.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/plugins/shave-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/plugins/swiper.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/plugins/swiper-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/router/index.js": {
 		"bF": 0,
@@ -20755,6 +21818,17 @@
 		"oAP": "/build/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/modules",
 		"oF": 0
 		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/modules/app.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/modules/app-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/modules/cart.js": {
 		"bF": 0,
 		"ft": 64,
@@ -20777,27 +21851,79 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/modules/pluginstore.js": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/modules/plugin-store.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/modules/pluginstore-min.js",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/modules/plugin-store-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/mutation-types.js": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/main.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/js/store/mutation-types-min.js",
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/main-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/categories.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/categories.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/general.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/general.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/grids.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/grids.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/layout.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/layout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/main.scss": {
 		"aP": 0,
@@ -20812,7 +21938,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/modal.scss": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/tailwind.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -20820,12 +21946,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/modal.css",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/tailwind.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/upgrade-craft.scss": {
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/tooltip.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -20833,10 +21959,45 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/upgrade-craft.css",
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/tooltip.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/src/sass/variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/tailwind.config.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/tailwind.config-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/vendor/craftcms/cms/src/web/assets/pluginstore/vue.config.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/vendor/craftcms/cms/src/web/assets/pluginstore/vue.config-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/vendor/craftcms/cms/src/web/assets/pluginstoreoauth/dist/images/error.png": {
 		"ft": 32768,
@@ -22517,14 +23678,6 @@
 		"oAP": "/vendor/craftcms/cms/src/widgets/Updates.php",
 		"oF": 0
 		},
-	"/vendor/craftcms/cms/src/Yii.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/src/Yii.php",
-		"oF": 0
-		},
 	"/vendor/craftcms/cms/tests/_bootstrap.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -22726,17 +23879,6 @@
 		"oA": 0,
 		"oAP": "/vendor/craftcms/cms/tests/unit/ViewTest.php",
 		"oF": 0
-		},
-	"/vendor/craftcms/cms/webpack.mix.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/vendor/craftcms/cms/webpack.mix-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"/vendor/craftcms/contact-form/.gitignore": {
 		"cB": 0,
@@ -39513,6 +40655,452 @@
 		"oAP": "/vendor/symfony/process/Tests/SignalListener.php",
 		"oF": 0
 		},
+	"/vendor/symfony/yaml/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/.gitignore",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/CHANGELOG.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/CHANGELOG.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/symfony/yaml/Command/LintCommand.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Command/LintCommand.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/vendor/symfony/yaml/composer-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/vendor/symfony/yaml/Dumper.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Dumper.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Escaper.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Escaper.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Exception/DumpException.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Exception/DumpException.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Exception/ExceptionInterface.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Exception/ExceptionInterface.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Exception/ParseException.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Exception/ParseException.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Exception/RuntimeException.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Exception/RuntimeException.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Inline.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Inline.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/LICENSE",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Parser.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Parser.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/phpunit.xml.dist": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/phpunit.xml.dist",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/symfony/yaml/Tag/TaggedValue.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tag/TaggedValue.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Command/LintCommandTest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Command/LintCommandTest.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/DumperTest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/DumperTest.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/arrow.gif": {
+		"ft": 4194304,
+		"iS": 185,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/arrow.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/booleanMappingKeys.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/booleanMappingKeys.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/escapedCharacters.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/escapedCharacters.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/index.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/index.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/legacyBooleanMappingKeys.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/legacyBooleanMappingKeys.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/legacyNonStringKeys.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/legacyNonStringKeys.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/legacyNullMappingKey.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/legacyNullMappingKey.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/multiple_lines_as_literal_block.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/multiple_lines_as_literal_block.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/nonStringKeys.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/nonStringKeys.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/nullMappingKey.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/nullMappingKey.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/numericMappingKeys.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/numericMappingKeys.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/sfComments.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/sfComments.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/sfCompact.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/sfCompact.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/sfMergeKey.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/sfMergeKey.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/sfObjects.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/sfObjects.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/sfQuotes.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/sfQuotes.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/sfTests.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/sfTests.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/unindentedCollections.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/unindentedCollections.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsAnchorAlias.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsAnchorAlias.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsBasicTests.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsBasicTests.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsBlockMapping.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsBlockMapping.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsDocumentSeparator.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsDocumentSeparator.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsErrorTests.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsErrorTests.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsFlowCollections.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsFlowCollections.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsFoldedScalars.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsFoldedScalars.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsNullsAndEmpties.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsNullsAndEmpties.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsSpecificationExamples.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsSpecificationExamples.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/Fixtures/YtsTypeTransfers.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/Fixtures/YtsTypeTransfers.yml",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/InlineTest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/InlineTest.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/ParseExceptionTest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/ParseExceptionTest.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/ParserTest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/ParserTest.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Tests/YamlTest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Tests/YamlTest.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Unescaper.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Unescaper.php",
+		"oF": 0
+		},
+	"/vendor/symfony/yaml/Yaml.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/symfony/yaml/Yaml.php",
+		"oF": 0
+		},
 	"/vendor/true/punycode/CHANGELOG.md": {
 		"cB": 0,
 		"cS": 0,
@@ -39885,6 +41473,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/twig/twig/doc/filters/sort.rst",
+		"oF": 0
+		},
+	"/vendor/twig/twig/doc/filters/spaceless.rst": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/twig/twig/doc/filters/spaceless.rst",
 		"oF": 0
 		},
 	"/vendor/twig/twig/doc/filters/split.rst": {
@@ -42051,6 +43647,14 @@
 		"oAP": "/vendor/twig/twig/src/Node/CheckSecurityNode.php",
 		"oF": 0
 		},
+	"/vendor/twig/twig/src/Node/CheckToStringNode.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/twig/twig/src/Node/CheckToStringNode.php",
+		"oF": 0
+		},
 	"/vendor/twig/twig/src/Node/DeprecatedNode.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -43657,6 +45261,14 @@
 		"oAP": "/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/batch_with_keys.test",
 		"oF": 0
 		},
+	"/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/batch_with_more_elements.test": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/batch_with_more_elements.test",
+		"oF": 0
+		},
 	"/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/batch_with_zero_elements.test": {
 		"cB": 0,
 		"ft": 8192,
@@ -43921,6 +45533,14 @@
 		"oAP": "/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/sort.test",
 		"oF": 0
 		},
+	"/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/spaceless.test": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/spaceless.test",
+		"oF": 0
+		},
 	"/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/special_chars.test": {
 		"cB": 0,
 		"ft": 8192,
@@ -44175,6 +45795,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/include/with_variables.test",
+		"oF": 0
+		},
+	"/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/include_template_from_string.test": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/include_template_from_string.test",
 		"oF": 0
 		},
 	"/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/magic_call.test": {
@@ -45985,14 +47613,6 @@
 		"oAP": "/vendor/twig/twig/test/Twig/Tests/Node/PrintTest.php",
 		"oF": 0
 		},
-	"/vendor/twig/twig/test/Twig/Tests/Node/SandboxedPrintTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vendor/twig/twig/test/Twig/Tests/Node/SandboxedPrintTest.php",
-		"oF": 0
-		},
 	"/vendor/twig/twig/test/Twig/Tests/Node/SandboxTest.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -46191,6 +47811,87 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/vlucas/phpdotenv/src/Validator.php",
+		"oF": 0
+		},
+	"/vendor/yii2tech/ar-softdelete/CHANGELOG.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yii2tech/ar-softdelete/CHANGELOG.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/yii2tech/ar-softdelete/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/vendor/yii2tech/ar-softdelete/composer-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/vendor/yii2tech/ar-softdelete/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yii2tech/ar-softdelete/LICENSE.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/yii2tech/ar-softdelete/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yii2tech/ar-softdelete/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/vendor/yii2tech/ar-softdelete/src/SoftDeleteBehavior.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yii2tech/ar-softdelete/src/SoftDeleteBehavior.php",
+		"oF": 0
+		},
+	"/vendor/yii2tech/ar-softdelete/src/SoftDeleteQueryBehavior.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yii2tech/ar-softdelete/src/SoftDeleteQueryBehavior.php",
 		"oF": 0
 		},
 	"/vendor/yiisoft/extensions.php": {
@@ -48412,6 +50113,14 @@
 		"oAP": "/vendor/yiisoft/yii2/behaviors/CacheableWidgetBehavior.php",
 		"oF": 0
 		},
+	"/vendor/yiisoft/yii2/behaviors/OptimisticLockBehavior.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yiisoft/yii2/behaviors/OptimisticLockBehavior.php",
+		"oF": 0
+		},
 	"/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -50451,6 +52160,14 @@
 		"oAP": "/vendor/yiisoft/yii2/mail/MessageInterface.php",
 		"oF": 0
 		},
+	"/vendor/yiisoft/yii2/messages/af/yii.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yiisoft/yii2/messages/af/yii.php",
+		"oF": 0
+		},
 	"/vendor/yiisoft/yii2/messages/ar/yii.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -50465,6 +52182,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/yiisoft/yii2/messages/az/yii.php",
+		"oF": 0
+		},
+	"/vendor/yiisoft/yii2/messages/be/yii.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yiisoft/yii2/messages/be/yii.php",
 		"oF": 0
 		},
 	"/vendor/yiisoft/yii2/messages/bg/yii.php": {
@@ -50891,6 +52616,14 @@
 		"oAP": "/vendor/yiisoft/yii2/mutex/PgsqlMutex.php",
 		"oF": 0
 		},
+	"/vendor/yiisoft/yii2/mutex/RetryAcquireTrait.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yiisoft/yii2/mutex/RetryAcquireTrait.php",
+		"oF": 0
+		},
 	"/vendor/yiisoft/yii2/rbac/Assignment.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -50953,6 +52686,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/vendor/yiisoft/yii2/rbac/migrations/m170907_052038_rbac_add_index_on_auth_assignment_user_id.php",
+		"oF": 0
+		},
+	"/vendor/yiisoft/yii2/rbac/migrations/m180523_151638_rbac_updates_indexes_without_prefix.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor/yiisoft/yii2/rbac/migrations/m180523_151638_rbac_updates_indexes_without_prefix.php",
 		"oF": 0
 		},
 	"/vendor/yiisoft/yii2/rbac/migrations/schema-mssql.sql": {
@@ -54044,6 +55785,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/web/assets/img/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/img/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/web/assets/img/og-image.png": {
 		"ft": 32768,
 		"iS": 50818,
@@ -54635,6 +56386,904 @@
 		"oAP": "/web/cpresources/.gitignore",
 		"oF": 0
 		},
+	"/web/cpresources/136f50f4/css/_cp.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web/cpresources/136f50f4/css/_cp.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/136f50f4/css/_fld.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web/cpresources/136f50f4/css/_fld.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/136f50f4/css/_image_editor.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web/cpresources/136f50f4/css/_image_editor.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/136f50f4/css/_main.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web/cpresources/136f50f4/css/_main.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/136f50f4/css/_reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web/cpresources/136f50f4/css/_reset.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/136f50f4/css/_shame.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web/cpresources/136f50f4/css/_shame.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/136f50f4/css/charts.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/css/charts-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/136f50f4/css/charts.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/css/charts.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/136f50f4/css/charts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/css/charts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/136f50f4/css/craft.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/css/craft-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/136f50f4/css/craft.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/css/craft.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/136f50f4/css/craft.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/css/craft.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/136f50f4/fonts/Craft.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/fonts/Craft.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/fonts/Craft.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/fonts/Craft.ttf",
+		"oF": 0
+		},
+	"/web/cpresources/136f50f4/fonts/Craft.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/fonts/Craft.woff",
+		"oF": 0
+		},
+	"/web/cpresources/136f50f4/images/branch.png": {
+		"ft": 32768,
+		"iS": 157,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/branch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/branch_2x.png": {
+		"ft": 32768,
+		"iS": 177,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/branch_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/branch_rtl.png": {
+		"ft": 32768,
+		"iS": 156,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/branch_rtl.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/branch_rtl_2x.png": {
+		"ft": 32768,
+		"iS": 179,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/branch_rtl_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/checkers.png": {
+		"ft": 32768,
+		"iS": 139,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/checkers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/checkers.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/checkers.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/checkers_2x.png": {
+		"ft": 32768,
+		"iS": 161,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/checkers_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/craft.png": {
+		"ft": 32768,
+		"iS": 3314,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/craft.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/craft_2x.png": {
+		"ft": 32768,
+		"iS": 7302,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/craft_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/craftcms.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/craftcms.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/dev-mode.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/dev-mode.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/fieldlayoutform-bg.png": {
+		"ft": 32768,
+		"iS": 153,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/fieldlayoutform-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/fieldlayoutform-bg_2x.png": {
+		"ft": 32768,
+		"iS": 199,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/fieldlayoutform-bg_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_bottom.png": {
+		"ft": 32768,
+		"iS": 1134,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_bottom.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_bottom_2x.png": {
+		"ft": 32768,
+		"iS": 1310,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_bottom_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_bottom_gray.png": {
+		"ft": 32768,
+		"iS": 1183,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_bottom_gray.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_bottom_gray_2x.png": {
+		"ft": 32768,
+		"iS": 1330,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_bottom_gray_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_left.png": {
+		"ft": 32768,
+		"iS": 1120,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_left_2x.png": {
+		"ft": 32768,
+		"iS": 1333,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_left_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_right.png": {
+		"ft": 32768,
+		"iS": 1146,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_right_2x.png": {
+		"ft": 32768,
+		"iS": 1330,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_right_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_top.png": {
+		"ft": 32768,
+		"iS": 1112,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_top.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/hudtip_top_2x.png": {
+		"ft": 32768,
+		"iS": 1236,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/hudtip_top_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/image-editor/crop.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/image-editor/crop.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/image-editor/filters.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/image-editor/filters.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/image-editor/flip-horizontal.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/image-editor/flip-horizontal.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/image-editor/flip-vertical.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/image-editor/flip-vertical.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/image-editor/focal-point.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/image-editor/focal-point.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/image-editor/rotate-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/image-editor/rotate-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/image-editor/rotate-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/image-editor/rotate-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/image-editor/unconstrained.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/image-editor/unconstrained.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/listview_sort.png": {
+		"ft": 32768,
+		"iS": 1200,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/listview_sort.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/listview_sort_2x.png": {
+		"ft": 32768,
+		"iS": 1420,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/listview_sort_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/prg.jpg": {
+		"ft": 16384,
+		"iS": 43114,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/prg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/progressbar_pending.png": {
+		"ft": 32768,
+		"iS": 188,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/progressbar_pending.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/progressbar_pending_2x.png": {
+		"ft": 32768,
+		"iS": 273,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/progressbar_pending_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/resizehandle.png": {
+		"ft": 32768,
+		"iS": 227,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/resizehandle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/resizehandle_2x.png": {
+		"ft": 32768,
+		"iS": 318,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/resizehandle_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/resizehandle_rtl.png": {
+		"ft": 32768,
+		"iS": 212,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/resizehandle_rtl.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/resizehandle_rtl_2x.png": {
+		"ft": 32768,
+		"iS": 343,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/resizehandle_rtl_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/spinner.gif": {
+		"ft": 4194304,
+		"iS": 3448,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_2x.gif": {
+		"ft": 4194304,
+		"iS": 7099,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_big.gif": {
+		"ft": 4194304,
+		"iS": 9087,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_big.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_big_2x.gif": {
+		"ft": 4194304,
+		"iS": 24092,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_big_2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_details.gif": {
+		"ft": 4194304,
+		"iS": 3470,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_details.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_details_2x.gif": {
+		"ft": 4194304,
+		"iS": 7164,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_details_2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_element.gif": {
+		"ft": 4194304,
+		"iS": 2858,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_element.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_element_2x.gif": {
+		"ft": 4194304,
+		"iS": 6990,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_element_2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_submit.gif": {
+		"ft": 4194304,
+		"iS": 3485,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_submit.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_submit_2x.gif": {
+		"ft": 4194304,
+		"iS": 7227,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_submit_2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_submit_secondary.gif": {
+		"ft": 4194304,
+		"iS": 3476,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_submit_secondary.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_submit_secondary_2x.gif": {
+		"ft": 4194304,
+		"iS": 7161,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_submit_secondary_2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_tableheader.gif": {
+		"ft": 4194304,
+		"iS": 2579,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_tableheader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_tableheader_2x.gif": {
+		"ft": 4194304,
+		"iS": 5746,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_tableheader_2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/spinner_transform.gif": {
+		"ft": 4194304,
+		"iS": 21324,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/spinner_transform.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/web/cpresources/136f50f4/images/success.png": {
+		"ft": 32768,
+		"iS": 1150,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/success.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/success_2x.png": {
+		"ft": 32768,
+		"iS": 2352,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/success_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/temp_folder.png": {
+		"ft": 32768,
+		"iS": 10923,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/temp_folder.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/touch-icons/ipad-pro_2x.png": {
+		"ft": 32768,
+		"iS": 5115,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/touch-icons/ipad-pro_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/touch-icons/ipad_1x.png": {
+		"ft": 32768,
+		"iS": 2324,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/touch-icons/ipad_1x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/touch-icons/ipad_2x.png": {
+		"ft": 32768,
+		"iS": 4831,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/touch-icons/ipad_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/touch-icons/iphone_2x.png": {
+		"ft": 32768,
+		"iS": 3700,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/touch-icons/iphone_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/touch-icons/iphone_3x.png": {
+		"ft": 32768,
+		"iS": 5629,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/touch-icons/iphone_3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/user.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/cpresources/136f50f4/images/user.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/cpresources/136f50f4/images/welcome_logo.png": {
+		"ft": 32768,
+		"iS": 5319,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/welcome_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/welcome_logo_2x.png": {
+		"ft": 32768,
+		"iS": 7091,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/welcome_logo_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/whats-new/customized-entry-index.png": {
+		"ft": 32768,
+		"iS": 357734,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/whats-new/customized-entry-index.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/whats-new/inline-entry-creation.png": {
+		"ft": 32768,
+		"iS": 462041,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/whats-new/inline-entry-creation.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/images/whats-new/new-dashboard.png": {
+		"ft": 32768,
+		"iS": 417550,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/images/whats-new/new-dashboard.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/136f50f4/js/Craft.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/js/Craft-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/136f50f4/js/Craft.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/js/Craft.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/136f50f4/js/Craft.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/136f50f4/js/Craft.min.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/172f8868/datepicker-ar.js": {
 		"bF": 0,
 		"ft": 64,
@@ -54990,6 +57639,111 @@
 		"oAP": "/web/cpresources/1d28d639/element-resize-detector.js.map",
 		"oF": 0
 		},
+	"/web/cpresources/20cd6728/images/error.png": {
+		"ft": 32768,
+		"iS": 914,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/images/error.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/20cd6728/images/error_2x.png": {
+		"ft": 32768,
+		"iS": 1971,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/images/error_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/20cd6728/images/success.png": {
+		"ft": 32768,
+		"iS": 1150,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/images/success.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/20cd6728/images/success_2x.png": {
+		"ft": 32768,
+		"iS": 2352,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/images/success_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/20cd6728/update.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/update-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/20cd6728/update.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/update.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/20cd6728/update.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/update.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/20cd6728/Updater.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/Updater-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/20cd6728/Updater.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/Updater.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/20cd6728/Updater.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/20cd6728/Updater.min.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/23378ab1/velocity.js": {
 		"bF": 0,
 		"ft": 64,
@@ -55008,6 +57762,133 @@
 		"oA": 0,
 		"oAP": "/web/cpresources/23378ab1/velocity.js.map",
 		"oF": 0
+		},
+	"/web/cpresources/25a4d79d/images/error.png": {
+		"ft": 32768,
+		"iS": 914,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/images/error.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/25a4d79d/images/error_2x.png": {
+		"ft": 32768,
+		"iS": 1971,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/images/error_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/25a4d79d/images/success.png": {
+		"ft": 32768,
+		"iS": 1150,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/images/success.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/25a4d79d/images/success_2x.png": {
+		"ft": 32768,
+		"iS": 2352,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/images/success_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/25a4d79d/update.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/update-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/25a4d79d/update.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/update.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/25a4d79d/update.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/update.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/25a4d79d/Updater.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/Updater-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/25a4d79d/Updater.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/Updater.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/25a4d79d/Updater.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/25a4d79d/Updater.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/28c2f6cb/jquery-ui.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/28c2f6cb/jquery-ui-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/28c2f6cb/jquery-ui.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/28c2f6cb/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/web/cpresources/2c6791c2/RecentEntriesWidget.js": {
 		"bF": 0,
@@ -55223,6 +58104,25 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/web/cpresources/3b1f338b/jquery.timepicker.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/3b1f338b/jquery.timepicker-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/3b1f338b/jquery.timepicker.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/3b1f338b/jquery.timepicker.js.map",
+		"oF": 0
 		},
 	"/web/cpresources/3f102559/jquery.payment.js": {
 		"bF": 0,
@@ -56519,6 +59419,25 @@
 		"oAP": "/web/cpresources/5633b72b/js/Craft.min.js.map",
 		"oF": 0
 		},
+	"/web/cpresources/587431e6/element-resize-detector.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/587431e6/element-resize-detector-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/587431e6/element-resize-detector.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/587431e6/element-resize-detector.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/5997d1d3/login.css": {
 		"aP": 1,
 		"bl": 0,
@@ -56579,6 +59498,36 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/web/cpresources/5a7b9a81/TableFieldSettings.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/5a7b9a81/TableFieldSettings-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/5a7b9a81/TableFieldSettings.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/5a7b9a81/TableFieldSettings.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/5a7b9a81/TableFieldSettings.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/5a7b9a81/TableFieldSettings.min.js.map",
+		"oF": 0
 		},
 	"/web/cpresources/5af202f0/picturefill.js": {
 		"bF": 0,
@@ -56902,6 +59851,25 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/web/cpresources/666b6d6e/velocity.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/666b6d6e/velocity-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/666b6d6e/velocity.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/666b6d6e/velocity.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/67ea3527/garnish.js": {
 		"bF": 0,
 		"ft": 64,
@@ -56971,6 +59939,67 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/web/cpresources/6e845b5a/FeedWidget.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/71141265/utilities.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/71141265/utilities-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/71141265/utilities.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/71141265/utilities.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/71141265/utilities.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/71141265/utilities.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/726928f4/fields.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/726928f4/fields-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/726928f4/fields.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/726928f4/fields.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/726928f4/fields.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/726928f4/fields.min.js.map",
 		"oF": 0
 		},
 	"/web/cpresources/72ace119/fabric.js": {
@@ -57101,6 +60130,44 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/web/cpresources/75c4d2c8/UpdatesWidget.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/77e49a13/jquery.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/77e49a13/jquery-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/77e49a13/jquery.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/77e49a13/jquery.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/7a4cc286/jquery.payment.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/7a4cc286/jquery.payment-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/7a4cc286/jquery.payment.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/7a4cc286/jquery.payment.js.map",
 		"oF": 0
 		},
 	"/web/cpresources/7b567e09/CraftSupportWidget.css": {
@@ -58241,6 +61308,25 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/web/cpresources/a3f390e9/sites.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/a55ccf9a/xregexp-all.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/a55ccf9a/xregexp-all-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/a55ccf9a/xregexp-all.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/a55ccf9a/xregexp-all.js.map",
 		"oF": 0
 		},
 	"/web/cpresources/a6fa40b5/jquery.fileupload.js": {
@@ -59831,6 +62917,35 @@
 		"oAP": "/web/cpresources/a92bc34/yii2-pjax/jquery.pjax.js.map",
 		"oF": 0
 		},
+	"/web/cpresources/af308b10/selectize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/af308b10/selectize-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/af308b10/selectize.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/af308b10/selectize-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/af308b10/selectize.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/af308b10/selectize.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/b0b7611a/d3.js": {
 		"bF": 0,
 		"ft": 64,
@@ -59972,6 +63087,281 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/web/cpresources/b6932c0c/datepicker-ar.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-ar-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-cs.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-cs-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-da.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-da-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-de.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-de-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-en-GB.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-en-GB-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-es.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-es-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-fr-CA.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-fr-CA-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-fr.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-fr-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-he.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-he-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-hu.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-hu-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-it.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-it-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-ja.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-ja-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-ko.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-ko-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-nb.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-nb-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-nl.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-nl-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-nn.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-nn-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-no.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-no-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-pl.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-pl-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-pt.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-pt-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-ru.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-ru-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-sk.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-sk-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-sv.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-sv-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-tr.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-tr-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-zh-CN.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-zh-CN-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b6932c0c/datepicker-zh.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b6932c0c/datepicker-zh-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/web/cpresources/b6b1714c/utilities.css": {
 		"aP": 1,
 		"bl": 0,
@@ -60024,6 +63414,67 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/web/cpresources/bd779268/login.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/bd779268/login-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/bd779268/login.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/bd779268/login.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/bd779268/login.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/bd779268/login-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/bd779268/login.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/bd779268/login.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/bd779268/login.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/bd779268/login.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/bd779268/login.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/bd779268/login.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/web/cpresources/be12414b/picturefill.js": {
 		"bF": 0,
@@ -60147,6 +63598,25 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/web/cpresources/c1449426/Updater.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/c6569143/garnish.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/c6569143/garnish-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/c6569143/garnish.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/c6569143/garnish.js.map",
 		"oF": 0
 		},
 	"/web/cpresources/c7d7c90a/velocity.js": {
@@ -60425,6 +63895,130 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/web/cpresources/cf9fd1c9/images/error.png": {
+		"ft": 32768,
+		"iS": 914,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/images/error.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/cf9fd1c9/images/error_2x.png": {
+		"ft": 32768,
+		"iS": 1971,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/images/error_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/cf9fd1c9/images/success.png": {
+		"ft": 32768,
+		"iS": 1150,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/images/success.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/cf9fd1c9/images/success_2x.png": {
+		"ft": 32768,
+		"iS": 2352,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/images/success_2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/web/cpresources/cf9fd1c9/updates.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/updates-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/cf9fd1c9/updates.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/updates.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/cf9fd1c9/updates.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/updates.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/web/cpresources/cf9fd1c9/UpdatesUtility.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/UpdatesUtility-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/cf9fd1c9/UpdatesUtility.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/UpdatesUtility.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/cf9fd1c9/UpdatesUtility.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/cf9fd1c9/UpdatesUtility.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/d310457d/fabric.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/d310457d/fabric-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/d310457d/fabric.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/d310457d/fabric.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/d6583e77/jquery.js": {
 		"bF": 0,
 		"ft": 64,
@@ -60591,6 +64185,25 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/web/cpresources/e3a6a76a/jquery.fileupload.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/e3a6a76a/jquery.fileupload-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/e3a6a76a/jquery.fileupload.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/e3a6a76a/jquery.fileupload.js.map",
+		"oF": 0
 		},
 	"/web/cpresources/e8c2f74/selectize.css": {
 		"aP": 1,
@@ -61548,6 +65161,36 @@
 		"oAP": "/web/cpresources/ec434986/js/Craft.min.js.map",
 		"oF": 0
 		},
+	"/web/cpresources/eceddd46/MatrixConfigurator.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/eceddd46/MatrixConfigurator-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/eceddd46/MatrixConfigurator.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/eceddd46/MatrixConfigurator.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/eceddd46/MatrixConfigurator.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/eceddd46/MatrixConfigurator.min.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/f3273e2a/dashboard.css": {
 		"aP": 1,
 		"bl": 0,
@@ -61884,6 +65527,25 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/web/cpresources/f5eb86c5/d3.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/f5eb86c5/d3-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/f5eb86c5/d3.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/f5eb86c5/d3.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/f63d9017/UpdatesWidget.js": {
 		"bF": 0,
 		"ft": 64,
@@ -61932,6 +65594,47 @@
 		"oA": 0,
 		"oAP": "/web/cpresources/f9c89582/element-resize-detector.js.map",
 		"oF": 0
+		},
+	"/web/cpresources/fb4ea694/picturefill.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/fb4ea694/picturefill-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/fb4ea694/picturefill.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/fb4ea694/picturefill.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/fcea9a56/jquery.mobile-events.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/fcea9a56/jquery.mobile-events-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/fcea9a56/jquery.mobile-events.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/fcea9a56/jquery.mobile-events.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/web/cpresources/fdb049b4/account.css": {
 		"aP": 1,
