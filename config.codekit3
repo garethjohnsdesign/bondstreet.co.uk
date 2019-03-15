@@ -53912,6 +53912,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/web/assets/favicons/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/favicons/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/web/assets/favicons/site.webmanifest": {
 		"cB": 0,
 		"ft": 8192,
@@ -54034,121 +54044,14 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/web/assets/img/arrow-left.png": {
-		"ft": 32768,
-		"iS": 178,
-		"oA": 0,
-		"oAP": "/web/assets/img/arrow-left.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/img/arrow-left.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/web/assets/img/arrow-left.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/web/assets/img/arrow-left@2x.png": {
-		"ft": 32768,
-		"iS": 297,
-		"oA": 0,
-		"oAP": "/web/assets/img/arrow-left@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/img/arrow-left@3x.png": {
-		"ft": 32768,
-		"iS": 502,
-		"oA": 0,
-		"oAP": "/web/assets/img/arrow-left@3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/img/arrow-right.png": {
-		"ft": 32768,
-		"iS": 189,
-		"oA": 0,
-		"oAP": "/web/assets/img/arrow-right.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/img/arrow-right.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/web/assets/img/arrow-right.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/web/assets/img/arrow-right@2x.png": {
-		"ft": 32768,
-		"iS": 333,
-		"oA": 0,
-		"oAP": "/web/assets/img/arrow-right@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/img/arrow-right@3x.png": {
-		"ft": 32768,
-		"iS": 517,
-		"oA": 0,
-		"oAP": "/web/assets/img/arrow-right@3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/img/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/web/assets/img/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/web/assets/img/octopus-and-lobster.png": {
-		"ft": 32768,
-		"iS": 245732,
-		"oA": 0,
-		"oAP": "/web/assets/img/octopus-and-lobster.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/web/assets/img/og-image.png": {
 		"ft": 32768,
 		"iS": 50818,
 		"oA": 0,
 		"oAP": "/web/assets/img/og-image.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -55104,6 +55007,36 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/web/cpresources/23378ab1/velocity.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/2c6791c2/RecentEntriesWidget.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/2c6791c2/RecentEntriesWidget-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/2c6791c2/RecentEntriesWidget.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/2c6791c2/RecentEntriesWidget.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/2c6791c2/RecentEntriesWidget.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/2c6791c2/RecentEntriesWidget.min.js.map",
 		"oF": 0
 		},
 	"/web/cpresources/2e1622c7/images/error.png": {
@@ -58170,6 +58103,36 @@
 		"oAP": "/web/cpresources/8a30a3d/js/Craft.min.js.map",
 		"oF": 0
 		},
+	"/web/cpresources/8a6418e1/FeedWidget.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/8a6418e1/FeedWidget-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/8a6418e1/FeedWidget.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/8a6418e1/FeedWidget.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/8a6418e1/FeedWidget.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/8a6418e1/FeedWidget.min.js.map",
+		"oF": 0
+		},
 	"/web/cpresources/953ef967/dashboard.css": {
 		"aP": 1,
 		"bl": 0,
@@ -59948,6 +59911,67 @@
 		"oAP": "/web/cpresources/b4dea706/UserPermissions.min.js.map",
 		"oF": 0
 		},
+	"/web/cpresources/b57125a5/CraftSupportWidget.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/b57125a5/CraftSupportWidget-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/b57125a5/CraftSupportWidget.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/b57125a5/CraftSupportWidget.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/b57125a5/CraftSupportWidget.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b57125a5/CraftSupportWidget-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b57125a5/CraftSupportWidget.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/b57125a5/CraftSupportWidget.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/b57125a5/CraftSupportWidget.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/b57125a5/CraftSupportWidget.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/b57125a5/CraftSupportWidget.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/b57125a5/CraftSupportWidget.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/web/cpresources/b6b1714c/utilities.css": {
 		"aP": 1,
 		"bl": 0,
@@ -61523,6 +61547,67 @@
 		"oA": 0,
 		"oAP": "/web/cpresources/ec434986/js/Craft.min.js.map",
 		"oF": 0
+		},
+	"/web/cpresources/f3273e2a/dashboard.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/f3273e2a/dashboard-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/web/cpresources/f3273e2a/dashboard.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/f3273e2a/dashboard.css.map",
+		"oF": 0
+		},
+	"/web/cpresources/f3273e2a/Dashboard.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/f3273e2a/Dashboard-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/f3273e2a/Dashboard.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/cpresources/f3273e2a/Dashboard.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/cpresources/f3273e2a/Dashboard.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/f3273e2a/Dashboard.min.js.map",
+		"oF": 0
+		},
+	"/web/cpresources/f3273e2a/dashboard.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/web/cpresources/f3273e2a/dashboard.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/web/cpresources/f3cfcbd3/datepicker-ar.js": {
 		"bF": 0,
