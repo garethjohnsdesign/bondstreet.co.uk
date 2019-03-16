@@ -79,12 +79,14 @@ $foundation-palette: (
 );
 */
 $foundation-palette: (
-  primary: #FF8300, // Orange
-  secondary: #041f4a, // Blue
+  primary: #1D2033, // Black Pearle
+  secondary: #FFCCCB, // Bubblegum
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
   spring-wood: #F9F7F2,
+  tietary: #F9F7F2, // Bianca 
+  background: #FDFDFD
 );
 // $light-gray: #e6e6e6;
 $light-gray: #f5f5f5;
@@ -96,7 +98,7 @@ $dark-gray: #757575;
 $black: #333333;
 $white: #fefefe;
 $body-background: $white;
-$body-background: get-color(spring-wood);
+$body-background: get-color(background);
 // $body-font-color: $black;
 $body-font-color: get-color(secondary);
 // $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
