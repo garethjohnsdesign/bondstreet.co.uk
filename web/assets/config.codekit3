@@ -7945,28 +7945,36 @@
 		"oAP": "/favicons/site.webmanifest",
 		"oF": 0
 		},
-	"/fonts/demibold-pro.ttf": {
+	"/fonts/Canela-Bold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/demibold-pro.ttf",
+		"oAP": "/fonts/Canela-Bold.woff",
 		"oF": 0
 		},
-	"/fonts/demibold-pro.woff": {
+	"/fonts/Canela-Bold.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/demibold-pro.woff",
+		"oAP": "/fonts/Canela-Bold.woff2",
 		"oF": 0
 		},
-	"/fonts/demibold-pro.woff2": {
+	"/fonts/Canela-Regular.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/demibold-pro.woff2",
+		"oAP": "/fonts/Canela-Regular.woff",
+		"oF": 0
+		},
+	"/fonts/Canela-Regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/Canela-Regular.woff2",
 		"oF": 0
 		},
 	"/fonts/gallery.woff": {
@@ -7983,70 +7991,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/fonts/gallery.woff2",
-		"oF": 0
-		},
-	"/fonts/light-pro.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/light-pro.ttf",
-		"oF": 0
-		},
-	"/fonts/light-pro.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/light-pro.woff",
-		"oF": 0
-		},
-	"/fonts/light-pro.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/light-pro.woff2",
-		"oF": 0
-		},
-	"/fonts/marrsans-regular.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/marrsans-regular.woff",
-		"oF": 0
-		},
-	"/fonts/marrsans-regular.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/marrsans-regular.woff2",
-		"oF": 0
-		},
-	"/fonts/regular-pro.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/regular-pro.ttf",
-		"oF": 0
-		},
-	"/fonts/regular-pro.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/regular-pro.woff",
-		"oF": 0
-		},
-	"/fonts/regular-pro.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/regular-pro.woff2",
 		"oF": 0
 		},
 	"/icons/symbol-defs.svg": {
@@ -8179,78 +8123,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/scss/.sass-cache/3c8bf1054bfb724e8298a85999c69e13ceacc368/_animations.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/scss/.sass-cache/3c8bf1054bfb724e8298a85999c69e13ceacc368/_animations.scssc",
-		"oF": 0
-		},
-	"/scss/.sass-cache/3c8bf1054bfb724e8298a85999c69e13ceacc368/_core.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/scss/.sass-cache/3c8bf1054bfb724e8298a85999c69e13ceacc368/_core.scssc",
-		"oF": 0
-		},
-	"/scss/.sass-cache/3c8bf1054bfb724e8298a85999c69e13ceacc368/_easing.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/scss/.sass-cache/3c8bf1054bfb724e8298a85999c69e13ceacc368/_easing.scssc",
-		"oF": 0
-		},
-	"/scss/.sass-cache/3c8bf1054bfb724e8298a85999c69e13ceacc368/aos.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/scss/.sass-cache/3c8bf1054bfb724e8298a85999c69e13ceacc368/aos.scssc",
-		"oF": 0
-		},
-	"/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/_fonts.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/_fonts.scssc",
-		"oF": 0
-		},
-	"/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/_settings.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/_settings.scssc",
-		"oF": 0
-		},
-	"/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/_transitions.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/_transitions.scssc",
-		"oF": 0
-		},
-	"/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/_typography.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/_typography.scssc",
-		"oF": 0
-		},
-	"/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/app.scssc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/scss/.sass-cache/8e5009913c6714aed6524a8ea0fd54f70085f126/app.scssc",
-		"oF": 0
-		},
 	"/scss/_fonts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -8338,16 +8210,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/scss/app.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/scss/app-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/scss/app.scss": {
 		"aP": 0,

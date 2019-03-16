@@ -1,35 +1,17 @@
 @font-face {
-  font-family: 'Demibold';
+  font-family: 'Canela Regular';
   src: 
-  url('../fonts/demibold-pro.woff2') format('woff2'), 
-  url('../fonts/demibold-pro.woff') format('woff');
+  url('../fonts/canela-regular.woff2') format('woff2'), 
+  url('../fonts/canela-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Regular';
+  font-family: 'Canela Bold';
   src: 
-  url('../fonts/regular-pro.woff2') format('woff2'), 
-  url('../fonts/regular-pro.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Light';
-  src: 
-  url('../fonts/light-pro.woff2') format('woff2'), 
-  url('../fonts/light-pro.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Marr Sans';
-  src: 
-  url('../fonts/marrsans-regular.woff2') format('woff2'), 
-  url('../fonts/marrsans-regular.woff') format('woff');
+  url('../fonts/canela-bold.woff2') format('woff2'), 
+  url('../fonts/canela-bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
