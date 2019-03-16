@@ -257,7 +257,7 @@ url('/assets/img/arrow-right@3x.png') 3x
   @include breakpoint(xxlarge) {
   @include padding(2, 2, 1, 2);
   }
-  @include links ($secondary-color, $primary-color)
+  @include links ($dark-gray, $primary-color)
   a {
     font-family: $sans-bold;
   }

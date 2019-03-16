@@ -89,18 +89,18 @@ $foundation-palette: (
   background: #FDFDFD
 );
 // $light-gray: #e6e6e6;
-$light-gray: #f5f5f5;
+$light-gray: #E5E5E5;
 // $medium-gray: #cacaca;
-$dim-gray: #e5e5e5;
-$medium-gray: #a6a6a6;
+$medium-gray: #A6A6A6;
 // $dark-gray: #8a8a8a;
 $dark-gray: #757575;
-$black: #333333;
-$white: #fefefe;
-$body-background: $white;
+// $black: #333333;
+$black: #252529;
+$white: #FFFFFF;
+// $body-background: $white;
 $body-background: get-color(background);
 // $body-font-color: $black;
-$body-font-color: get-color(secondary);
+$body-font-color: $dark-gray;
 // $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-font-family: $sans-regular;
 $body-antialiased: true;

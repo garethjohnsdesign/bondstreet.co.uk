@@ -1,0 +1,17 @@
+<div class="grid-x align-justify align-middle navigation"> 
+
+    <div class="shrink cell">    
+      <ul class="dropdown menu align-middle" data-dropdown-menu>
+        {% for slug, item in navigation %}
+    	  <li><a href="{{ url(slug) }}">{{ item.title }}</a></li>
+    		{% endfor %}
+      </ul>
+    </div>
+    
+    <div class="shrink cell hide-for-xlarge">  
+      <a data-toggle="offCanvas" style="z-index: 1001"><svg class="icon icon-sort"><use xlink:href="/assets/icons/symbol-defs.svg#icon-sort"></use></svg></a>
+    </div>  
+
+</div>
+
+
