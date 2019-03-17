@@ -9413,6 +9413,9 @@ i, cite, em, var, address, dfn {
 p a {
   border-bottom: 1px solid #252529; }
 
+.sans-regular {
+  font-family: "Maison Neue Book", sans-serif; }
+
 .sans-bold {
   font-family: "Maison Neue Bold", sans-serif; }
 
@@ -9496,7 +9499,7 @@ p a {
     height: 100%;
     width: 100%; }
   .image--panorama .content {
-    background-color: rgba(37, 37, 41, 0.075); }
+    background-color: rgba(37, 37, 41, 0.5); }
 
 .swiper-button-prev-test,
 .swiper-button-next-test {
@@ -9629,3 +9632,6 @@ background-color: transparent;
 
 .tabs-title > a:hover {
   color: #FFCCCB; }
+
+.tiny {
+  letter-spacing: 2px; }

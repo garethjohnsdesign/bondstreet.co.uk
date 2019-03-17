@@ -158,6 +158,10 @@ p a {
   border-bottom: 1px solid $black;
 }
 
+.sans-regular {
+  font-family: $sans-regular;
+}
+
 .sans-bold {
   font-family: $sans-bold;
 }
@@ -188,7 +192,7 @@ p a {
   background-size: cover; 
   background-position: 50%;
  .content {
-  background-color: rgba($black, 0.075);
+  background-color: rgba($black, 0.5);
   }
 }
 
@@ -323,4 +327,8 @@ background-color: transparent;
 
 .tabs-title > a:hover {
 color: $secondary-color;
+}
+
+.tiny {
+  letter-spacing: 2px;
 }
