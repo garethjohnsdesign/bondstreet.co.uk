@@ -11,6 +11,18 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Maison Neue Book';
+  src: url("../fonts/maison-neue-book.woff2") format("woff2"), url("../fonts/maison-neue-book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Maison Neue Bold';
+  src: url("../fonts/maison-neue-bold.woff2") format("woff2"), url("../fonts/maison-neue-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body[data-aos-duration='50'] [data-aos], [data-aos][data-aos][data-aos-duration='50'] {
   transition-duration: 50ms; }
 
@@ -1612,7 +1624,7 @@ body {
   margin: 0;
   padding: 0;
   background: #FDFDFD;
-  font-family: "Regular", sans-serif;
+  font-family: "Maison Neue Book", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #757575;
@@ -4859,7 +4871,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Demibold", sans-serif;
+  font-family: "Maison Neue Bold", sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -9404,11 +9416,8 @@ i, cite, em, var, address, dfn {
 p a {
   border-bottom: 1px solid #252529; }
 
-.sans-light {
-  font-family: "Light", sans-serif; }
-
 .sans-bold {
-  font-family: "Demibold", sans-serif; }
+  font-family: "Maison Neue Bold", sans-serif; }
 
 .image--portrait {
   position: relative;
@@ -9545,7 +9554,7 @@ p a {
     .navigation a:hover {
       color: #1D2033; }
   .navigation a {
-    font-family: "Demibold", sans-serif; }
+    font-family: "Maison Neue Bold", sans-serif; }
 
 .navigation__banner {
   padding-top: 0.45rem !important;

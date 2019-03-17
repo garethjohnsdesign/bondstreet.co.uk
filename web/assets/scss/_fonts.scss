@@ -15,3 +15,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Maison Neue Book';
+  src: 
+  url('../fonts/maison-neue-book.woff2') format('woff2'), 
+  url('../fonts/maison-neue-book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maison Neue Bold';
+  src: 
+  url('../fonts/maison-neue-bold.woff2') format('woff2'), 
+  url('../fonts/maison-neue-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

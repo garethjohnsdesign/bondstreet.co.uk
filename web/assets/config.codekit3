@@ -7993,6 +7993,38 @@
 		"oAP": "/fonts/gallery.woff2",
 		"oF": 0
 		},
+	"/fonts/maison-neue-bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/maison-neue-bold.woff",
+		"oF": 0
+		},
+	"/fonts/maison-neue-bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/maison-neue-bold.woff2",
+		"oF": 0
+		},
+	"/fonts/maison-neue-book.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/maison-neue-book.woff",
+		"oF": 0
+		},
+	"/fonts/maison-neue-book.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/maison-neue-book.woff2",
+		"oF": 0
+		},
 	"/icons/symbol-defs.svg": {
 		"ft": 2097152,
 		"miP": 0,
