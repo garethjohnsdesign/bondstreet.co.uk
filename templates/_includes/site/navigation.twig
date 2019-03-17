@@ -1,16 +1,20 @@
-<div class="grid-x align-justify align-middle navigation"> 
+<div class="grid-x grid-padding-x align-justify align-middle navigation"> 
 
     <div class="shrink cell">    
       <ul class="dropdown menu align-middle" data-dropdown-menu>
         {% for slug, item in navigation %}
-    	  <li><a href="{{ url(slug) }}">{{ item.title }}</a></li>
+    	  <li><a href="{{ url(slug) }}" class="clear button tiny margin-left-2 text-uppercase">{{ item.title }}</a></li>
     		{% endfor %}
       </ul>
     </div>
     
-    <div class="shrink cell hide-for-xlarge">  
-      <a data-toggle="offCanvas" style="z-index: 1001"><svg class="icon icon-sort"><use xlink:href="/assets/icons/symbol-defs.svg#icon-sort"></use></svg></a>
-    </div>  
+    <div class="shrink cell">    
+      <ul class="menu align-center">
+        <li><a href="" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+        <li><a href="" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+        <li><a href="" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+      </ul>
+    </div>
 
 </div>
 

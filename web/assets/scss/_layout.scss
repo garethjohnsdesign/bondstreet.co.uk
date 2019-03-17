@@ -142,10 +142,6 @@ html.is-animating .swup-transition-color {
   @include links($white, $primary-color);
 }
 
-.home .white:hover {
-  color: $primary-color;
-}
-
 // 5. Typography
 // -------------
 
@@ -232,12 +228,6 @@ url('/assets/img/arrow-right.png') 1x,
 url('/assets/img/arrow-right@2x.png') 2x,
 url('/assets/img/arrow-right@3x.png') 3x
 ) 16 16, auto !important;
-}
-
-.acts {
- .content:hover {
-  background-color: rgba($secondary-color, 0.95);
- }
 }
 
 // 6. Navigation
