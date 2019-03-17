@@ -2,7 +2,7 @@
 {% set globalSeoTitle = seo.seoTitle %}
 {% set globalSeoDescription = seo.seoDescription %}
 {# {% set globalSeoImage = seo.seoImage|length ? seo.seoImage.first().getUrl() : '' %} #}
-{# END SEO #}
+{# End SEO #}
 
 {# Navigation #}
 {% set navigation = {
@@ -61,14 +61,8 @@
     <link rel="home" href="{{ siteUrl }}" />
     <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{seo.seoAnalytics}}"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', '{{seo.seoAnalytics}}');
-    </script>
+    {% include "_includes/site/analytics" %}
+    {% include "_includes/site/scripts" %}
 
 	{% endblock %}
 </head>
