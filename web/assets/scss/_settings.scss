@@ -65,8 +65,7 @@
 // 1. Global
 // ---------
 
-// $global-font-size: 100%;
-$global-font-size: 18px;
+$global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 /*
@@ -160,6 +159,7 @@ $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
+$header-color: $black;
 // $header-lineheight: 1.4;
 $header-lineheight: 1.2;
 $header-margin-bottom: 0.5rem;

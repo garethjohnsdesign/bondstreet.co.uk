@@ -168,6 +168,7 @@ p a {
 
 .hero {
   font-size: 200px;
+line-height: 1;
 }
 
 .tiny {
@@ -187,6 +188,7 @@ p a {
   @include aspect-ratio (4, 4);
   background-size: cover; 
   background-position: 50%;
+  background-color: $dark-gray;
 }
 
 .image--default {

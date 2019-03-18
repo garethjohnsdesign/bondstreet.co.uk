@@ -6,14 +6,12 @@
   <div class="small-12 cell text-center">
 
     <div class="image--panorama align-center-middle" data-interchange="">
-      
       <div class="grid-y height-100 align-center content">
         <div class="shrink cell text-center">
-          <h1 class="white text-uppercase hero">Bond Street</h1>
+          <h1 class="white text-uppercase hero">Bond <br>Street</h1>
           <h4 class="sans-regular white">The home of luxury shopping in London</h4>
         </div>
       </div>
-  
     </div>
 
   </div>
@@ -33,13 +31,18 @@
   </div>
 </div>
 
-{% for entry in entries %}
-<div class="grid-x grid-padding-x grid-padding-y">
-  <div class="small-12 cell text-center">
-    <h3>{{ entry.title}}</h3>
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+    {% for entry in entries %}
+      <div class="cell">
+        <div class="image--square align-center-middle margin-bottom-1" data-interchange=""></div>
+        <h3>{{ entry.title}}</h3>
+        <p>{{ entry.articleBody |striptags|slice(0,100)|default('Read more') }}...}}</p>
+        <div class="sans-bold clear button tiny text-uppercase">Read More</div>
+      </div>
+    {% endfor %}
   </div>
 </div>
-{% endfor %}
 
 {% endif %}
 {# Recent Articles #}
