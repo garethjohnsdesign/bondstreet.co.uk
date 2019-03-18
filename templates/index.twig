@@ -36,8 +36,8 @@
     {% for entry in entries %}
       <div class="cell">
         <div class="image--square align-center-middle margin-bottom-1" data-interchange=""></div>
-        <h3>{{ entry.title}}</h3>
-        <p>{{ entry.articleBody |striptags|slice(0,100)|default('Read more') }}...}}</p>
+        <h4>{{ entry.title}}</h4>
+        <p>{{ entry.articleBody |striptags|slice(0,100)|default('Read more') }}...</p>
         <div class="sans-bold clear button tiny text-uppercase">Read More</div>
       </div>
     {% endfor %}
