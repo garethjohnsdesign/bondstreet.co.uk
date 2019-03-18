@@ -9422,6 +9422,9 @@ p a {
 .hero {
   font-size: 200px; }
 
+.tiny {
+  letter-spacing: 2px; }
+
 .image--portrait {
   position: relative;
   background-size: cover;
@@ -9556,72 +9559,12 @@ p a {
   .navigation a {
     font-family: "Maison Neue Bold", sans-serif; }
 
-.navigation__banner {
-  padding-top: 0.45rem !important;
-  padding-right: 0.45rem !important;
-  padding-bottom: 0.45rem !important;
-  padding-left: 0.45rem !important; }
-
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   background-color: #FFFFFF; }
-
-.home .navigation {
-  border-bottom: 1px solid #FFCCCB; }
-  .home .navigation a {
-    color: #FFCCCB; }
-    .home .navigation a:hover {
-      color: #1D2033; }
-  @media screen and (min-width: 90em) {
-    .home .navigation {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      border-bottom: 1px solid #FFFFFF; }
-      .home .navigation a {
-        color: #FFFFFF; }
-        .home .navigation a:hover {
-          color: #1D2033; } }
-
-.home .is-dropdown-submenu {
-  z-index: 14;
-  /*
-  @include breakpoint(xxlarge) {
-background-color: transparent;
-  }
-*/ }
-  .home .is-dropdown-submenu a {
-    color: #FFCCCB; }
-    .home .is-dropdown-submenu a:hover {
-      color: #1D2033; }
-
-.is-dropdown-submenu {
-  z-index: 14; }
 
 .off-canvas .menu .active > a {
   background: transparent;
   color: #252529; }
 
-.vendor__description {
-  padding-top: 1rem !important;
-  padding-right: 1rem !important;
-  padding-bottom: 1rem !important;
-  padding-left: 1rem !important; }
-  @media print, screen and (min-width: 64em) {
-    .vendor__description {
-      padding-top: 2rem !important;
-      padding-right: 2rem !important;
-      padding-bottom: 2rem !important;
-      padding-left: 2rem !important; } }
-  @media screen and (min-width: 90em) {
-    .vendor__description {
-      padding-top: 3rem !important;
-      padding-right: 3rem !important;
-      padding-bottom: 3rem !important;
-      padding-left: 3rem !important; } }
-
 .tabs-title > a:hover {
   color: #FFCCCB; }
-
-.tiny {
-  letter-spacing: 2px; }

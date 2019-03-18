@@ -19,4 +19,29 @@
   </div>
 </div>
 
+{# Recent Articles #}
+
+{% set entries = craft.entries
+.section('articles')
+.all() %}
+
+{% if entries|length %}
+
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="small-12 cell text-center">
+    <h6 class="text-uppercase">Recent Articles</h5>
+  </div>
+</div>
+
+{% for entry in entries %}
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="small-12 cell text-center">
+    <h3>{{ entry.title}}</h3>
+  </div>
+</div>
+{% endfor %}
+
+{% endif %}
+{# Recent Articles #}
+
 {% endblock %}

@@ -170,6 +170,10 @@ p a {
   font-size: 200px;
 }
 
+.tiny {
+  letter-spacing: 2px;
+}
+
 // 6. Layout
 // ---------
 
@@ -257,9 +261,6 @@ url('/assets/img/arrow-right@3x.png') 3x
   }
 }
 
-.navigation__banner {
-  @include padding(0.45, 0.45, 0.45, 0.45);
-}
 
 .hamburger-inner {
   &,
@@ -272,53 +273,13 @@ url('/assets/img/arrow-right@3x.png') 3x
 // 9. Home
 // -------
 
-.home .navigation {
-  @include links ($secondary-color, $primary-color);
-  border-bottom: 1px solid $secondary-color;
-  @include breakpoint(xxlarge) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid $white;
-  @include links ($white, $primary-color);
-  }
-}
-
-.home .is-dropdown-submenu {
-// background-color: transparent;
-  z-index: 14;
-  @include links ($secondary-color, $primary-color);
-/*
-  @include breakpoint(xxlarge) {
-background-color: transparent;
-  }
-*/
-}
-
-.is-dropdown-submenu {
-  z-index: 14;
-}
 
 .off-canvas .menu .active > a {
   background: transparent;
   color: $black;
 }
 
-.vendor__description {
-  @include padding(1, 1, 1, 1);
-  @include breakpoint(large) {
-  @include padding(2, 2, 2, 2);
-  }
-  @include breakpoint(xxlarge) {
-  @include padding(3, 3, 3, 3);
-  }
-}
 
 .tabs-title > a:hover {
 color: $secondary-color;
-}
-
-.tiny {
-  letter-spacing: 2px;
 }
