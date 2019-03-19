@@ -1,5 +1,5 @@
 app: bondstreet
-ssh_url: bondstreet.u5w5fblgg9tiqvcq@deploy.eu2.frbit.com
+ssh_url: bondstreet@deploy.eu2.frbit.com
 ssh_path: null
 git_remote: bondstreet/master
 before:
