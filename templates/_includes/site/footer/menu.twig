@@ -1,4 +1,4 @@
-{% set navigationexplore = {
+{% set explore = {
   "explore/shops":    { title: "Shops" },
   "explore/hotels":    { title: "Hotels" },
   "explore/restaurants-and-bars":    { title: "Restaurants and Bars" },
@@ -6,24 +6,28 @@
   "explore/services":    { title: "Services" },
 } %}
 
-{% set eventsmenu = {
+{% set events = {
   "events/now":    { title: "Now" },
   "events/next-month":    { title: "Next Month" },
   "events/after-that":    { title: "After That" },
   "events/archive":    { title: "Archive" },
 } %}
 
-{% set journalmenu = {
-  "recipes":    { title: "Recipes" },
-  "events":    { title: "Events" },
-  "news":    { title: "News" },
+{% set articles = {
+  "explore/shops":    { title: "Shops" },
+  "explore/hotels":    { title: "Hotels" },
+  "explore/restaurants-and-bars":    { title: "Restaurants and Bars" },
+  "explore/galleries-and-culture":    { title: "Galleries and Culture" },
+  "explore/services":    { title: "Services" },
 } %}
 
-{% set infomenu = {
+{% set info = {
+  "location":    { title: "Location" },
+  "heritage":    { title: "Heritage" },
+  "members":   { title: "Members" },
+  "bespoke":    { title: "Bespoke" },
+  "careers":    { title: "Careers" },
   "contact":    { title: "Contact" },
-  "delivery-faqs":    { title: "Delivery / FAQs" },
-  "terms-and-conditions":   { title: "Terms and Conditions" },
-  "privacy-policy":    { title: "Privacy Policy" },
 } %}
 
 <div class="grid-container">
@@ -32,7 +36,7 @@
       <div class="cell medium-auto">
         <ul class="vertical menu text-center">
           <li class="menu-text text-uppercase">Explore</li>
-          {% for slug, item in navigationexplore %}
+          {% for slug, item in explore %}
             <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
   			  {% endfor %}
         </ul>
@@ -41,7 +45,7 @@
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
           <li class="menu-text text-uppercase">Events</li>
-          {% for slug, item in eventsmenu %}
+          {% for slug, item in events %}
             <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
   			  {% endfor %}
         </ul>
@@ -50,8 +54,8 @@
   
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
-          <li class="menu-text">Journal</li>
-          {% for slug, item in journalmenu %}
+          <li class="menu-text">Articles</li>
+          {% for slug, item in articles %}
             <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
   			  {% endfor %}
         </ul>
@@ -61,7 +65,7 @@
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
           <li class="menu-text">Info</li>
-          {% for slug, item in infomenu %}
+          {% for slug, item in info %}
             <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
   			  {% endfor %}
         </ul>
