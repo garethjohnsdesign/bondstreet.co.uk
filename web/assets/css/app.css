@@ -5608,7 +5608,7 @@ textarea {
   height: 2.4375rem;
   margin: 0 0 1rem;
   padding: 0.5rem;
-  border: 1px solid #1D2033;
+  border: 1px solid #FFFFFF;
   border-radius: 3px;
   background-color: transparent;
   box-shadow: 0;
@@ -5634,7 +5634,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #1D2033; }
+  color: #FFFFFF; }
 
 input:disabled, input[readonly],
 textarea:disabled,
@@ -5679,7 +5679,7 @@ label {
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.8;
-  color: #252529; }
+  color: #FFFFFF; }
   label.middle {
     margin: 0 0 1rem;
     padding: 0.5625rem 0; }
@@ -5756,7 +5756,7 @@ legend {
 .fieldset {
   margin: 1.125rem 0;
   padding: 1.25rem;
-  border: 1px solid #252529; }
+  border: 1px solid #FFFFFF; }
   .fieldset legend {
     margin: 0;
     margin-left: -0.1875rem;
@@ -5767,7 +5767,7 @@ select {
   margin: 0 0 1rem;
   padding: 0.5rem;
   appearance: none;
-  border: 1px solid #1D2033;
+  border: 1px solid #FFFFFF;
   border-radius: 3px;
   background-color: #FFFFFF;
   font-family: inherit;
