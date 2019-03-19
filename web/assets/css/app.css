@@ -9344,6 +9344,10 @@ svg {
 :focus {
   outline: 0; }
 
+.menu .menu-text {
+  font-weight: normal;
+  font-family: "Maison Neue Bold", sans-serif; }
+
 .swup-transition-fade-up {
   transition: 0.5s;
   opacity: 1;
