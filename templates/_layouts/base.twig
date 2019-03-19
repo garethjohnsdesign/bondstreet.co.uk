@@ -4,18 +4,8 @@
 {# {% set globalSeoImage = seo.seoImage|length ? seo.seoImage.first().getUrl() : '' %} #}
 {# End SEO #}
 
-{# Navigation #}
-{% set navigation = {
-  "":    { title: "Home" },
-  "explore":    { title: "Explore" },
-  "events":    { title: "Events" },
-  "articles":    { title: "Articles" },
-  "your-visit":    { title: "Your Visit" },
-} %}
-{# End Navigation #}
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ craft.app.language }}">
+<html lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
 	{% block head %}
     <meta charset="utf-8">
