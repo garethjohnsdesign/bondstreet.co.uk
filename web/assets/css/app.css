@@ -7680,7 +7680,7 @@ html.is-reveal-open body {
   text-decoration: line-through !important; }
 
 .font-wide {
-  letter-spacing: 0.25rem; }
+  letter-spacing: 0.125rem; }
 
 .font-normal {
   font-weight: normal; }
@@ -9384,6 +9384,8 @@ html.is-animating .swup-transition-color {
     color: #FFFFFF; }
     .primary-background-colour a:hover {
       color: #FFCCCB; }
+  .primary-background-colour h1, .primary-background-colour .h1, .primary-background-colour h2, .primary-background-colour .h2, .primary-background-colour h3, .primary-background-colour .h3, .primary-background-colour h4, .primary-background-colour .h4, .primary-background-colour h5, .primary-background-colour .h5, .primary-background-colour h6, .primary-background-colour .h6 {
+    color: #FFFFFF; }
 
 .secondary-background-colour {
   background-color: #FFCCCB;
