@@ -140,6 +140,11 @@ html.is-animating .swup-transition-color {
   }
 }
 
+.medium-gray {
+  color: $medium-gray;
+  @include links($medium-gray, $primary-color)
+}
+
 .black {
   color: $black;
   @include links($black, $primary-color)
@@ -196,13 +201,14 @@ line-height: 1;
   @include aspect-ratio (4, 4);
   background-size: cover; 
   background-position: 50%;
-  background-color: $dark-gray;
+  background-color: $medium-gray;
 }
 
 .image--default {
   @include aspect-ratio (7, 5);
   background-size: cover; 
   background-position: 50%;
+  background-color: $medium-gray;
 }
 
 .image--panorama {

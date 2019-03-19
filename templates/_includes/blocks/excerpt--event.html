@@ -1,0 +1,22 @@
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="small-12 medium-6 cell small-order-1 {% if loop.index is even %}medium-order-2{% endif %}">
+    <div class="image--default margin-bottom-1" data-interchange="">
+      <div class="grid-y height-100 align-top content">
+        <div class="shrink cell">
+          <a class="button tiny sans-bold text-uppercase" href="#">Tag One</a>
+          <a class="button tiny sans-bold text-uppercase" href="#">Tag Two</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="small-12 medium-6 cell small-order-2 {% if loop.index is even %}medium-order-1{% endif %}">
+    <div class="padding-2">
+      <h5 class="medium-gray">{{ entry.date|date("j F")}}</h5>
+      <h4>{{ entry.title}}</h4>
+      <p>{{ entry.body |striptags|slice(0,100)|default('Read more') }}...</p>
+      <div class="sans-bold clear button tiny text-uppercase">Read More</div>
+    </div>
+  </div>
+
+</div>

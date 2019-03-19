@@ -25,7 +25,6 @@
 
 {% if entries|length %}
 <div class="grid-container">
-
   <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
     <div class="small-12 cell text-center">
       <h6 class="text-uppercase font-wide">Recent Articles</h5>
@@ -34,16 +33,10 @@
 
   <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
     {% for entry in entries %}
-      <div class="cell">
-        <div class="image--square align-center-middle margin-bottom-1" data-interchange=""></div>
-        <h4>{{ entry.title}}</h4>
-        <p>{{ entry.articleBody |striptags|slice(0,100)|default('Read more') }}...</p>
-        <div class="sans-bold clear button tiny text-uppercase">Read More</div>
-      </div>
+      {% include "_includes/blocks/excerpt--article" %}
     {% endfor %}
   </div>
 </div>
-
 {% endif %}
 {# Recent Articles #}
 
@@ -62,16 +55,10 @@
     </div>
   </div>
 
-  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
-    {% for entry in entries %}
-      <div class="cell">
-        <div class="image--square align-center-middle margin-bottom-1" data-interchange=""></div>
-        <h4>{{ entry.title}}</h4>
-        <p>{{ entry.articleBody |striptags|slice(0,100)|default('Read more') }}...</p>
-        <div class="sans-bold clear button tiny text-uppercase">Read More</div>
-      </div>
-    {% endfor %}
-  </div>
+  {% for entry in entries %}
+    {% include "_includes/blocks/excerpt--event" %}
+  {% endfor %}
+
 </div>
 
 {% endif %}

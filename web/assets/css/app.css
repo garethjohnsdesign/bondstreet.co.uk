@@ -1641,12 +1641,12 @@ img {
 textarea {
   height: auto;
   min-height: 50px;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 select {
   box-sizing: border-box;
   width: 100%;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 .map_canvas img,
 .map_canvas embed,
@@ -1660,7 +1660,7 @@ button {
   padding: 0;
   appearance: none;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0;
   background: transparent;
   line-height: 1;
   cursor: auto; }
@@ -5068,8 +5068,7 @@ kbd {
   padding: 0.125rem 0.25rem 0;
   background-color: #E5E5E5;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  color: #252529;
-  border-radius: 3px; }
+  color: #252529; }
 
 .subheader {
   margin-top: 0.2rem;
@@ -5212,7 +5211,7 @@ ul.no-bullet, ol.no-bullet {
   padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 0;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-size: 0.9rem;
   line-height: 1;
@@ -5609,7 +5608,7 @@ textarea {
   margin: 0 0 1rem;
   padding: 0.5rem;
   border: 1px solid #FFFFFF;
-  border-radius: 3px;
+  border-radius: 0;
   background-color: transparent;
   box-shadow: 0;
   font-family: inherit;
@@ -5645,7 +5644,7 @@ textarea[readonly] {
 [type='submit'],
 [type='button'] {
   appearance: none;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 input[type='search'] {
   box-sizing: border-box; }
@@ -5696,9 +5695,9 @@ label {
   margin-bottom: 1rem;
   align-items: stretch; }
   .input-group > :first-child {
-    border-radius: 3px 0 0 3px; }
+    border-radius: 0 0 0 0; }
   .input-group > :last-child > * {
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 0 0 0; }
 
 .input-group-label, .input-group-field, .input-group-button, .input-group-button a,
 .input-group-button input,
@@ -5768,7 +5767,7 @@ select {
   padding: 0.5rem;
   appearance: none;
   border: 1px solid #FFFFFF;
-  border-radius: 3px;
+  border-radius: 0;
   background-color: #FFFFFF;
   font-family: inherit;
   font-size: 1rem;
@@ -5827,10 +5826,10 @@ select {
     cursor: not-allowed; }
 
 .accordion-item:first-child > :first-child {
-  border-radius: 3px 3px 0 0; }
+  border-radius: 0 0 0 0; }
 
 .accordion-item:last-child > :last-child {
-  border-radius: 0 0 3px 3px; }
+  border-radius: 0 0 0 0; }
 
 .accordion-title {
   position: relative;
@@ -5843,7 +5842,7 @@ select {
   color: #1D2033; }
   :last-child:not(.is-active) > .accordion-title {
     border-bottom: 1px solid #E5E5E5;
-    border-radius: 0 0 3px 3px; }
+    border-radius: 0 0 0 0; }
   .accordion-title:hover, .accordion-title:focus {
     background-color: #E5E5E5; }
   .accordion-title::before {
@@ -6025,7 +6024,7 @@ select {
   margin: 0 0 1rem 0;
   padding: 1rem;
   border: 1px solid rgba(37, 37, 41, 0.25);
-  border-radius: 3px;
+  border-radius: 0;
   background-color: white;
   color: #757575; }
   .callout > :first-child {
@@ -6343,7 +6342,7 @@ select {
   visibility: hidden;
   display: none;
   border: 1px solid #A6A6A6;
-  border-radius: 3px;
+  border-radius: 0;
   background-color: #FDFDFD;
   font-size: 1rem; }
   .dropdown-pane.is-opening {
@@ -6548,7 +6547,7 @@ select {
 .label {
   display: inline-block;
   padding: 0.33333rem 0.5rem;
-  border-radius: 3px;
+  border-radius: 0;
   font-size: 0.8rem;
   line-height: 1;
   white-space: nowrap;
@@ -7113,7 +7112,7 @@ html.is-reveal-open body {
   display: none;
   padding: 1rem;
   border: 1px solid #A6A6A6;
-  border-radius: 3px;
+  border-radius: 0;
   background-color: #FFFFFF;
   position: relative;
   top: 100px;
@@ -8619,7 +8618,7 @@ ol.list-upper-roman {
     width: 2rem;
     height: 4px;
     background-color: #FFFFFF;
-    border-radius: 3px;
+    border-radius: 0;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
@@ -9395,6 +9394,13 @@ html.is-animating .swup-transition-color {
   .secondary-background-colour a:hover {
     color: #252529; }
 
+.medium-gray {
+  color: #A6A6A6; }
+  .medium-gray a {
+    color: #A6A6A6; }
+    .medium-gray a:hover {
+      color: #1D2033; }
+
 .black {
   color: #252529; }
   .black a {
@@ -9456,7 +9462,7 @@ p a {
   position: relative;
   background-size: cover;
   background-position: 50%;
-  background-color: #757575; }
+  background-color: #A6A6A6; }
   .image--square:before {
     display: block;
     content: "";
@@ -9476,7 +9482,8 @@ p a {
 .image--default {
   position: relative;
   background-size: cover;
-  background-position: 50%; }
+  background-position: 50%;
+  background-color: #A6A6A6; }
   .image--default:before {
     display: block;
     content: "";

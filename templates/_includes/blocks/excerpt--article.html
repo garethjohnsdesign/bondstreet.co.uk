@@ -1,0 +1,17 @@
+<div class="cell">
+
+  <div class="image--square margin-bottom-1" data-interchange="">
+    <div class="grid-y height-100 align-top content">
+      <div class="shrink cell">
+        <a class="button tiny sans-bold text-uppercase" href="#">Tag One</a>
+        <a class="button tiny sans-bold text-uppercase" href="#">Tag Two</a>
+      </div>
+    </div>
+  </div>
+  
+  <h4>{{ entry.date}}</h4>
+  <h4>{{ entry.title}}</h4>
+  <p>{{ entry.body |striptags|slice(0,100)|default('Read more') }}...</p>
+  <div class="sans-bold clear button tiny text-uppercase">Read More</div>
+
+</div>
