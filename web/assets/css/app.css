@@ -9552,12 +9552,7 @@ p a {
   padding-top: 0.45rem !important;
   padding-right: 0.45rem !important;
   padding-bottom: 0rem !important;
-  padding-left: 0.45rem !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 15; }
+  padding-left: 0.45rem !important; }
   @media print, screen and (min-width: 40em) {
     .navigation {
       padding-top: 1.5rem !important;
@@ -9571,7 +9566,7 @@ p a {
       padding-bottom: 1rem !important;
       padding-left: 2rem !important; } }
   .navigation a {
-    color: #FFFFFF; }
+    color: #252529; }
     .navigation a:hover {
       color: #1D2033; }
   .navigation a {

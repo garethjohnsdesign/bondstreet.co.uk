@@ -1,0 +1,68 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<div class="grid-x">
+  <div class="small-12 cell text-center">
+
+    <div class="image--panorama align-center-middle" data-interchange="">
+      <div class="grid-y height-100 align-center content">
+        <div class="shrink cell text-center">
+          <h1 class="white text-uppercase hero">Bond <br>Street</h1>
+          <h4 class="sans-regular white">The home of luxury shopping in London</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{# Recent Articles #}
+
+{% set entries = craft.entries
+.section('articles')
+.all() %}
+
+{% if entries|length %}
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+    <div class="small-12 cell text-center">
+      <h6 class="text-uppercase font-wide">Recent Articles</h5>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+    {% for entry in entries %}
+      {% include "_includes/blocks/excerpt--article" %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{# Recent Articles #}
+
+{# Recent Events #}
+
+{% set entries = craft.entries
+.section('events')
+.all() %}
+
+{% if entries|length %}
+<div class="grid-container">
+
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+    <div class="small-12 cell text-center">
+      <h6 class="text-uppercase font-wide">Recent Events</h5>
+    </div>
+  </div>
+
+  {% for entry in entries %}
+    {% include "_includes/blocks/excerpt--event" %}
+  {% endfor %}
+
+</div>
+
+{% endif %}
+{# Recent Events #}
+
+
+{% endblock %}

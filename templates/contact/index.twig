@@ -1,0 +1,26 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+{# Recent Articles #}
+
+{% set entries = craft.entries
+.section('articles')
+.all() %}
+
+{% if entries|length %}
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+    <div class="small-12 cell text-center">
+      <h6 class="text-uppercase font-wide">Recent Articles</h5>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+    {% for entry in entries %}
+      {% include "_includes/blocks/excerpt--article" %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{# Recent Articles #}
+{% endblock %}
