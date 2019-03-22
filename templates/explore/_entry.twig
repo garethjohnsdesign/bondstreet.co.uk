@@ -5,32 +5,46 @@
 <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
   <div class="small-12 cell text-center">
     <h1>{{entry.title}}</h1>
-{{ entry.location.address }}
+    {{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}
   </div>
 </div>
 
 
-
 <div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y">
-    <div class="small-12 cell text-center">
+
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell text-center">
+    <h6 class="text-uppercase font-wide">About</h6>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell text-center">
     {{entry.body}}
     </div>
   </div>
+
 </div>
 
 <div class="grid-container">
+
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell text-center">
+    <h6 class="text-uppercase font-wide">Details</h6>
+    </div>
+  </div>
+
   <div class="grid-x grid-padding-x grid-padding-y">
   
     <div class="small-12 medium-6 cell">
-    <h3>Opening Hours</h3>
+    <h6 class="sans-bold text-uppercase font-wide">Opening Hours</h6>
     {% for day in entry.openingHours %}
       <div class="grid-x grid-padding-x">
         <div class="small-6 cell">
         {{ day.name }}
         </div>
         <div class="small-6 cell">
-        {% if day.isBlank %}Closed{% else %}{{ day.open|time }} - {{ day.close|time }}{% endif %}
+        {% if day.isBlank %}Closed{% else %}{{ day.open|time('short') }} - {{ day.close|time('short')}}{% endif %}
         </div>
       </div>
     {% endfor %}
@@ -57,9 +71,6 @@
 
   </div>
 </div>
-
-
-
 
 
 {% endblock %}
