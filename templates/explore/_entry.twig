@@ -1,0 +1,41 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+  <div class="small-12 cell text-center">
+    <h1>{{entry.title}}</h1>
+  </div>
+</div>
+
+
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell text-center">
+    {{entry.body}}
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 medium-6 cell">
+
+    <h3>Opening Hours</h3>
+    {% for day in entry.openingHours %}
+      <div class="grid-x grid-padding-x">
+        <div class="small-6 cell">
+        {{ day.name }}
+        </div>
+        <div class="small-6 cell">
+        {% if day.isBlank %}Closed{% else %}{{ day.open|time }} - {{ day.close|time }}{% endif %}
+        </div>
+      </div>
+    {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
