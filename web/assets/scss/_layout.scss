@@ -262,12 +262,12 @@ url('/assets/img/arrow-right@3x.png') 3x
 // -------------
 
 .navigation {
-  @include padding(0.45, 0.45, 0, 0.45);
+  @include padding(0.45, 0, 0.45, 0);
   @include breakpoint(medium) {
-  @include padding(1.5, 1.5, 1, 1.5);
+  @include padding(1.5, 0, 1.5, 0);
   }
   @include breakpoint(xxlarge) {
-  @include padding(2, 2, 1, 2);
+  @include padding(1.5, 0, 1.5, 0);
   }
   @include links ($black, $primary-color)
   a {
