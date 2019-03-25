@@ -4862,7 +4862,7 @@ b {
   line-height: inherit; }
 
 small {
-  font-size: 80%;
+  font-size: 75%;
   line-height: inherit; }
 
 h1, .h1,
@@ -6201,10 +6201,10 @@ select {
       margin-bottom: 0.25rem;
       text-align: center; }
   .menu .is-active > a {
-    background: transparent;
+    background: #1D2033;
     color: #1D2033; }
   .menu .active > a {
-    background: transparent;
+    background: #1D2033;
     color: #1D2033; }
   .menu.align-left {
     justify-content: flex-start; }
@@ -7239,7 +7239,7 @@ html.is-reveal-open body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 2rem;
   flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
@@ -9548,30 +9548,36 @@ p a {
   cursor: url("/assets/img/arrow-right.png") 16 16, auto !important;
   cursor: -webkit-image-set(url("/assets/img/arrow-right.png") 1x, url("/assets/img/arrow-right@2x.png") 2x, url("/assets/img/arrow-right@3x.png") 3x) 16 16, auto !important; }
 
+/*
 .navigation {
-  padding-top: 0.45rem !important;
-  padding-right: 0rem !important;
-  padding-bottom: 0.45rem !important;
-  padding-left: 0rem !important; }
-  @media print, screen and (min-width: 40em) {
-    .navigation {
-      padding-top: 1.5rem !important;
-      padding-right: 0rem !important;
-      padding-bottom: 1.5rem !important;
-      padding-left: 0rem !important; } }
-  @media screen and (min-width: 90em) {
-    .navigation {
-      padding-top: 1.5rem !important;
-      padding-right: 0rem !important;
-      padding-bottom: 1.5rem !important;
-      padding-left: 0rem !important; } }
-  .navigation a {
-    color: #252529; }
-    .navigation a:hover {
-      color: #1D2033; }
-  .navigation a {
-    font-family: "Maison Neue Bold", sans-serif; }
+  @include padding(0.45, 0, 0.45, 0);
+  @include breakpoint(medium) {
+  @include padding(1.5, 0, 1.5, 0);
+  }
+  @include breakpoint(xxlarge) {
+  @include padding(1.5, 0, 1.5, 0);
+  }
+  @include links ($black, $primary-color)
+  a {
+    font-family: $sans-bold;
+  }
+}
+*/
+.top-bar .top-bar-left,
+.top-bar .top-bar-right {
+  z-index: 15; }
 
+.top-bar .top-bar-left {
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 75%;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem; }
+
+/*
+.top-bar .top-bar-left, .top-bar .top-bar-right {
+z-index: 15;
+}
+*/
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   background-color: #FFFFFF; }
 

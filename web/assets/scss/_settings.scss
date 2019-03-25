@@ -209,7 +209,8 @@ $header-styles: (
   )
 );
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 80%;
+// $small-font-size: 80%;
+$small-font-size: 75%;
 $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
@@ -551,8 +552,7 @@ $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;
 // $menu-item-color-active: $white;
 $menu-item-color-active: get-color(primary);
-// $menu-item-background-active: get-color(primary);
-$menu-item-background-active: transparent;
+$menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
@@ -937,7 +937,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-padding: 2rem;
+// $topbar-background: $light-gray;
 $topbar-background: transparent;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
