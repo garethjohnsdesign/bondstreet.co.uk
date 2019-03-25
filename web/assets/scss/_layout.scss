@@ -171,6 +171,14 @@ p a {
   border-bottom: 1px solid $black;
 }
 
+.letter-spacing--loose {
+  letter-spacing: $letter-spacing--loose
+}
+
+.letter-spacing--looser {
+  letter-spacing: $letter-spacing--looser
+}
+
 .sans-regular {
   font-family: $sans-regular;
 }
@@ -179,9 +187,21 @@ p a {
   font-family: $sans-bold;
 }
 
+.serif-regular {
+  font-family: $serif-regular;
+}
+
+.serif-bold {
+  font-family: $serif-bold;
+}
+
 .hero {
   font-size: 200px;
 line-height: 1;
+}
+
+.small {
+ font-size: $small-font-size;
 }
 
 .tiny {

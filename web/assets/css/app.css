@@ -9425,15 +9425,30 @@ i, cite, em, var, address, dfn {
 p a {
   border-bottom: 1px solid #252529; }
 
+.letter-spacing--loose {
+  letter-spacing: 0.125em; }
+
+.letter-spacing--looser {
+  letter-spacing: 0.25em; }
+
 .sans-regular {
   font-family: "Maison Neue Book", sans-serif; }
 
 .sans-bold {
   font-family: "Maison Neue Bold", sans-serif; }
 
+.serif-regular {
+  font-family: "Canela Regular", serif; }
+
+.serif-bold {
+  font-family: "Canela Bold", serif; }
+
 .hero {
   font-size: 200px;
   line-height: 1; }
+
+.small {
+  font-size: 75%; }
 
 .tiny {
   letter-spacing: 2px; }
