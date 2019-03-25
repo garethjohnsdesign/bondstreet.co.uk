@@ -345,3 +345,7 @@ color: $black;
     color: $medium-gray;
     opacity: 1; /* Firefox */
 }
+
+.top-bar-right {
+@include links($medium-gray, $secondary-color)
+}

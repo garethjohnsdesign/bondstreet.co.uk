@@ -35,7 +35,7 @@
       
       <div class="cell medium-auto">
         <ul class="vertical menu text-center">
-          <li class="menu-text text-uppercase font-wide">Explore</li>
+          <li class="small sans-bold text-uppercase letter-spacing--loose">Explore</li>
           {% for slug, item in explore %}
             <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
   			  {% endfor %}
@@ -44,7 +44,7 @@
       
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
-          <li class="menu-text text-uppercase font-wide">Events</li>
+          <li class="small sans-bold text-uppercase letter-spacing--loose">Events</li>
           {% for slug, item in events %}
             <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
   			  {% endfor %}
@@ -54,7 +54,7 @@
   
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
-          <li class="menu-text text-uppercase font-wide">Articles</li>
+          <li class="small sans-bold text-uppercase letter-spacing--loose">Articles</li>
           {% for slug, item in articles %}
             <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
   			  {% endfor %}
@@ -64,7 +64,7 @@
       
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
-          <li class="menu-text text-uppercase font-wide">Info</li>
+          <li class="small sans-bold text-uppercase letter-spacing--loose">Info</li>
           {% for slug, item in info %}
             <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
   			  {% endfor %}
