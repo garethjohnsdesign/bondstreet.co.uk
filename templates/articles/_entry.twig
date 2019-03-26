@@ -1,0 +1,19 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+    <div class="small-12 cell text-center">
+      <h1>{{ entry.title }}</h1>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell">
+      {{ entry.body }}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
