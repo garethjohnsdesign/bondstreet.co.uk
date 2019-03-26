@@ -2,19 +2,27 @@
 
 {% block main %}
 
-<div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+<div class="grid-x">
   <div class="small-12 cell text-center">
-    <h1>{{entry.title}}</h1>
-    {{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}
+
+    <div class="image--panorama align-center-middle" data-interchange="">
+      <div class="grid-y height-100 align-center content">
+        <div class="shrink cell text-center">
+          <h1 class="white">{{entry.title}}</h1>
+          <div class="white">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
 
-<div class="grid-container">
+<div class="grid-container padding-vertical-2">
 
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 cell text-center">
-    <h6 class="text-uppercase font-wide">About</h6>
+      <div class="small serif-bold text-uppercase letter-spacing--loose black">About</div>
     </div>
   </div>
 
@@ -30,14 +38,13 @@
 
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 cell text-center">
-    <h6 class="text-uppercase font-wide">Details</h6>
+      <div class="small serif-bold text-uppercase letter-spacing--loose black">Details</div>
     </div>
   </div>
 
-  <div class="grid-x grid-padding-x grid-padding-y">
-  
+  <div class="grid-x grid-padding-x grid-padding-y"> 
     <div class="small-12 medium-6 cell">
-    <h6 class="sans-bold text-uppercase font-wide">Opening Hours</h6>
+    <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Opening Hours</div>
     {% for day in entry.openingHours %}
       <div class="grid-x grid-padding-x">
         <div class="small-6 cell">
@@ -48,6 +55,12 @@
         </div>
       </div>
     {% endfor %}
+
+    <div class="padding-vertical-1"> 
+      <button type="button" class="expanded button hollow">Open Now</button>
+      <button type="button" class="expanded button hollow">Request a Booking</button>
+    </div>
+
     </div>
 
     <div class="small-12 medium-6 cell">
@@ -68,8 +81,27 @@
     });
     </script>
     </div>
-
   </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-4 cell">
+      <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Address</div>
+      {{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}
+    </div>
+    <div class="small-12 medium-4 cell">
+      <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Contact</div>
+      {{ entry.email }}
+    </div>
+    <div class="small-12 medium-4 cell">
+      <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Socials</div>
+      <ul class="menu">
+      <li><a href="" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+      <li><a href="" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+      <li><a href="" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+      </ul>
+    </div>
+  </div>
+
 </div>
 
 
