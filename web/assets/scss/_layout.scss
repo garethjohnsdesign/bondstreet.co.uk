@@ -1,4 +1,4 @@
-//  Table of Contents:
+ //  Table of Contents:
 //
 //   1. Mixins
 //   2. Global
@@ -239,6 +239,20 @@ line-height: 1;
   background-color: $dark-gray;
   }
 }
+
+.image--hero {
+height: 100vh;
+ .content {
+  background-color: $dark-gray;
+  }
+}
+/*
+.image--hero {
+  height: 100
+  background-size: cover; 
+  background-position: 50%;
+}
+*/
 
 .swiper-button-prev-test,
 .swiper-button-next-test {
