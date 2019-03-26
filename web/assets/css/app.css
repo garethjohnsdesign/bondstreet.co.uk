@@ -9628,3 +9628,12 @@ z-index: 15;
   color: #A6A6A6; }
   .top-bar-right a:hover {
     color: #FFCCCB; }
+
+/*
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+*/

@@ -348,18 +348,27 @@ z-index: 15;
 
 
 .tabs-title > a:hover {
-color: $secondary-color;
+  color: $secondary-color;
 }
 
 .top-bar input[type='search'] {
-color: $black;
+  color: $black;
 }
 
 .top-bar input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $medium-gray;
-    opacity: 1; /* Firefox */
+  color: $medium-gray;
+  opacity: 1; /* Firefox */
 }
 
 .top-bar-right {
-@include links($medium-gray, $secondary-color)
+  @include links($medium-gray, $secondary-color)
 }
+
+/*
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+*/

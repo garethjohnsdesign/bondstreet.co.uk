@@ -1,7 +1,8 @@
 {% extends "_layouts/site" %}
 
 {% block main %}
-
+<!-- Hero -->
+<section class="site__hero">
 <div class="grid-x">
   <div class="small-12 cell text-center">
 
@@ -18,9 +19,10 @@
 
   </div>
 </div>
+</section>
+<!-- End Hero -->
 
-{# Recent Articles #}
-
+<!-- Recent Articles -->
 {% set entries = craft.entries
 .section('articles')
 .all() %}
@@ -40,10 +42,9 @@
   </div>
 </div>
 {% endif %}
-{# Recent Articles #}
+<!-- End Recent Articles -->
 
-{# Recent Events #}
-
+<!-- Recent Events -->
 {% set entries = craft.entries
 .section('events')
 .all() %}
@@ -64,7 +65,6 @@
 </div>
 
 {% endif %}
-{# Recent Events #}
-
+<!-- End Recent Events -->
 
 {% endblock %}

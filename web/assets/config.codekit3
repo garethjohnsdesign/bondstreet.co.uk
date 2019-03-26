@@ -7950,7 +7950,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/Canela-Bold.woff",
+		"oAP": "/fonts/canela-bold.woff",
 		"oF": 0
 		},
 	"/fonts/Canela-Bold.woff2": {
@@ -7958,7 +7958,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/Canela-Bold.woff2",
+		"oAP": "/fonts/canela-bold.woff2",
 		"oF": 0
 		},
 	"/fonts/Canela-Regular.woff": {
@@ -7966,7 +7966,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/Canela-Regular.woff",
+		"oAP": "/fonts/canela-regular.woff",
 		"oF": 0
 		},
 	"/fonts/Canela-Regular.woff2": {
@@ -7974,7 +7974,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/Canela-Regular.woff2",
+		"oAP": "/fonts/canela-regular.woff2",
 		"oF": 0
 		},
 	"/fonts/gallery.woff": {
