@@ -1,0 +1,139 @@
+<article>
+{% for matrixBlock in entry.article.all() %}
+{% switch matrixBlock.type %}
+    
+    {% case "text" %}    
+    {% if matrixBlock.position == 'full' %}
+    <div class="grid-x grid-padding-y">
+      <div class="small-12 cell">
+        {{ matrixBlock.text | markdown }}
+      </div>
+    </div>
+    {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+      <div class="small-12 medium-9 cell">
+        {{ matrixBlock.text | markdown }}
+      </div>
+    </div>
+    {% endif %}
+    
+    {% case "heading" %}    
+    {% if matrixBlock.position == 'full' %}
+    <div class="grid-x grid-padding-y">
+      <div class="small-12 cell">
+        {{ matrixBlock.heading | markdown }}
+      </div>
+    </div>
+    {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+      <div class="small-12 medium-9 cell">
+        {{ matrixBlock.heading | markdown }}
+      </div>
+    </div>
+    {% endif %}
+    
+    
+    {% case "image" %}
+    {% if matrixBlock.position == 'full' %}
+    <div class="grid-x grid-padding-y">
+      <div class="small-12 cell">
+        {{ matrixBlock.image[0].getImg() }}
+      </div>
+    </div>
+    {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+      <div class="small-12 medium-9 cell">
+        {{ matrixBlock.image[0].getImg() }}
+      </div>
+    </div>
+    {% endif %}
+    
+    
+    {% case "portraitImage" %}
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+      <div class="small-12 medium-6 cell">
+        {{ matrixBlock.image[0].getImg() }}
+      </div>
+    </div>
+    
+    {% case "portraitPair" %}
+    {% if matrixBlock.position == 'left' %}
+    <div class="grid-x grid-padding-y">
+      <div class="small-12 medium-6 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-10 cell align-self-middle">
+            {{ matrixBlock.image[0].getImg() }}  
+          </div>
+        </div>
+              
+      </div>
+      
+      <div class="small-12 medium-6 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-8 cell align-self-middle">
+            {{ matrixBlock.image[1].getImg() }}  
+          </div>
+        </div>   
+        
+      </div>
+    </div>
+    {% elseif matrixBlock.position == 'center' %}
+    <div class="grid-x grid-padding-y">
+      <div class="small-12 medium-6 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-10 cell align-self-middle">
+            {{ matrixBlock.image[0].getImg() }}  
+          </div>
+        </div>
+              
+      </div>
+      
+      <div class="small-12 medium-6 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-10 cell align-self-middle">
+            {{ matrixBlock.image[1].getImg() }}  
+          </div>
+        </div>   
+        
+      </div>
+    </div>
+    {% elseif matrixBlock.position == 'right' %}
+    <div class="grid-x grid-padding-y">
+      <div class="small-12 medium-6 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-8 cell align-self-middle">
+            {{ matrixBlock.image[0].getImg() }}  
+          </div>
+        </div>
+              
+      </div>
+      
+      <div class="small-12 medium-6 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-10 cell align-self-middle">
+            {{ matrixBlock.image[1].getImg() }}  
+          </div>
+        </div>   
+        
+      </div>
+    </div>
+    {% endif %}
+    
+    {% case "videoEmbed" %}
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+      <div class="small-12 medium-9 cell">
+        <div class="responsive-embed widescreen">
+        {{ matrixBlock.videoEmbed | markdown }}
+        </div>
+      </div>
+    </div>
+    
+{% endswitch %}
+{% endfor %}
+</article>

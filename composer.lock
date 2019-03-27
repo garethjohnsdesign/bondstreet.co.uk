@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f73a39d350d9e19978fb124b845fb235",
+    "content-hash": "b93259c97bb42d61ef0fd5b18716a9a7",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -1841,6 +1841,56 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2016-02-11T07:05:27+00:00"
+        },
+        {
+            "name": "rias/craft-position-fieldtype",
+            "version": "1.0.14",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rias500/craft-position-fieldtype/zipball/18fc333880c34fd13ec2b04f43ad0a9a8b090ce2",
+                "reference": "18fc333880c34fd13ec2b04f43ad0a9a8b090ce2",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Position Fieldtype",
+                "handle": "position-fieldtype",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/Rias500/craft-position-fieldtype/master/CHANGELOG.md",
+                "class": "rias\\positionfieldtype\\PositionFieldtype"
+            },
+            "autoload": {
+                "psr-4": {
+                    "rias\\positionfieldtype\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rias",
+                    "homepage": "https://rias.be"
+                }
+            ],
+            "description": "Brings back the Position fieldtype from Craft 2",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "position fieldtype"
+            ],
+            "support": {
+                "docs": "https://github.com/Rias500/craft-position-fieldtype/blob/master/README.md",
+                "issues": "https://github.com/Rias500/craft-position-fieldtype/issues"
+            },
+            "time": "2018-10-07T10:25:48+00:00"
         },
         {
             "name": "seld/cli-prompt",
