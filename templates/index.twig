@@ -23,6 +23,13 @@
 </section>
 <!-- End Hero -->
 
+{% set image = entry.image.first() %}
+<div class="grid-x grid-padding-y grid-padding-x">
+  <div class="small-12 cell">
+<img src="https://bond-street.imgix.net/{{ image.filename }}" />
+  </div>
+</div>
+
 <!-- Recent Articles -->
 {% set entries = craft.entries
 .section('articles')

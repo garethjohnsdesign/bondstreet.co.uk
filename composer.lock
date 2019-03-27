@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b93259c97bb42d61ef0fd5b18716a9a7",
+    "content-hash": "a5137f843a5ae1cbb2c040d4c4b90393",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -44,6 +44,69 @@
                 "rsync library"
             ],
             "time": "2018-01-13T20:13:12+00:00"
+        },
+        {
+            "name": "aws/aws-sdk-php",
+            "version": "3.90.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/59ffa2a23553dfc4ed5a4f609377bd1881370ad6",
+                "reference": "59ffa2a23553dfc4ed5a4f609377bd1881370ad6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^5.3.3|^6.2.1",
+                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/psr7": "^1.4.1",
+                "mtdowling/jmespath.php": "~2.2",
+                "php": ">=5.5"
+            },
+            "suggest": {
+                "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
+                "doctrine/cache": "To use the DoctrineCacheAdapter",
+                "ext-curl": "To send requests using cURL",
+                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+                "ext-sockets": "To use client-side monitoring"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aws\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Amazon Web Services",
+                    "homepage": "http://aws.amazon.com"
+                }
+            ],
+            "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
+            "homepage": "http://aws.amazon.com/sdkforphp",
+            "keywords": [
+                "amazon",
+                "aws",
+                "cloud",
+                "dynamodb",
+                "ec2",
+                "glacier",
+                "s3",
+                "sdk"
+            ],
+            "time": "2019-03-26T18:29:19+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -557,6 +620,59 @@
             "time": "2018-11-13T23:19:42+00:00"
         },
         {
+            "name": "craftcms/google-cloud",
+            "version": "1.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/google-cloud/zipball/c38c159de0f11785d978e2ed8b93645ecc41db3f",
+                "reference": "c38c159de0f11785d978e2ed8b93645ecc41db3f",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.5",
+                "superbalist/flysystem-google-storage": "^7.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Google Cloud Storage",
+                "handle": "google-cloud",
+                "changelogUrl": "https://raw.githubusercontent.com/craftcms/google-cloud/master/CHANGELOG.md",
+                "downloadUrl": "https://github.com/craftcms/google-cloud/archive/master.zip"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\googlecloud\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Google Cloud Storage integration for Craft CMS",
+            "keywords": [
+                "cloud",
+                "cms",
+                "craftcms",
+                "flysystem",
+                "google",
+                "storage",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/google-cloud/issues?state=open",
+                "source": "https://github.com/craftcms/google-cloud",
+                "docs": "https://github.com/craftcms/google-cloud",
+                "rss": "https://github.com/craftcms/google-cloud/commits/master.atom"
+            },
+            "time": "2019-02-08T11:39:43+00:00"
+        },
+        {
             "name": "craftcms/oauth2-craftid",
             "version": "1.0.0.1",
             "dist": {
@@ -1057,6 +1173,43 @@
             "time": "2018-02-23T01:58:20+00:00"
         },
         {
+            "name": "firebase/php-jwt",
+            "version": "v5.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "time": "2017-06-27T22:17:23+00:00"
+        },
+        {
             "name": "fortrabbit/craft-auto-migrate",
             "version": "1.1.0",
             "dist": {
@@ -1155,6 +1308,123 @@
                 "issues": "https://github.com/fortrabbit/craft-deploy-tools/issues"
             },
             "time": "2019-02-01T14:35:14+00:00"
+        },
+        {
+            "name": "google/auth",
+            "version": "v1.4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/196237248e636a3554a7d9e4dfddeb97f450ab5c",
+                "reference": "196237248e636a3554a7d9e4dfddeb97f450ab5c",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "~2.0|~3.0|~4.0|~5.0",
+                "guzzlehttp/guzzle": "~5.3.1|~6.0",
+                "guzzlehttp/psr7": "^1.2",
+                "php": ">=5.4",
+                "psr/cache": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Auth\\": "src"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Google Auth Library for PHP",
+            "homepage": "http://github.com/google/google-auth-library-php",
+            "keywords": [
+                "Authentication",
+                "google",
+                "oauth2"
+            ],
+            "time": "2018-09-17T20:29:21+00:00"
+        },
+        {
+            "name": "google/cloud-core",
+            "version": "v1.26.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/ea5ac30e4120b48a92494b1de2c5230926f8c171",
+                "reference": "ea5ac30e4120b48a92494b1de2c5230926f8c171",
+                "shasum": ""
+            },
+            "require": {
+                "google/auth": "^1.2",
+                "guzzlehttp/guzzle": "^5.3|^6.0",
+                "guzzlehttp/promises": "^1.3",
+                "guzzlehttp/psr7": "^1.2",
+                "monolog/monolog": "~1",
+                "php": ">=5.5",
+                "psr/http-message": "1.0.*",
+                "rize/uri-template": "~0.3"
+            },
+            "suggest": {
+                "opis/closure": "May be used to serialize closures to process jobs in the batch daemon. Please require version ^3.",
+                "symfony/lock": "Required for the Spanner cached based session pool. Please require the following commit: 3.3.x-dev#1ba6ac9"
+            },
+            "bin": [
+                "bin/google-cloud-batch"
+            ],
+            "type": "library",
+            "extra": {
+                "component": {
+                    "id": "cloud-core",
+                    "target": "googleapis/google-cloud-php-core.git",
+                    "path": "Core",
+                    "entry": "src/ServiceBuilder.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Google\\Cloud\\Core\\": "src"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Google Cloud PHP shared dependency, providing functionality useful to all components.",
+            "time": "2019-02-06T21:40:58+00:00"
+        },
+        {
+            "name": "google/cloud-storage",
+            "version": "v1.11.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-storage/zipball/9e4b3aeebfc466671e7aa74862131a3bbd34804d",
+                "reference": "9e4b3aeebfc466671e7aa74862131a3bbd34804d",
+                "shasum": ""
+            },
+            "require": {
+                "google/cloud-core": "^1.26"
+            },
+            "suggest": {
+                "google/cloud-pubsub": "May be used to register a topic to receive bucket notifications.",
+                "phpseclib/phpseclib": "May be used in place of OpenSSL for creating signed Cloud Storage URLs. Please require version ^2."
+            },
+            "type": "library",
+            "extra": {
+                "component": {
+                    "id": "cloud-storage",
+                    "target": "googleapis/google-cloud-php-storage.git",
+                    "path": "Storage",
+                    "entry": "src/StorageClient.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Google\\Cloud\\Storage\\": "src"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Cloud Storage Client for PHP",
+            "time": "2019-02-06T21:40:58+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1325,6 +1595,33 @@
             "time": "2018-12-04T20:46:45+00:00"
         },
         {
+            "name": "imgix/imgix-php",
+            "version": "2.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/2acbceb98931253b4c672e7f2001cbebd2854b91",
+                "reference": "2acbceb98931253b4c672e7f2001cbebd2854b91",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Imgix\\": "src/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "A PHP client library for generating URLs with imgix.",
+            "keywords": [
+                "imgix"
+            ],
+            "time": "2018-08-16T23:08:36+00:00"
+        },
+        {
             "name": "justinrainbow/json-schema",
             "version": "5.2.8",
             "dist": {
@@ -1465,6 +1762,43 @@
             "time": "2019-02-01T08:50:36+00:00"
         },
         {
+            "name": "league/flysystem-aws-s3-v3",
+            "version": "1.0.22",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/883b02c80ca9cd68cf58a9b4b2185beef24b836b",
+                "reference": "883b02c80ca9cd68cf58a9b4b2185beef24b836b",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": "^3.0.0",
+                "league/flysystem": "^1.0.40",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\AwsS3v3\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frenky.net"
+                }
+            ],
+            "description": "Flysystem adapter for the AWS S3 SDK v3.x",
+            "time": "2019-01-31T15:07:25+00:00"
+        },
+        {
             "name": "league/oauth2-client",
             "version": "2.4.1",
             "dist": {
@@ -1586,6 +1920,111 @@
                 "shell"
             ],
             "time": "2018-07-07T07:35:36+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.24.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2018-11-05T09:00:11+00:00"
+        },
+        {
+            "name": "mtdowling/jmespath.php",
+            "version": "2.4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/adcc9531682cf87dfda21e1fd5d0e7a41d292fac",
+                "reference": "adcc9531682cf87dfda21e1fd5d0e7a41d292fac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "bin": [
+                "bin/jp.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JmesPath\\": "src/"
+                },
+                "files": [
+                    "src/JmesPath.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Declaratively specify how to extract elements from a JSON document",
+            "keywords": [
+                "json",
+                "jsonpath"
+            ],
+            "time": "2016-12-03T22:08:25+00:00"
         },
         {
             "name": "ostark/yii2-artisan-bridge",
@@ -1719,6 +2158,46 @@
                 "image processing"
             ],
             "time": "2017-10-26T13:18:33+00:00"
+        },
+        {
+            "name": "psr/cache",
+            "version": "1.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2016-08-06T20:24:11+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1893,6 +2372,41 @@
             "time": "2018-10-07T10:25:48+00:00"
         },
         {
+            "name": "rize/uri-template",
+            "version": "0.3.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rize/UriTemplate/zipball/9e5fdd5c47147aa5adf7f760002ee591ed37b9ca",
+                "reference": "9e5fdd5c47147aa5adf7f760002ee591ed37b9ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Rize\\UriTemplate": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marut K",
+                    "homepage": "http://twitter.com/rezigned"
+                }
+            ],
+            "description": "PHP URI Template (RFC 6570) supports both expansion & extraction",
+            "keywords": [
+                "RFC 6570",
+                "template",
+                "uri"
+            ],
+            "time": "2017-06-14T03:57:53+00:00"
+        },
+        {
             "name": "seld/cli-prompt",
             "version": "1.0.3",
             "dist": {
@@ -2017,6 +2531,97 @@
                 "phra"
             ],
             "time": "2015-10-13T18:44:15+00:00"
+        },
+        {
+            "name": "superbalist/flysystem-google-storage",
+            "version": "7.2.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Superbalist/flysystem-google-cloud-storage/zipball/97cf8a5c9a9d368260b2791ec130690a1bec0cbd",
+                "reference": "97cf8a5c9a9d368260b2791ec130690a1bec0cbd",
+                "shasum": ""
+            },
+            "require": {
+                "google/cloud-storage": "~1.0",
+                "league/flysystem": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Superbalist\\Flysystem\\GoogleStorage\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Superbalist.com a division of Takealot Online (Pty) Ltd",
+                    "email": "info@superbalist.com"
+                }
+            ],
+            "description": "Flysystem adapter for Google Cloud Storage",
+            "time": "2019-02-21T08:07:24+00:00"
+        },
+        {
+            "name": "superbig/craft3-imgix",
+            "version": "2.0.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sjelfull/craft3-imgix/zipball/7e02209998ce9b32cf1bf2c25a8c4e04aaf7a765",
+                "reference": "7e02209998ce9b32cf1bf2c25a8c4e04aaf7a765",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "imgix/imgix-php": "~2.1.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Imgix",
+                "handle": "imgix",
+                "schemaVersion": "2.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/sjelfull/craft3-imgix/master/CHANGELOG.md",
+                "components": {
+                    "imgixService": "superbig\\imgix\\services\\ImgixService"
+                },
+                "class": "superbig\\imgix\\Imgix"
+            },
+            "autoload": {
+                "psr-4": {
+                    "superbig\\imgix\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Superbig",
+                    "homepage": "https://superbig.co"
+                }
+            ],
+            "description": "Use Imgix with Craft",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "imgix"
+            ],
+            "support": {
+                "docs": "https://github.com/sjelfull/craft3-imgix/blob/master/README.md",
+                "issues": "https://github.com/sjelfull/craft3-imgix/issues"
+            },
+            "time": "2018-07-21T12:56:39+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
