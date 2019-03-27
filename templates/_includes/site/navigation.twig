@@ -20,7 +20,8 @@
     {% endif %}
 {% endfor %}
 
-<div class="top-bar">
+
+<div class="top-bar{% if entry.navigation is defined and entry.navigation %} top-bar--light{% endif %}">
   <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu>
     {% for item in primaryNav %}
@@ -38,7 +39,7 @@
                     </ul>
                 </li>
             {% else %}
-                <li {% if item.link == craft.request.firstSegment %}class="active" {% endif %}><a href="{{ item.link }}">{{ item.label }}</a></li>
+                <li {% if item.link == craft.request.firstSegment %}class="active" {% endif %}><a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a></li>
             {% endif %}
         {% endif %}
     {% endfor %}

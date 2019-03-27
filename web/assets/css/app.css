@@ -9629,11 +9629,8 @@ z-index: 15;
   .top-bar-right a:hover {
     color: #FFCCCB; }
 
-/*
-.top-bar {
+.top-bar--light {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-}
-*/
+  width: 100%; }
