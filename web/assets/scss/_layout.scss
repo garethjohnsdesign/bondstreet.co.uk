@@ -349,9 +349,6 @@ z-index: 15;
 }
 
 
-.tabs-title > a:hover {
-  color: $secondary-color;
-}
 
 .top-bar input[type='search'] {
   color: $black;
@@ -372,4 +369,11 @@ z-index: 15;
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.categories {
+font-family: $sans-bold;
+font-size: $small-font-size;
+text-transform: uppercase;
+letter-spacing: $prototype-wide-letter-spacing;
 }

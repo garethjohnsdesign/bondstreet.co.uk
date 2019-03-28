@@ -5868,10 +5868,10 @@ select {
   width: 100%; }
 
 .accordion-menu a {
-  padding: 0.7rem 0.7rem; }
+  padding: 0.5rem 1rem; }
 
 .accordion-menu .is-accordion-submenu a {
-  padding: 0.7rem 0.7rem; }
+  padding: 0.5rem 1rem; }
 
 .accordion-menu .nested.is-accordion-submenu {
   margin-right: 0;
@@ -6099,7 +6099,7 @@ select {
     line-height: 1;
     text-decoration: none;
     display: block;
-    padding: 0.7rem 0.7rem; }
+    padding: 0.5rem 1rem; }
   .menu input,
   .menu select,
   .menu a,
@@ -6227,7 +6227,7 @@ select {
     .menu.align-center li .submenu li {
       justify-content: flex-start; }
   .menu .menu-text {
-    padding: 0.7rem 0.7rem;
+    padding: 0.5rem 1rem;
     font-weight: bold;
     line-height: 1;
     color: inherit; }
@@ -6252,7 +6252,7 @@ select {
     transition: height 0.5s; }
 
 .drilldown a {
-  padding: 0.7rem 0.7rem;
+  padding: 0.5rem 1rem;
   background: #FFFFFF; }
 
 .drilldown .is-drilldown-submenu {
@@ -6270,7 +6270,7 @@ select {
   .drilldown .is-drilldown-submenu.is-closing {
     transform: translateX(100%); }
   .drilldown .is-drilldown-submenu a {
-    padding: 0.7rem 0.7rem; }
+    padding: 0.5rem 1rem; }
 
 .drilldown .nested.is-drilldown-submenu {
   margin-right: 0;
@@ -9612,9 +9612,6 @@ z-index: 15;
   background: transparent;
   color: #252529; }
 
-.tabs-title > a:hover {
-  color: #FFCCCB; }
-
 .top-bar input[type='search'] {
   color: #252529; }
 
@@ -9638,3 +9635,9 @@ z-index: 15;
     color: #FFFFFF; }
     .top-bar--light a:hover {
       color: #FFCCCB; }
+
+.categories {
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 75%;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem; }

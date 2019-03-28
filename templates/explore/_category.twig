@@ -1,0 +1,24 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-8 large-8 cell text-center">
+      <h1>Use the interactive map to explore {{category.title}} on Bond Street</h1>
+    </div>
+  </div>
+</div>
+
+{% set entries = craft.entries.relatedTo(category).all() %}
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+  {% for entry in entries %}
+    {% include "_includes/blocks/excerpt--explore" %}
+  {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}
