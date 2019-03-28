@@ -10,19 +10,18 @@
   </div>
 </div>
 
-{% set categories = craft.categories.group('explore') %}
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-8 large-8 cell text-center">
       <ul class="menu align-center">
-        {% for category in categories %}
-           <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose ">{{ category.title }}</a></li>
-        {% endfor %}
+        {% nav category in craft.categories.group('explore') %}
+          {% set entryCount = craft.entries.relatedTo(category).total() %}
+          <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose ">{{ category.title }} {{ entryCount }}</a></li>
+        {% endnav %}
       </ul>
     </div>
   </div>
 </div>
-
 
 {% set entries = craft.entries
 .section('explore')

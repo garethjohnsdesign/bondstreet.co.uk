@@ -4,13 +4,27 @@
   </div>
 </div>
 
+
 <div class="grid-container">
-<div class="grid-x grid-padding-x grid-padding-y align-center">
-  <div class="small-6 cell">
-    <h1>Shops</h1>
-    <h1>Hotels</h1>
-    <h1>Restaurants and Bars</h1>
-    <h1>Galleries and Culture</h1>
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-8 large-8 cell">
+      <ul class="vertical menu">
+        {% nav category in craft.categories.group('explore') %}
+          {% set entryCount = craft.entries.relatedTo(category).total() %}
+          <li>
+            <a href="{{ category.url }}">
+              <div class="grid-x grid-padding-x grid-padding-y align-justify">
+                <div class="shrink cell">
+                  <h1>{{ category.title }}</h1>
+                </div>
+                <div class="shrink cell">
+                  <h6>{{ entryCount }}</h6>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endnav %}
+      </ul>
+    </div>
   </div>
-</div>
 </div>
