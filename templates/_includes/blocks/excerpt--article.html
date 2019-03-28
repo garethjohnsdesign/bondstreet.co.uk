@@ -3,7 +3,8 @@
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-12 cell">
   
-        <div class="image--square">
+        {% set image = entry.image.one() %}
+        <div class="image--square" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}"{% endif %}>
           <div class="grid-y height-100 align-top content">
             <div class="shrink cell">
               <button class="button tiny sans-bold text-uppercase" href="">Tag One</button>

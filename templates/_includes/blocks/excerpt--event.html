@@ -13,7 +13,7 @@
 
   <div class="small-12 medium-6 cell small-order-2 {% if loop.index is even %}medium-order-1{% endif %}">
     <div class="padding-2">
-      <h5 class="medium-gray">{{ entry.date|date("j F")}}</h5>
+      <h5 class="medium-gray">{{ entry.start|date("j F")}} — {{ entry.end|date("j F")}}</h5>
       <h4>{{ entry.title}}</h4>
       <p>{{ entry.body |striptags|slice(0,100)|default('Read more') }}...</p>
       <div class="small sans-bold text-uppercase letter-spacing--loose black">Read More +</div>
