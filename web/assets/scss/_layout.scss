@@ -241,9 +241,11 @@ line-height: 1;
 }
 
 .image--hero {
-height: 100vh;
+  height: 100vh;
+  background-size: cover; 
+  background-position: 50%;
  .content {
-  background-color: $dark-gray;
+//   background-color: $dark-gray;
   }
 }
 /*
@@ -365,11 +367,9 @@ z-index: 15;
 }
 
 .top-bar--light {
+  @include links($white, $secondary-color)
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.test {
 }

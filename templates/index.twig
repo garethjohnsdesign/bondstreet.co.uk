@@ -7,7 +7,8 @@
 <div class="grid-x">
   <div class="small-12 cell text-center">
 
-    <div class="image--hero align-center-middle">
+    {% set image = entry.image.first() %}
+    <div class="image--hero align-center-middle"  data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}">
 
       <div class="grid-y height-100 align-center content">
         <div class="shrink cell text-center">
@@ -22,13 +23,6 @@
 </div>
 </section>
 <!-- End Hero -->
-
-{% set image = entry.image.first() %}
-<div class="grid-x grid-padding-y grid-padding-x">
-  <div class="small-12 cell">
-<img src="https://bond-street.imgix.net/{{ image.filename }}" />
-  </div>
-</div>
 
 <!-- Recent Articles -->
 {% set entries = craft.entries

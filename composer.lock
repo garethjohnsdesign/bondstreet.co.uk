@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5137f843a5ae1cbb2c040d4c4b90393",
+    "content-hash": "a5fbc5e651a364cf6745599ae3bdbefc",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -2568,60 +2568,6 @@
             ],
             "description": "Flysystem adapter for Google Cloud Storage",
             "time": "2019-02-21T08:07:24+00:00"
-        },
-        {
-            "name": "superbig/craft3-imgix",
-            "version": "2.0.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sjelfull/craft3-imgix/zipball/7e02209998ce9b32cf1bf2c25a8c4e04aaf7a765",
-                "reference": "7e02209998ce9b32cf1bf2c25a8c4e04aaf7a765",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0",
-                "imgix/imgix-php": "~2.1.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Imgix",
-                "handle": "imgix",
-                "schemaVersion": "2.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/sjelfull/craft3-imgix/master/CHANGELOG.md",
-                "components": {
-                    "imgixService": "superbig\\imgix\\services\\ImgixService"
-                },
-                "class": "superbig\\imgix\\Imgix"
-            },
-            "autoload": {
-                "psr-4": {
-                    "superbig\\imgix\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Superbig",
-                    "homepage": "https://superbig.co"
-                }
-            ],
-            "description": "Use Imgix with Craft",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "imgix"
-            ],
-            "support": {
-                "docs": "https://github.com/sjelfull/craft3-imgix/blob/master/README.md",
-                "issues": "https://github.com/sjelfull/craft3-imgix/issues"
-            },
-            "time": "2018-07-21T12:56:39+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -9538,9 +9538,9 @@ p a {
     background-color: #757575; }
 
 .image--hero {
-  height: 100vh; }
-  .image--hero .content {
-    background-color: #757575; }
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%; }
 
 /*
 .image--hero {
@@ -9634,3 +9634,7 @@ z-index: 15;
   top: 0;
   left: 0;
   width: 100%; }
+  .top-bar--light a {
+    color: #FFFFFF; }
+    .top-bar--light a:hover {
+      color: #FFCCCB; }

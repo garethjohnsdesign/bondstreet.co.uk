@@ -8,8 +8,7 @@
     "craftcms/store-hours": "2.1.1.1",
     "ether/simplemap": "3.4.7",
     "rias/craft-position-fieldtype": "1.0.14",
-    "craftcms/google-cloud": "1.3.0",
-    "superbig/craft3-imgix": "2.0.4"
+    "craftcms/google-cloud": "1.3.0"
   },
   "autoload": {
     "psr-4": {
