@@ -6509,12 +6509,12 @@ select {
   z-index: 1;
   display: none;
   min-width: 250px;
-  border: 1px solid #A6A6A6;
+  border: 0px solid #A6A6A6;
   background: #FFFFFF; }
   .dropdown .is-dropdown-submenu a {
     padding: 0.5rem 0.7rem; }
   .is-dropdown-submenu .is-dropdown-submenu {
-    margin-top: -1px; }
+    margin-top: 0px; }
   .is-dropdown-submenu > li {
     width: 100%; }
   .is-dropdown-submenu.js-dropdown-active {
