@@ -10,7 +10,7 @@
     <div class="small-12 medium-8 large-8 cell">
       <ul class="vertical menu">
         {% nav category in craft.categories.group('explore') %}
-          {% set entryCount = craft.entries.relatedTo(category).total() %}
+          {% set entryCount = craft.entries.relatedTo(category).count() %}
           <li>
             <a href="{{ category.url }}">
               <div class="grid-x grid-padding-x grid-padding-y align-justify">

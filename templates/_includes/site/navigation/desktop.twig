@@ -21,7 +21,7 @@
 {% endfor %}
 
 
-<div class="top-bar{% if entry.navigation is defined and entry.navigation %} top-bar--light{% endif %}">
+<div class="top-bar{% if entry.navigation is defined and entry.navigation %} top-bar--light{% endif %} show-for-medium">
   <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu>
     {% for item in primaryNav %}
@@ -30,7 +30,7 @@
             {% set childrenOfThisItem = attribute(children,'children-of-' ~ loop.index) ?? {} %}
 
             {% if childrenOfThisItem|length %}
-                <li {% if item.link == craft.request.firstSegment %}class="active" {% endif %}>
+                <li {% if item.link == craft.app.request.segments|first %}class="active" {% endif %}>
                     <a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a>
                     <ul class="menu">
                         {% for child in childrenOfThisItem %}
@@ -39,7 +39,7 @@
                     </ul>
                 </li>
             {% else %}
-                <li {% if item.link == craft.request.firstSegment %}class="active" {% endif %}><a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a></li>
+                <li {% if item.link == craft.app.request.segments|first %}class="active" {% endif %}><a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a></li>
             {% endif %}
         {% endif %}
     {% endfor %}
@@ -48,7 +48,6 @@
   <div class="top-bar-right">
     <ul class="menu">
       <li><input type="search" placeholder="Search"></li>
-{#       <li><button type="button" class="button">Search</button></li> #}
       <li class="margin-right-2"><a href="" target="_blank"><svg class="icon icon-magnifier"><use xlink:href="/assets/icons/symbol-defs.svg#icon-magnifier"></use></svg></a></li>
       <li><a href="" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
       <li><a href="" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
@@ -56,9 +55,4 @@
     </ul>
   </div>
 </div>
-
-
-{# ======================================
-NOW OUTPUT...
-========================================= #}
 

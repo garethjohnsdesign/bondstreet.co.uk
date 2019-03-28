@@ -1,53 +1,21 @@
-{% set explore = {
-  "explore/shops":    { title: "Shops" },
-  "explore/hotels":    { title: "Hotels" },
-  "explore/restaurants-and-bars":    { title: "Restaurants and Bars" },
-  "explore/galleries-and-culture":    { title: "Galleries and Culture" },
-  "explore/services":    { title: "Services" },
-} %}
-
-{% set events = {
-  "events/now":    { title: "Now" },
-  "events/next-month":    { title: "Next Month" },
-  "events/after-that":    { title: "After That" },
-  "events/archive":    { title: "Archive" },
-} %}
-
-{% set articles = {
-  "explore/shops":    { title: "Shops" },
-  "explore/hotels":    { title: "Hotels" },
-  "explore/restaurants-and-bars":    { title: "Restaurants and Bars" },
-  "explore/galleries-and-culture":    { title: "Galleries and Culture" },
-  "explore/services":    { title: "Services" },
-} %}
-
-{% set info = {
-  "location":    { title: "Location" },
-  "heritage":    { title: "Heritage" },
-  "members":   { title: "Members" },
-  "bespoke":    { title: "Bespoke" },
-  "careers":    { title: "Careers" },
-  "contact":    { title: "Contact" },
-} %}
-
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center show-for-large">
       
       <div class="cell medium-auto">
         <ul class="vertical menu text-center">
           <li class="small sans-bold text-uppercase letter-spacing--loose">Explore</li>
-          {% for slug, item in explore %}
-            <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
-  			  {% endfor %}
+            {% nav category in craft.categories.group('explore') %}
+              <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
+            {% endnav %}
         </ul>
       </div>
       
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
           <li class="small sans-bold text-uppercase letter-spacing--loose">Events</li>
-          {% for slug, item in events %}
-            <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
-  			  {% endfor %}
+            {% nav category in craft.categories.group('events') %}
+              <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
+            {% endnav %}
         </ul>
       </div>
       
@@ -55,9 +23,9 @@
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
           <li class="small sans-bold text-uppercase letter-spacing--loose">Articles</li>
-          {% for slug, item in articles %}
-            <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
-  			  {% endfor %}
+            {% nav category in craft.categories.group('articles') %}
+              <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
+            {% endnav %}
         </ul>
       </div>
   
@@ -65,9 +33,6 @@
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
           <li class="small sans-bold text-uppercase letter-spacing--loose">Info</li>
-          {% for slug, item in info %}
-            <li><a href="{{ url(slug) }}" {% if craft.request.firstSegment == slug %}class="active"{% endif %}>{{ item.title }}</a></li>
-  			  {% endfor %}
         </ul>
       </div>
       
