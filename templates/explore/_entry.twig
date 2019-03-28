@@ -113,8 +113,15 @@
 <!-- Services -->
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-10 cell text-center">
+    <div class="small-12 medium-10 large-8 cell text-center">
       <div class="small serif-bold text-uppercase letter-spacing--loose black">Services</div>
+      {% if entry.services|length %}
+        <ul class="menu align-center padding-vertical-1">
+          {% for row in entry.services %}
+            <li class="menu-text">{{ row.service }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
   </div>
 </div>
