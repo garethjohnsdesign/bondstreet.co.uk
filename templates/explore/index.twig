@@ -22,9 +22,14 @@
   </div>
 </div>
 
-{% set entries = craft.entries
-.section('explore')
-.all() %}
+{% set entries = craft.entries.section('explore').all() %}
+
+{% set category = craft.categories.slug('shopping') %}
+{% set shopping = craft.entries.section('explore').relatedTo(category).find() %}
+
+{% set category = craft.categories.slug('restaurants-and-bars') %}
+{% set restaurantsAndBars = craft.entries.section('explore').relatedTo(category).find() %}
+
 
 <div id="map" style="width: 100%; height: 50vh;"></div>
 
@@ -42,10 +47,35 @@ center: [
 });
 
 
-var stores = {
+var shopping = {
   "type": "FeatureCollection",
   "features": [
-   {% for entry in entries %}
+   {% for entry in shopping %}
+    {
+    type: 'Feature',
+    "properties": {
+      "phoneFormatted": "(202) 234-7336",
+      "phone": "2022347336",
+      "address": "1471 P St NW",
+      "city": "Washington DC",
+      "country": "United States",
+      "crossStreet": "at 15th St NW",
+      "postalCode": "20005",
+      "state": "D.C."
+    },
+    geometry: {
+    type: "Point",
+    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
+    }
+    },
+    {% endfor %}
+  ]
+};
+
+var restaurantsAndBars = {
+  "type": "FeatureCollection",
+  "features": [
+   {% for entry in restaurantsAndBars %}
     {
     type: 'Feature',
     "properties": {
@@ -72,15 +102,28 @@ map.addControl(new mapboxgl.NavigationControl());
 map.on('load', function(e) {
   // Add the data to your map as a layer
   map.addLayer({
-    id: 'locations',
+    id: 'restaurantsAndBars',
     type: 'symbol',
     // Add a GeoJSON source containing place coordinates and information.
     source: {
       type: 'geojson',
-      data: stores
+      data: restaurantsAndBars
     },
     layout: {
       'icon-image': 'restaurant-15',
+      'icon-allow-overlap': true,
+    }
+  });
+map.addLayer({
+    id: 'shopping',
+    type: 'symbol',
+    // Add a GeoJSON source containing place coordinates and information.
+    source: {
+      type: 'geojson',
+      data: shopping
+    },
+    layout: {
+      'icon-image': 'shop-15',
       'icon-allow-overlap': true,
     }
   });
