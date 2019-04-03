@@ -84,6 +84,10 @@
       {{ entry.location.lng }},
       {{ entry.location.lat }}
     ],
+    pitch: 60, // pitch in degrees
+    bearing: -60, // bearing in degrees
+    scrollZoom: false,
+    dragPan: false
     });
     
     map.addControl(new mapboxgl.NavigationControl());
@@ -115,7 +119,7 @@
     }
     },
     layout: {
-      'icon-image': 'shop-15',
+      'icon-image': 'marker-15',
       'icon-allow-overlap': true,
     }
     });
