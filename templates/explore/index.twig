@@ -30,6 +30,9 @@
 {% set category = craft.categories.slug('restaurants-and-bars') %}
 {% set restaurantsAndBars = craft.entries.section('explore').relatedTo(category).find() %}
 
+{% set category = craft.categories.slug('hotels') %}
+{% set hotels = craft.entries.section('explore').relatedTo(category).find() %}
+
 
 <div id="map" style="width: 100%; height: 50vh;"></div>
 
@@ -51,6 +54,31 @@ var shopping = {
   "type": "FeatureCollection",
   "features": [
    {% for entry in shopping %}
+    {
+    type: 'Feature',
+    "properties": {
+      "phoneFormatted": "(202) 234-7336",
+      "phone": "2022347336",
+      "address": "1471 P St NW",
+      "city": "Washington DC",
+      "country": "United States",
+      "crossStreet": "at 15th St NW",
+      "postalCode": "20005",
+      "state": "D.C."
+    },
+    geometry: {
+    type: "Point",
+    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
+    }
+    },
+    {% endfor %}
+  ]
+};
+
+var hotels = {
+  "type": "FeatureCollection",
+  "features": [
+   {% for entry in hotels %}
     {
     type: 'Feature',
     "properties": {
@@ -124,6 +152,19 @@ map.addLayer({
     },
     layout: {
       'icon-image': 'shop-15',
+      'icon-allow-overlap': true,
+    }
+  });
+map.addLayer({
+    id: 'hotels',
+    type: 'symbol',
+    // Add a GeoJSON source containing place coordinates and information.
+    source: {
+      type: 'geojson',
+      data: hotels
+    },
+    layout: {
+      'icon-image': 'bar-15',
       'icon-allow-overlap': true,
     }
   });
