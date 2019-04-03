@@ -21,9 +21,12 @@
 {% endfor %}
 
 
-<div class="top-bar{% if entry.navigation is defined and entry.navigation %} top-bar--light{% endif %} show-for-medium">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
+<div class="grid-x grid-padding-x grid-padding-y align-justify navigation{% if entry.navigation is defined and entry.navigation %} navigation--light{% endif %}">
+  <div class="shrink cell navigation__left">
+
+    <div class="show-for-small-only"><a href="" target="_blank"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></a></div>
+
+    <ul class="dropdown menu show-for-medium" data-dropdown-menu>
     {% for item in primaryNav %}
         {% if not item.level2 %}
 
@@ -45,14 +48,18 @@
     {% endfor %}
     </ul>
   </div>
-  <div class="top-bar-right">
-    <ul class="menu">
+  <div class="shrink cell navigation__right">
+    
+    <div class="show-for-small-only"><a href="" target="_blank"><svg class="icon icon-magnifier"><use xlink:href="/assets/icons/symbol-defs.svg#icon-magnifier"></use></svg></a></div>
+
+    <ul class="menu show-for-medium">
       <li><input type="search" placeholder="Search"></li>
       <li class="margin-right-2"><a href="" target="_blank"><svg class="icon icon-magnifier"><use xlink:href="/assets/icons/symbol-defs.svg#icon-magnifier"></use></svg></a></li>
       <li><a href="" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
       <li><a href="" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
       <li><a href="" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
     </ul>
+
   </div>
 </div>
 

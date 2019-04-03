@@ -196,7 +196,7 @@ p a {
 
 .hero {
   font-size: 200px;
-line-height: 1;
+  line-height: 1;
 }
 
 .small {
@@ -312,22 +312,43 @@ url('/assets/img/arrow-right@3x.png') 3x
 }
 */
 
-.top-bar .top-bar-left, .top-bar .top-bar-right {
+.navigation .navigation__left, .navigation .navigation__left {
 z-index: 15;
 }
 
-.top-bar .top-bar-left {
+.navigation__left {
 font-family: $sans-bold;
 font-size: $small-font-size;
 text-transform: uppercase;
 letter-spacing: $prototype-wide-letter-spacing;
 }
 
-/*
-.top-bar .top-bar-left, .top-bar .top-bar-right {
-z-index: 15;
+.navigation input[type='search'] {
+  color: $black;
 }
-*/
+
+.navigation input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $medium-gray;
+  opacity: 1; /* Firefox */
+}
+
+.navigation__right {
+  @include links($medium-gray, $secondary-color)
+}
+
+.navigation--light {
+  @include links($white, $secondary-color)
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation .icon {
+@include breakpoint(small only) {
+font-size: 2rem;
+}
+}
 
 
 .hamburger-inner {
@@ -347,28 +368,6 @@ z-index: 15;
   color: $black;
 }
 
-
-
-.top-bar input[type='search'] {
-  color: $black;
-}
-
-.top-bar input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: $medium-gray;
-  opacity: 1; /* Firefox */
-}
-
-.top-bar-right {
-  @include links($medium-gray, $secondary-color)
-}
-
-.top-bar--light {
-  @include links($white, $secondary-color)
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
 
 .categories {
 font-family: $sans-bold;
