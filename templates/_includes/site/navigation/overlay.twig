@@ -1,0 +1,65 @@
+{% set primaryNav = navigation.primaryNavigation %}
+{% set children = {} %}
+
+{% for item in primaryNav %}
+    {% set targetArray = {} %}
+
+    {% if item.level2 %}
+        {% if attribute(children, lastKnownTopLevelItem) is not defined %}
+            {% set children = children|merge({(lastKnownTopLevelItem): [item]}) %}
+        {% else %}
+            {% set targetArray = attribute(children, lastKnownTopLevelItem) %}
+            {% set targetArray = targetArray|merge([item]) %}
+            {% set children = children|merge({(lastKnownTopLevelItem): targetArray}) %}
+        {% endif %}
+    {% endif %}
+
+    {# make a note of the loop index of the last known top level item... #}
+    {% if not item.level2 %}
+        {% set lastKnownTopLevelItem = 'children-of-' ~ loop.index %}
+    {% endif %}
+{% endfor %}
+
+
+<div class="grid-x grid-padding-x grid-padding-y align-justify navigation{% if entry.navigation is defined and entry.navigation %} navigation--light{% endif %}">
+  <div class="shrink cell navigation__left">
+
+    <div class="hide-for-large"><a href="" target="_blank"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></a></div>
+
+    <ul class="dropdown menu show-for-large" data-dropdown-menu>
+    {% for item in primaryNav %}
+        {% if not item.level2 %}
+
+            {% set childrenOfThisItem = attribute(children,'children-of-' ~ loop.index) ?? {} %}
+
+            {% if childrenOfThisItem|length %}
+                <li {% if item.link == craft.app.request.segments|first %}class="active" {% endif %}>
+                    <a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a>
+                    <ul class="menu">
+                        {% for child in childrenOfThisItem %}
+                            <li><a href="{{ siteUrl }}{{ child.link }}">{{ child.label }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li {% if item.link == craft.app.request.segments|first %}class="active" {% endif %}><a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a></li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="shrink cell navigation__right">
+    
+    <div class="hide-for-large"><a href="" target="_blank"><svg class="icon icon-magnifier"><use xlink:href="/assets/icons/symbol-defs.svg#icon-magnifier"></use></svg></a></div>
+
+    <ul class="menu show-for-large">
+      <li><input type="search" placeholder="Search"></li>
+      <li class="margin-right-2"><a href="" target="_blank"><svg class="icon icon-magnifier"><use xlink:href="/assets/icons/symbol-defs.svg#icon-magnifier"></use></svg></a></li>
+      <li><a href="" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+      <li><a href="" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+      <li><a href="" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+    </ul>
+
+  </div>
+</div>
+

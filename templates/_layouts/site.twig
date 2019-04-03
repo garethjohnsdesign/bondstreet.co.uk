@@ -2,13 +2,20 @@
 
 {% block body %}
 
-<!-- Navigation Desktop -->
-{% include "_includes/site/navigation/desktop" %}
-<!-- End Navigation Desktop -->
+<!-- Off Canvas Navigation -->
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap" data-close-on-click="true">
+{% include "_includes/off-canvas/menu" %}
+</div>
+<!-- End Off Canvas Navigation -->
 
-<main id="main" role="main">
+<!-- Navigation Primary -->
+{% include "_includes/site/navigation/primary" %}
+<!-- End Navigation Primary -->
+
+
+<div class="off-canvas-content" data-off-canvas-content>
 {% block main %}{% endblock %}
-</main>
+</div>
 
 {% endblock %}
 

@@ -6613,7 +6613,7 @@ select {
   z-index: 12;
   transition: transform 0.5s ease;
   backface-visibility: hidden;
-  background: #1D2033; }
+  background: #FFFFFF; }
   [data-whatinput='mouse'] .off-canvas {
     outline: 0; }
   .off-canvas.is-transition-push {
@@ -6632,7 +6632,7 @@ select {
   z-index: 12;
   transition: transform 0.5s ease;
   backface-visibility: hidden;
-  background: #1D2033; }
+  background: #FFFFFF; }
   [data-whatinput='mouse'] .off-canvas-absolute {
     outline: 0; }
   .off-canvas-absolute.is-transition-push {
@@ -9606,6 +9606,10 @@ p a {
       color: #FFCCCB; }
 
 @media screen and (max-width: 39.9375em) {
+  .navigation .icon {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .navigation .icon {
     font-size: 2rem; } }
 

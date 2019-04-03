@@ -348,6 +348,9 @@ letter-spacing: $prototype-wide-letter-spacing;
 @include breakpoint(small only) {
 font-size: 2rem;
 }
+@include breakpoint(medium only) {
+font-size: 2rem;
+}
 }
 
 

@@ -1,0 +1,51 @@
+{% set primaryNav = navigation.primaryNavigation %}
+{% set children = {} %}
+
+{% for item in primaryNav %}
+    {% set targetArray = {} %}
+
+    {% if item.level2 %}
+        {% if attribute(children, lastKnownTopLevelItem) is not defined %}
+            {% set children = children|merge({(lastKnownTopLevelItem): [item]}) %}
+        {% else %}
+            {% set targetArray = attribute(children, lastKnownTopLevelItem) %}
+            {% set targetArray = targetArray|merge([item]) %}
+            {% set children = children|merge({(lastKnownTopLevelItem): targetArray}) %}
+        {% endif %}
+    {% endif %}
+
+    {# make a note of the loop index of the last known top level item... #}
+    {% if not item.level2 %}
+        {% set lastKnownTopLevelItem = 'children-of-' ~ loop.index %}
+    {% endif %}
+{% endfor %}
+
+<!-- Navigation -->
+<div class="grid-y align-center" style="height: 100%;">
+  
+  <div class="shrink cell">
+    <ul class="vertical menu align-center accordion-menu" data-accordion-menu>
+    {% for item in primaryNav %}
+        {% if not item.level2 %}
+
+            {% set childrenOfThisItem = attribute(children,'children-of-' ~ loop.index) ?? {} %}
+
+            {% if childrenOfThisItem|length %}
+                <li {% if item.link == craft.app.request.segments|first %}class="active" {% endif %}>
+                    <a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a>
+                    <ul class="vertical menu">
+                        {% for child in childrenOfThisItem %}
+                            <li><a href="{{ siteUrl }}{{ child.link }}">{{ child.label }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li {% if item.link == craft.app.request.segments|first %}class="active" {% endif %}><a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a></li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}  
+    </ul>
+  </div>
+
+</div>
+<!-- End Navigation -->
