@@ -7945,7 +7945,7 @@
 		"oAP": "/favicons/site.webmanifest",
 		"oF": 0
 		},
-	"/fonts/Canela-Bold.woff": {
+	"/fonts/canela-bold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
@@ -7953,7 +7953,7 @@
 		"oAP": "/fonts/canela-bold.woff",
 		"oF": 0
 		},
-	"/fonts/Canela-Bold.woff2": {
+	"/fonts/canela-bold.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
@@ -7961,7 +7961,7 @@
 		"oAP": "/fonts/canela-bold.woff2",
 		"oF": 0
 		},
-	"/fonts/Canela-Regular.woff": {
+	"/fonts/canela-regular.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
@@ -7969,7 +7969,7 @@
 		"oAP": "/fonts/canela-regular.woff",
 		"oF": 0
 		},
-	"/fonts/Canela-Regular.woff2": {
+	"/fonts/canela-regular.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
