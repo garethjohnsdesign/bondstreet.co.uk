@@ -9302,7 +9302,8 @@ Single-colored icons can be modified like so:
   fill: currentColor; }
 
 .icon-logo {
-  width: 2.150390625em; }
+  width: 2.150390625em;
+  font-size: 20rem; }
 
 a {
   transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1); }
