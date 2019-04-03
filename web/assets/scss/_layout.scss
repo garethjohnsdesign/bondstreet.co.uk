@@ -296,21 +296,11 @@ url('/assets/img/arrow-right@3x.png') 3x
 // 6. Navigation
 // -------------
 
-/*
-.navigation {
-  @include padding(0.45, 0, 0.45, 0);
-  @include breakpoint(medium) {
-  @include padding(1.5, 0, 1.5, 0);
-  }
-  @include breakpoint(xxlarge) {
-  @include padding(1.5, 0, 1.5, 0);
-  }
-  @include links ($black, $primary-color)
-  a {
-    font-family: $sans-bold;
+.no-js {
+  .navigation {
+  display: none;
   }
 }
-*/
 
 .navigation .navigation__left, .navigation .navigation__left {
 z-index: 15;
