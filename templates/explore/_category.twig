@@ -10,7 +10,113 @@
   </div>
 </div>
 
+
 {% set entries = craft.entries.relatedTo(category).all() %}
+
+<div id="map" style="width: 100%; height: 50vh;"></div>
+
+<script>
+mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
+ 
+/* Map: This represents the map on the page. */
+var map = new mapboxgl.Map({
+container: "map",
+style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1",
+zoom: 14,
+center: [
+-0.144,51.512
+],
+});
+
+
+var all = {
+  "type": "FeatureCollection",
+  "features": [
+   {% for entry in entries %}
+    {
+    type: 'Feature',
+    "properties": {
+      "phoneFormatted": "(202) 234-7336",
+      "phone": "2022347336",
+      "address": "1471 P St NW",
+      "city": "Washington DC",
+      "country": "United States",
+      "crossStreet": "at 15th St NW",
+      "postalCode": "20005",
+      "state": "D.C."
+    },
+    geometry: {
+    type: "Point",
+    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
+    }
+    },
+    {% endfor %}
+  ]
+};
+
+
+map.addControl(new mapboxgl.NavigationControl());
+ 
+map.on('load', function(e) {
+  // Add the data to your map as a layer
+  map.addLayer({
+    id: 'restaurantsAndBars',
+    type: 'symbol',
+    // Add a GeoJSON source containing place coordinates and information.
+    source: {
+      type: 'geojson',
+      data: all
+    },
+    layout: {
+      'icon-image': 'marker-15',
+      'icon-allow-overlap': true,
+    }
+  });
+});
+
+function createPopUp(currentFeature) {
+  var popUps = document.getElementsByClassName('mapboxgl-popup');
+  // Check if there is already a popup on the map and if so, remove it
+  if (popUps[0]) popUps[0].remove();
+
+  var popup = new mapboxgl.Popup({ closeOnClick: false })
+    .setLngLat(currentFeature.geometry.coordinates)
+    .setHTML('<h3>Sweetgreen</h3>' +
+      '<h4>' + currentFeature.properties.address + '</h4>')
+    .addTo(map);
+}
+
+// Add an event listener for when a user clicks on the map
+map.on('click', function(e) {
+  // Query all the rendered points in the view
+  var features = map.queryRenderedFeatures(e.point, { layers: ['locations'] });
+  if (features.length) {
+    var clickedPoint = features[0];
+    // 1. Fly to the point
+    flyToStore(clickedPoint);
+    // 2. Close all other popups and display popup for clicked store
+    createPopUp(clickedPoint);
+    // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+    var activeItem = document.getElementsByClassName('active');
+    if (activeItem[0]) {
+      activeItem[0].classList.remove('active');
+    }
+    // Find the index of the store.features that corresponds to the clickedPoint that fired the event listener
+    var selectedFeature = clickedPoint.properties.address;
+
+    for (var i = 0; i < stores.features.length; i++) {
+      if (stores.features[i].properties.address === selectedFeature) {
+        selectedFeatureIndex = i;
+      }
+    }
+    // Select the correct list item using the found index and add the active class
+    var listing = document.getElementById('listing-' + selectedFeatureIndex);
+    listing.classList.add('active');
+  }
+});
+
+
+</script>
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
