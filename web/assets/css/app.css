@@ -9592,6 +9592,8 @@ p a {
     color: #FFFFFF; }
     .navigation--light a:hover {
       color: #FFCCCB; }
+  .navigation--light .icon {
+    color: #FFFFFF; }
 
 @media screen and (max-width: 39.9375em) {
   .navigation .icon {
