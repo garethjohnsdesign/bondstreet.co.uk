@@ -9570,7 +9570,7 @@ p a {
   letter-spacing: 0.125rem; }
 
 .navigation input[type='search'] {
-  color: red; }
+  color: #252529; }
 
 .navigation input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
