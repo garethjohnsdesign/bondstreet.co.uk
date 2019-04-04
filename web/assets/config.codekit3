@@ -8056,28 +8056,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/js/app copy.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/app copy-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/app-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/app-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/app.js": {
 		"bF": 0,
 		"ft": 64,
@@ -8087,17 +8065,6 @@
 		"oAP": "js/min/app-min.js",
 		"oF": 1,
 		"sC": 0,
-		"tS": 0
-		},
-	"/js/min/app-min-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/min/app-min-min-min.js",
-		"oF": 0,
-		"sC": 3,
 		"tS": 0
 		},
 	"/js/min/app-min.js": {
@@ -8111,17 +8078,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/min/svgxuse-min-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/min/svgxuse-min-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/min/svgxuse-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -8129,17 +8085,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/min/svgxuse-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/svgxuse-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/svgxuse-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
