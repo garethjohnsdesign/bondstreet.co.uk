@@ -11,27 +11,30 @@
     <div class="grid-container">
       <div class="grid-x grid-padding-x align-center">
         <div class="small-12 medium-8 large-7 cell padding-top-2">
-          <form action="" method="post" target="_blank" data-abide novalidate>
+          <form action="{{ newsletter.domain }}" method="post" target="_blank" data-abide novalidate>
            
             <div data-abide-error class="alert callout" style="display: none;">
               <p><i class="fi-alert"></i>There are some errors in your form.</p>
             </div> 
       
-            <div class="grid-x grid-padding-x">
+            <div class="grid-x grid-padding-x align-middle">
               <div class="small-8 cell">
                 <input type="email" name="EMAIL" placeholder="Enter Email">
               </div>
               <div class="small-4 cell">
                 <fieldset>
-                  <input id="checkbox1" type="checkbox"><label for="checkbox1">Male</label>
-                  <input id="checkbox2" type="checkbox"><label for="checkbox2">Female</label>
+                  <input id="checkbox1" type="checkbox" value="1" name="group[18833][1]"><label for="checkbox1">Male</label>
+                  <input id="checkbox2" type="checkbox" value="2" name="group[18833][2]"><label for="checkbox2">Female</label>
                 </fieldset>
               </div>
             </div>
 
             <div class="grid-x grid-padding-x align-center">
               <div class="small-12 cell text-center">
-                <small>I confirm I am happy to register to the {{ siteName }} newsletter. For information about our privacy practices, visit our terms and conditions and privacy pages.</small>
+                <input id="confirmation" type="checkbox" required><label for="confirmation">I confirm I am happy to register to the {{ siteName }} newsletter.</label>
+              </div>
+              <div class="small-12 cell text-center">
+                <small>For information about our privacy practices, visit our terms and conditions and privacy pages.</small>
               </div>
             </div>
 
