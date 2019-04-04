@@ -5239,55 +5239,55 @@ ul.no-bullet, ol.no-bullet {
     background-color: #1D2033;
     color: #FFFFFF; }
     .button.primary:hover, .button.primary:focus {
-      background-color: #171a29;
+      background-color: white;
       color: #FFFFFF; }
   .button.secondary {
     background-color: #FFCCCB;
     color: #252529; }
     .button.secondary:hover, .button.secondary:focus {
-      background-color: #ff726f;
+      background-color: white;
       color: #252529; }
   .button.success {
     background-color: #3adb76;
     color: #252529; }
     .button.success:hover, .button.success:focus {
-      background-color: #22bb5b;
+      background-color: white;
       color: #252529; }
   .button.warning {
     background-color: #ffae00;
     color: #252529; }
     .button.warning:hover, .button.warning:focus {
-      background-color: #cc8b00;
+      background-color: white;
       color: #252529; }
   .button.alert {
     background-color: #cc4b37;
     color: #FFFFFF; }
     .button.alert:hover, .button.alert:focus {
-      background-color: #a53b2a;
+      background-color: white;
       color: #FFFFFF; }
   .button.spring-wood {
     background-color: #F9F7F2;
     color: #252529; }
     .button.spring-wood:hover, .button.spring-wood:focus {
-      background-color: #daceaf;
+      background-color: white;
       color: #252529; }
   .button.tietary {
     background-color: #F9F7F2;
     color: #252529; }
     .button.tietary:hover, .button.tietary:focus {
-      background-color: #daceaf;
+      background-color: white;
       color: #252529; }
   .button.background {
     background-color: #FDFDFD;
     color: #252529; }
     .button.background:hover, .button.background:focus {
-      background-color: #cacaca;
+      background-color: white;
       color: #252529; }
   .button.white {
     background-color: #FFFFFF;
     color: #252529; }
     .button.white:hover, .button.white:focus {
-      background-color: #cccccc;
+      background-color: white;
       color: #252529; }
   .button.disabled, .button[disabled] {
     opacity: 0.25;
@@ -5954,49 +5954,49 @@ select {
     background-color: #1D2033;
     color: #FFFFFF; }
     .button-group.primary .button:hover, .button-group.primary .button:focus {
-      background-color: #171a29;
+      background-color: white;
       color: #FFFFFF; }
   .button-group.secondary .button {
     background-color: #FFCCCB;
     color: #252529; }
     .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-      background-color: #ff726f;
+      background-color: white;
       color: #252529; }
   .button-group.success .button {
     background-color: #3adb76;
     color: #252529; }
     .button-group.success .button:hover, .button-group.success .button:focus {
-      background-color: #22bb5b;
+      background-color: white;
       color: #252529; }
   .button-group.warning .button {
     background-color: #ffae00;
     color: #252529; }
     .button-group.warning .button:hover, .button-group.warning .button:focus {
-      background-color: #cc8b00;
+      background-color: white;
       color: #252529; }
   .button-group.alert .button {
     background-color: #cc4b37;
     color: #FFFFFF; }
     .button-group.alert .button:hover, .button-group.alert .button:focus {
-      background-color: #a53b2a;
+      background-color: white;
       color: #FFFFFF; }
   .button-group.spring-wood .button {
     background-color: #F9F7F2;
     color: #252529; }
     .button-group.spring-wood .button:hover, .button-group.spring-wood .button:focus {
-      background-color: #daceaf;
+      background-color: white;
       color: #252529; }
   .button-group.tietary .button {
     background-color: #F9F7F2;
     color: #252529; }
     .button-group.tietary .button:hover, .button-group.tietary .button:focus {
-      background-color: #daceaf;
+      background-color: white;
       color: #252529; }
   .button-group.background .button {
     background-color: #FDFDFD;
     color: #252529; }
     .button-group.background .button:hover, .button-group.background .button:focus {
-      background-color: #cacaca;
+      background-color: white;
       color: #252529; }
   .button-group.stacked, .button-group.stacked-for-small, .button-group.stacked-for-medium {
     flex-wrap: wrap; }
