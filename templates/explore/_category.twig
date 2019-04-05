@@ -38,7 +38,7 @@ mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
 var map = new mapboxgl.Map({
 container: "map",
 style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1",
-zoom: 14,
+zoom: 15,
 center: [
 -0.144,51.512
 ],
@@ -47,22 +47,19 @@ bearing: -60, // bearing in degrees
 scrollZoom: false,
 });
 
-
-var all = {
+var places = {
   "type": "FeatureCollection",
   "features": [
    {% for entry in entries %}
+   {% set rel = entry.category.one() %}
     {
     type: 'Feature',
     "properties": {
-      "phoneFormatted": "(202) 234-7336",
-      "phone": "2022347336",
-      "address": "1471 P St NW",
-      "city": "Washington DC",
-      "country": "United States",
-      "crossStreet": "at 15th St NW",
-      "postalCode": "20005",
-      "state": "D.C."
+      "description": "{{entry.title}}",
+      "phone": "{{ entry.phone }}",
+      "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
+      "postalCode": "{{ entry.location.parts.postcode }}",
+      "icon": "{% if rel %}{{ rel.title|kebab }}{% else %}map-marker{% endif %}"
     },
     geometry: {
     type: "Point",
@@ -73,65 +70,87 @@ var all = {
   ]
 };
 
-
 map.addControl(new mapboxgl.NavigationControl());
  
-map.on('load', function(e) {
+map.on('load', function () {
   // Add the data to your map as a layer
   map.addLayer({
-    id: 'restaurantsAndBars',
-    type: 'symbol',
-    // Add a GeoJSON source containing place coordinates and information.
-    source: {
-      type: 'geojson',
-      data: all
-    },
-    layout: {
-      'icon-image': 'marker-15',
-      'icon-allow-overlap': true,
-    }
-  });
+      id: 'places',
+      type: 'symbol',
+      // Add a GeoJSON source containing place coordinates and information.
+      source: {
+        type: 'geojson',
+        data: places
+      },
+      layout: {
+        'icon-image': 'hotels',
+        'icon-size': 0.75,
+        'icon-allow-overlap': true,
+      }
+    });
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'places', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
+});
+ 
+map.on('mouseleave', 'places', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
 });
 
-function createPopUp(currentFeature) {
-  var popUps = document.getElementsByClassName('mapboxgl-popup');
-  // Check if there is already a popup on the map and if so, remove it
-  if (popUps[0]) popUps[0].remove();
+{#
+    // When a click event occurs on a feature in the places layer, open a popup at the
+    // location of the feature, with description HTML from its properties.
+    map.on('click', 'places', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
 
-  var popup = new mapboxgl.Popup({ closeOnClick: false })
-    .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<h3>Sweetgreen</h3>' +
-      '<h4>' + currentFeature.properties.address + '</h4>')
-    .addTo(map);
-}
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
 
-// Add an event listener for when a user clicks on the map
-map.on('click', function(e) {
-  // Query all the rendered points in the view
-  var features = map.queryRenderedFeatures(e.point, { layers: ['locations'] });
-  if (features.length) {
-    var clickedPoint = features[0];
-    // 1. Fly to the point
-    flyToStore(clickedPoint);
-    // 2. Close all other popups and display popup for clicked store
-    createPopUp(clickedPoint);
-    // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-    var activeItem = document.getElementsByClassName('active');
-    if (activeItem[0]) {
-      activeItem[0].classList.remove('active');
-    }
-    // Find the index of the store.features that corresponds to the clickedPoint that fired the event listener
-    var selectedFeature = clickedPoint.properties.address;
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+    });
 
-    for (var i = 0; i < stores.features.length; i++) {
-      if (stores.features[i].properties.address === selectedFeature) {
-        selectedFeatureIndex = i;
-      }
-    }
-    // Select the correct list item using the found index and add the active class
-    var listing = document.getElementById('listing-' + selectedFeatureIndex);
-    listing.classList.add('active');
-  }
+    // Change the cursor to a pointer when the mouse is over the places layer.
+    map.on('mouseenter', 'places', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'places', function () {
+        map.getCanvas().style.cursor = '';
+    });
+#}
 });
 
 

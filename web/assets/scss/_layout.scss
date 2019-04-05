@@ -403,7 +403,7 @@ letter-spacing: $prototype-wide-letter-spacing;
 .mapboxgl-popup {
 max-width: 400px;
 font-family: $sans-bold;
-font-size: $small-font-size;
+font-size: 14px;
 text-transform: uppercase;
-letter-spacing: $prototype-wide-letter-spacing;
+letter-spacing: 1px;
 }

@@ -59,10 +59,11 @@ bearing: -60, // bearing in degrees
 scrollZoom: false,
 });
 
-var shopping = {
+var places = {
   "type": "FeatureCollection",
   "features": [
-   {% for entry in shopping %}
+   {% for entry in entries %}
+   {% set rel = entry.category.one() %}
     {
     type: 'Feature',
     "properties": {
@@ -70,69 +71,7 @@ var shopping = {
       "phone": "{{ entry.phone }}",
       "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
       "postalCode": "{{ entry.location.parts.postcode }}",
-    },
-    geometry: {
-    type: "Point",
-    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
-    }
-    },
-    {% endfor %}
-  ]
-};
-
-var hotels = {
-  "type": "FeatureCollection",
-  "features": [
-   {% for entry in hotels %}
-    {
-    type: 'Feature',
-    "properties": {
-      "description": "{{entry.title}}",
-      "phone": "{{ entry.phone }}",
-      "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
-      "postalCode": "{{ entry.location.parts.postcode }}",
-    },
-    geometry: {
-    type: "Point",
-    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
-    }
-    },
-    {% endfor %}
-  ]
-};
-
-var restaurantsAndBars = {
-  "type": "FeatureCollection",
-  "features": [
-   {% for entry in restaurantsAndBars %}
-    {
-    type: 'Feature',
-    "properties": {
-      "description": "{{entry.title}}",
-      "phone": "{{ entry.phone }}",
-      "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
-      "postalCode": "{{ entry.location.parts.postcode }}",
-    },
-    geometry: {
-    type: "Point",
-    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
-    }
-    },
-    {% endfor %}
-  ]
-};
-
-var culture = {
-  "type": "FeatureCollection",
-  "features": [
-   {% for entry in culture %}
-    {
-    type: 'Feature',
-    "properties": {
-      "description": "{{entry.title}}",
-      "phone": "{{ entry.phone }}",
-      "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
-      "postalCode": "{{ entry.location.parts.postcode }}",
+      "icon": "{% if rel %}{{ rel.title|kebab }}{% else %}map-marker{% endif %}"
     },
     geometry: {
     type: "Point",
@@ -148,61 +87,56 @@ map.addControl(new mapboxgl.NavigationControl());
 map.on('load', function () {
   // Add the data to your map as a layer
   map.addLayer({
-    id: 'restaurantsAndBars',
-    type: 'symbol',
-    // Add a GeoJSON source containing place coordinates and information.
-    source: {
-      type: 'geojson',
-      data: restaurantsAndBars
-    },
-    layout: {
-      'icon-image': 'map-marker',
-      'icon-allow-overlap': true,
-    }
-  });
-  map.addLayer({
-      id: 'shopping',
+      id: 'places',
       type: 'symbol',
       // Add a GeoJSON source containing place coordinates and information.
       source: {
         type: 'geojson',
-        data: shopping
+        data: places
       },
       layout: {
-        'icon-image': 'shop-15',
-        'icon-allow-overlap': true,
-      }
-    });
-  map.addLayer({
-      id: 'hotels',
-      type: 'symbol',
-      // Add a GeoJSON source containing place coordinates and information.
-      source: {
-        type: 'geojson',
-        data: hotels
-      },
-      layout: {
-        'icon-image': 'bar-15',
-        'icon-allow-overlap': true,
-      }
-    });
-  map.addLayer({
-      id: 'culture',
-      type: 'symbol',
-      // Add a GeoJSON source containing place coordinates and information.
-      source: {
-        type: 'geojson',
-        data: culture
-      },
-      layout: {
-        'icon-image': 'art-gallery-15',
+        'icon-image': '{icon}',
+        'icon-size': 0.75,
         'icon-allow-overlap': true,
       }
     });
 
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'places', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
+});
+ 
+map.on('mouseleave', 'places', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
+
+{#
     // When a click event occurs on a feature in the places layer, open a popup at the
     // location of the feature, with description HTML from its properties.
-    map.on('click', 'culture', function (e) {
+    map.on('click', 'places', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
 
@@ -220,14 +154,15 @@ map.on('load', function () {
     });
 
     // Change the cursor to a pointer when the mouse is over the places layer.
-    map.on('mouseenter', 'culture', function () {
+    map.on('mouseenter', 'places', function () {
         map.getCanvas().style.cursor = 'pointer';
     });
 
     // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'culture', function () {
+    map.on('mouseleave', 'places', function () {
         map.getCanvas().style.cursor = '';
     });
+#}
 });
 
 
