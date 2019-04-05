@@ -398,3 +398,12 @@ font-size: $small-font-size;
 text-transform: uppercase;
 letter-spacing: $prototype-wide-letter-spacing;
 }
+
+
+.mapboxgl-popup {
+max-width: 400px;
+font-family: $sans-bold;
+font-size: $small-font-size;
+text-transform: uppercase;
+letter-spacing: $prototype-wide-letter-spacing;
+}
