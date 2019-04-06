@@ -261,9 +261,6 @@ $max_font: 200px;
   @include aspect-ratio (16, 9);
   background-size: cover; 
   background-position: 50%;
- .content {
-  background-color: $dark-gray;
-  }
 }
 
 .image--hero {

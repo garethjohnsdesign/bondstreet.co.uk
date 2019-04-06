@@ -46,6 +46,27 @@
 {% endif %}
 <!-- End Recent Articles -->
 
+<!-- Feature Article -->
+{# Create an entry query with the 'section' and 'limit' parameters #}
+{% set featuredArticles = craft.entries()
+    .section('articles')
+    .limit(1) %}
+
+{# Fetch the entries #}
+{% set entries = featuredArticles.all() %}
+
+{# Display the entries #}
+{% if entries|length %}
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1">
+    {% for entry in entries %}
+      {% include "_includes/blocks/excerpt--feature-video" %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+<!-- End Feature Article -->
+
 <!-- Recent Events -->
 {% set entries = craft.entries
 .section('events')
