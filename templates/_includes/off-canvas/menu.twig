@@ -1,4 +1,4 @@
-{% set primaryNav = navigation.primaryNavigation %}
+{% set primaryNav = navigation.mobileNavigation %}
 {% set children = {} %}
 
 {% for item in primaryNav %}
@@ -40,7 +40,7 @@
                     </ul>
                 </li>
             {% else %}
-                <li {% if item.link == craft.app.request.segments|first %}class="active" {% endif %}><a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a></li>
+                <li {% if item.link == craft.app.request.segments|first %}class="active" {% endif %}><a href="{{ siteUrl }}{{ item.link }}" class="h3">{{ item.label }}</a></li>
             {% endif %}
         {% endif %}
     {% endfor %}  
