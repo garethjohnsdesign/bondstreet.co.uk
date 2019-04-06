@@ -24,6 +24,7 @@
 </section>
 <!-- End Hero -->
 
+<!-- Container -->
 <div class="grid-container">
 
   <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
@@ -87,12 +88,9 @@
 {% endfor %}
 
 <!-- Upcoming Events -->
-{% set entries = craft.entries
-.section('events')
-.all() %}
-
+{% set entries = craft.entries.section('events').all() %}
 {% if entries|length %}
-<div class="grid-container">
+
 
   <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
     <div class="small-12 cell text-center">
@@ -104,11 +102,10 @@
     {% include "_includes/blocks/excerpt--event" %}
   {% endfor %}
 
-</div>
-
 {% endif %}
 <!-- End Upcoming Events -->
 
 </div>
+<!-- End Container -->
 
 {% endblock %}
