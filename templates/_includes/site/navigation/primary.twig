@@ -52,9 +52,9 @@
     
     <div class="hide-for-large"><a href="" target="_blank"><svg class="icon icon-magnifier"><use xlink:href="/assets/icons/symbol-defs.svg#icon-magnifier"></use></svg></a></div>
 
-    <ul class="menu show-for-large">
-      <li><input type="search" placeholder="Search"></li>
-      <li class="margin-right-2"><a href="" target="_blank"><svg class="icon icon-magnifier"><use xlink:href="/assets/icons/symbol-defs.svg#icon-magnifier"></use></svg></a></li>
+    <ul class="menu show-for-large align-middle">
+
+      <li class="margin-right-2 navigation__search"><a href="" target="_blank">Search<svg class="icon icon-search"><use xlink:href="/assets/icons/symbol-defs.svg#icon-search"></use></svg></a></li>
 
       {% for block in social.socials.all() %}
       {% switch block.type %}

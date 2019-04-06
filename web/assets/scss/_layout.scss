@@ -337,6 +337,13 @@ text-transform: uppercase;
 letter-spacing: $prototype-wide-letter-spacing;
 }
 
+.navigation__search {
+font-family: $sans-bold;
+font-size: $small-font-size;
+text-transform: uppercase;
+letter-spacing: $prototype-wide-letter-spacing;
+}
+
 .navigation input[type='search'] {
   color: $black;
 }

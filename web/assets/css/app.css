@@ -9305,6 +9305,11 @@ Single-colored icons can be modified like so:
   width: 2.150390625em;
   font-size: 20rem; }
 
+.icon-search {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-left: 1rem; }
+
 a {
   transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1); }
 
@@ -9567,6 +9572,12 @@ p a {
   z-index: 15; }
 
 .navigation__left {
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 75%;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem; }
+
+.navigation__search {
   font-family: "Maison Neue Bold", sans-serif;
   font-size: 75%;
   text-transform: uppercase;
