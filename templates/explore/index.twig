@@ -24,19 +24,6 @@
 
 {% set entries = craft.entries.section('explore').all() %}
 
-{% set category = craft.categories.slug('shopping') %}
-{% set shopping = craft.entries.section('explore').relatedTo(category).find() %}
-
-{% set category = craft.categories.slug('hotels') %}
-{% set hotels = craft.entries.section('explore').relatedTo(category).find() %}
-
-{% set category = craft.categories.slug('restaurants-and-bars') %}
-{% set restaurantsAndBars = craft.entries.section('explore').relatedTo(category).find() %}
-
-{% set category = craft.categories.slug('culture') %}
-{% set culture = craft.entries.section('explore').relatedTo(category).find() %}
-
-
 <div class="grid-x grid-padding-x grid-padding-y align-center">
 <div class="small-12 cell">
 <div id="map" style="width: 100%; height: 50vh;"></div>
