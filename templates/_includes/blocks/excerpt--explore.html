@@ -1,5 +1,4 @@
 <div class="cell">
-  <a href="{{ entry.url}}">
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-12 cell">
   
@@ -7,21 +6,28 @@
         <div class="image--square" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}"{% endif %}>
           <div class="grid-y height-100 align-top content">
             <div class="shrink cell">
-              <button class="button tiny sans-bold text-uppercase" href="">{% set rel = entry.category.one() %}
-        {% if rel %}
-        {{ rel.title }}
-{% else %}
-Tag Two
-        {% endif %}
-</button>
-              <button class="button tiny sans-bold text-uppercase" href="">Tag Two</button>
+
+            {% set rel = entry.category.one() %}
+            {% if rel %}
+            <a class="button tiny sans-bold text-uppercase" href="{{ rel.url }}">
+            {{ rel.title }}
+            </a>
+            {% endif %}
+
+            {% if entry.tags|length %}
+              {% for tag in entry.tags %}
+              <a class="button tiny sans-bold text-uppercase" href="{{ siteUrl }}tags/{{ tag.title | kebab }}">{{ tag.title }}</a>
+              {% endfor %}
+            {% endif %}
+
+  
+
             </div>
           </div>
         </div>
   
       </div>
     </div>
-  </a>
   
   <a href="{{ entry.url}}">
     <div class="grid-x grid-padding-x grid-padding-y">
