@@ -51,11 +51,11 @@
     <div class="small-12 medium-6 cell">
     <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Opening Hours</div>
     {% for day in entry.openingHours %}
-      <div class="grid-x grid-padding-x">
+      <div class="grid-x grid-padding-x align-justify">
         <div class="small-6 cell">
         {{ day.name }}
         </div>
-        <div class="small-6 cell">
+        <div class="shrink cell">
         {% if day.isBlank %}Closed{% else %}{{ day.open|time('short') }} - {{ day.close|time('short')}}{% endif %}
         </div>
       </div>
@@ -79,7 +79,7 @@
     var map = new mapboxgl.Map({
     container: "map",
     style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1",
-    zoom: 14,
+    zoom: 15,
     center: [
       {{ entry.location.lng }},
       {{ entry.location.lat }}
@@ -152,20 +152,20 @@
 <!-- End Details -->
 
 <!-- Services -->
+{% if entry.services|length %}
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 large-8 cell text-center">
       <div class="small serif-bold text-uppercase letter-spacing--loose black">Services</div>
-      {% if entry.services|length %}
         <ul class="menu align-center padding-vertical-1">
           {% for row in entry.services %}
             <li class="menu-text">{{ row.service }}</li>
           {% endfor %}
         </ul>
-      {% endif %}
     </div>
   </div>
 </div>
+{% endif %}
 <!-- End Services -->
 
 {% endblock %}
