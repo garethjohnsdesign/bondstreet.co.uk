@@ -70,6 +70,14 @@ var places = {
 };
 
 map.addControl(new mapboxgl.NavigationControl());
+
+// Add geolocate control to the map.
+map.addControl(new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+}));
  
 map.on('load', function () {
   // Add the data to your map as a layer
