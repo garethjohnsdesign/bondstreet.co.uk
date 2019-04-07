@@ -5712,7 +5712,7 @@ label {
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.8;
-  color: #252529; }
+  color: #FFFFFF; }
   label.middle {
     margin: 0 0 1rem;
     padding: 0.5625rem 0; }
@@ -9701,3 +9701,41 @@ p a {
   background-color: #FFFFFF;
   box-shadow: 0;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out; }
+
+.read-more {
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 75%;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem; }
+
+.excerpt {
+  position: relative; }
+
+.excerpt a {
+  transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  .excerpt a h4 {
+    color: #1D2033; }
+  .excerpt a p {
+    color: #757575; }
+  .excerpt a .content {
+    background-color: rgba(29, 32, 51, 0); }
+  .excerpt a .read-more svg {
+    transition: transform 0.25s; }
+
+.excerpt a:hover {
+  transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  .excerpt a:hover h4 {
+    color: #1D2033; }
+  .excerpt a:hover p {
+    color: #757575; }
+  .excerpt a:hover .content {
+    background-color: rgba(29, 32, 51, 0.25); }
+  .excerpt a:hover .read-more svg {
+    transform: translate(3px, 0); }
+
+.excerpt .tags {
+  transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0; }

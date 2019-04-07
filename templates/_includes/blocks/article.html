@@ -15,11 +15,11 @@
     <a href="{{ entry.url}}" class="">
     
       {% set image = entry.image.one() %}
-      <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}"{% endif %}>
+      <div class="image--square" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}"{% endif %}>
         <div class="content"></div>
       </div>
     
-      <div class="margin-top-1 text-center">
+      <div class="margin-top-1">
       <h4>{{ entry.title}}</h4>
       <p>{{ entry.body |striptags|slice(0,100)|default('Read more') }}...</p>
       <div class="read-more">Read More <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>

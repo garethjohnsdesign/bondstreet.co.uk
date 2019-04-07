@@ -43,7 +43,7 @@
   {% if entries|length %}
     <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-4">
       {% for entry in entries %}
-        {% include "_includes/blocks/excerpt--article" %}
+        {% include "_includes/blocks/article" %}
       {% endfor %}
     </div>
   {% endif %}
@@ -55,7 +55,7 @@
   {% if entries|length %}
     <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3">
       {% for entry in entries %}
-        {% include "_includes/blocks/excerpt--article" %}
+        {% include "_includes/blocks/article" %}
       {% endfor %}
     </div>
   {% endif %}
@@ -67,7 +67,7 @@
   {% if entries|length %}
     <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-2">
       {% for entry in entries %}
-        {% include "_includes/blocks/excerpt--article" %}
+        {% include "_includes/blocks/article" %}
       {% endfor %}
     </div>
   {% endif %}
@@ -99,7 +99,7 @@
   </div>
 
   {% for entry in entries %}
-    {% include "_includes/blocks/excerpt--event" %}
+    {% include "_includes/blocks/event" %}
   {% endfor %}
 
 {% endif %}
