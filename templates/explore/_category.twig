@@ -22,139 +22,12 @@
   </div>
 </div>
 
-
 {% set entries = craft.entries.relatedTo(category).all() %}
-
 <div class="grid-x grid-padding-x grid-padding-y align-center">
 <div class="small-12 cell">
 <div id="map" style="width: 100%; height: 50vh;"></div>
 </div>
 </div>
-
-<script>
-mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
- 
-/* Map: This represents the map on the page. */
-var map = new mapboxgl.Map({
-container: "map",
-style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1",
-zoom: 15,
-center: [
--0.144,51.512
-],
-pitch: 60, // pitch in degrees
-bearing: -60, // bearing in degrees
-scrollZoom: false,
-});
-
-var places = {
-  "type": "FeatureCollection",
-  "features": [
-   {% for entry in entries %}
-   {% set rel = entry.category.one() %}
-    {
-    type: 'Feature',
-    "properties": {
-      "description": "{{entry.title}}",
-      "phone": "{{ entry.phone }}",
-      "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
-      "postalCode": "{{ entry.location.parts.postcode }}",
-      "icon": "{% if rel %}{{ rel.title|kebab }}{% else %}map-marker{% endif %}"
-    },
-    geometry: {
-    type: "Point",
-    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
-    }
-    },
-    {% endfor %}
-  ]
-};
-
-map.addControl(new mapboxgl.NavigationControl());
- 
-map.on('load', function () {
-  // Add the data to your map as a layer
-  map.addLayer({
-      id: 'places',
-      type: 'symbol',
-      // Add a GeoJSON source containing place coordinates and information.
-      source: {
-        type: 'geojson',
-        data: places
-      },
-      layout: {
-        'icon-image': '{icon}',
-        'icon-size': 0.75,
-        'icon-allow-overlap': true,
-      }
-    });
-
-// Create a popup, but don't add it to the map yet.
-var popup = new mapboxgl.Popup({
-closeButton: false,
-closeOnClick: false
-});
- 
-map.on('mouseenter', 'places', function(e) {
-// Change the cursor style as a UI indicator.
-map.getCanvas().style.cursor = 'pointer';
- 
-var coordinates = e.features[0].geometry.coordinates.slice();
-var description = e.features[0].properties.description;
- 
-// Ensure that if the map is zoomed out such that multiple
-// copies of the feature are visible, the popup appears
-// over the copy being pointed to.
-while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-}
- 
-// Populate the popup and set its coordinates
-// based on the feature found.
-popup.setLngLat(coordinates)
-.setHTML(description)
-.addTo(map);
-});
- 
-map.on('mouseleave', 'places', function() {
-map.getCanvas().style.cursor = '';
-popup.remove();
-});
-
-{#
-    // When a click event occurs on a feature in the places layer, open a popup at the
-    // location of the feature, with description HTML from its properties.
-    map.on('click', 'places', function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.description;
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-            .setLngLat(coordinates)
-            .setHTML(description)
-            .addTo(map);
-    });
-
-    // Change the cursor to a pointer when the mouse is over the places layer.
-    map.on('mouseenter', 'places', function () {
-        map.getCanvas().style.cursor = 'pointer';
-    });
-
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'places', function () {
-        map.getCanvas().style.cursor = '';
-    });
-#}
-});
-
-
-</script>
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
@@ -164,5 +37,8 @@ popup.remove();
   </div>
 </div>
 
+{% js %}
+{% include "_includes/scripts/map" %}
+{% endjs %}
 
 {% endblock %}

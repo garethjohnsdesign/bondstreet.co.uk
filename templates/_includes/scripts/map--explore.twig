@@ -1,0 +1,65 @@
+mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
+ 
+/* Map: This represents the map on the page. */
+var map = new mapboxgl.Map({
+container: "map",
+style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1",
+zoom: 15,
+center: [
+{{ entry.location.lng }},
+{{ entry.location.lat }}
+],
+pitch: 60, // pitch in degrees
+bearing: -60, // bearing in degrees
+scrollZoom: false,
+});
+
+var places = {
+  "type": "FeatureCollection",
+  "features": [
+   {% set rel = entry.category.one() %}
+    {
+    type: 'Feature',
+    "properties": {
+      "description": "{{entry.title}}",
+      "phone": "{{ entry.phone }}",
+      "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
+      "postalCode": "{{ entry.location.parts.postcode }}",
+      "icon": "{% if rel %}{{ rel.title|kebab }}{% else %}map-marker{% endif %}"
+    },
+    geometry: {
+    type: "Point",
+    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
+    }
+    },
+  ]
+};
+
+map.addControl(new mapboxgl.NavigationControl());
+
+// Add geolocate control to the map.
+map.addControl(new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+}));
+ 
+map.on('load', function () {
+  // Add the data to your map as a layer
+  map.addLayer({
+      id: 'places',
+      type: 'symbol',
+      // Add a GeoJSON source containing place coordinates and information.
+      source: {
+        type: 'geojson',
+        data: places
+      },
+      layout: {
+        'icon-image': '{icon}',
+        'icon-size': 0.75,
+        'icon-allow-overlap': true,
+      }
+    }); 
+
+});
