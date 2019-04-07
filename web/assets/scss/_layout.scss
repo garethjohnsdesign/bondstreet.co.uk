@@ -78,7 +78,8 @@ color: $white;
 body {
   cursor: default;
   font-kerning: normal;
-  margin: 0
+  margin: 0;
+  width: 100%;
 }
 
 svg {
@@ -327,7 +328,7 @@ url('/assets/img/arrow-right@3x.png') 3x
 }
 
 .navigation .navigation__left, .navigation .navigation__left {
-z-index: 15;
+z-index: 10;
 }
 
 .navigation__left {
@@ -337,7 +338,7 @@ text-transform: uppercase;
 letter-spacing: $prototype-wide-letter-spacing;
 }
 
-.navigation__search {
+.button--search {
 font-family: $sans-bold;
 font-size: $small-font-size;
 text-transform: uppercase;
@@ -363,8 +364,11 @@ letter-spacing: $prototype-wide-letter-spacing;
   top: 0;
   left: 0;
   width: 100%;
- .icon {
- color: $white
+  .button.clear.navigation {
+      color: $white;
+      &:hover {
+        color: $secondary-color;   
+      }
   }
 }
 
@@ -410,4 +414,15 @@ font-family: $sans-bold;
 font-size: 14px;
 text-transform: uppercase;
 letter-spacing: 1px;
+}
+
+.button.clear.navigation {
+  font-family: $sans-bold;
+  font-size: $small-font-size;
+  text-transform: uppercase;
+  letter-spacing: $prototype-wide-letter-spacing;
+  color: $primary-color;
+  &:hover {
+    color: $secondary-color;   
+  }
 }
