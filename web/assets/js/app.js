@@ -27,22 +27,12 @@ $("#cookiesPolicy").foundation("open");
   }
 });
 
-// 2. Map
-// ------
 
-/*
-$(function() {  
-mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FyZXRoam9obnNkZXNpZ24iLCJhIjoibWRoWDZWUSJ9.n1A58EO10IDrB5yIAKqAPA';
+$(document).on('opened.zf.offcanvas', function () {
+    console.log('asdfasdfsadf')
+    var modal = $(this);
+    modal.find('[autofocus]').focus();
 });
-
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/garethjohnsdesign/cjj4c8f7p46ua2roce0wkb7f9', //hosted style id
-    center: [-0.102483, 51.528037],
-    zoom: 11.14,
-    scrollZoom: false
-  });
-*/
 
 // 2. Animate on Scroll
 // --------------------
@@ -59,39 +49,6 @@ $(function() {
   window.addEventListener('load', AOS.refresh);
 });
 
-// 2. Carousel
-// -----------
-
-$(function() {
-
-    var firstSlide = Math.floor(Math.random() * 5);
-    //initialize swiper when document ready
-    var mySwiper = new Swiper ('.swiper-container', {
-
-      direction: 'horizontal',
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      initialSlide: firstSlide,
-      loop: true,
-      autoplay: {
-        delay: 4000,
-      },
-      preventClicks: true,
-      slideToClickedSlide: false,
-
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-
-    navigation: {
-      nextEl: '.swiper-button-next-test',
-      prevEl: '.swiper-button-prev-test',
-    }
-
-   
-    });
-  });
 
   });
 
