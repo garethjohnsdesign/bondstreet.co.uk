@@ -1,0 +1,33 @@
+<div class="cell">
+  <div class="excerpt">
+  
+    <!-- Tags -->
+    <div class="tags">
+      {% if entry.tags|length %}
+        {% for tag in entry.tags %}
+          <a class="button tiny sans-bold text-uppercase margin-bottom-0" href="{{ siteUrl }}tags/{{ tag.title | kebab }}">{{ tag.title }}</a>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <!-- End Tags -->
+    
+    <!-- Image and Text -->
+    <a href="{{ entry.url}}" class="">
+    
+      {% set image = entry.image.one() %}
+      <div class="image--square" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}"{% endif %}>
+        <div class="content"></div>
+      </div>
+    
+      <div class="margin-top-1">
+      <h5 class="medium-gray">{{ entry.start|date("j F")}} — {{ entry.end|date("j F")}}</h5>
+      <h4>{{ entry.title}}</h4>
+      <p>{{ entry.body |striptags|slice(0,100)|default('Read more') }}...</p>
+      <div class="read-more">Read More <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
+      </div>
+    
+    </a>
+    <!-- End Image and Text -->
+  
+  </div>
+</div>

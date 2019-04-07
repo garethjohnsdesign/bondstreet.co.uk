@@ -8,11 +8,12 @@
 
   <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
     <div class="small-12 cell text-center">
+      <div class="small serif-bold text-uppercase letter-spacing--loose black margin-bottom-1">Results for</div>
       <h1>{{ searchQuery }}</h1>
     </div>
   </div>
 
-{% set entries = craft.entries()
+  {% set entries = craft.entries()
     .section('explore')
     .search(searchQuery)
     .orderBy('score')
@@ -33,7 +34,7 @@
   </div>
   {% endif %}
 
-{% set entries = craft.entries()
+  {% set entries = craft.entries()
     .section('articles')
     .search(searchQuery)
     .orderBy('score')
@@ -49,6 +50,26 @@
   <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
   {% for entry in entries %}
     {% include "_includes/blocks/article" %}
+  {% endfor %}
+  </div>
+  {% endif %}
+
+  {% set entries = craft.entries()
+    .section('events')
+    .search(searchQuery)
+    .orderBy('score')
+    .all() %}
+  {% if entries | length %}
+
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+    <div class="small-12 cell text-center">
+      <div class="small serif-bold text-uppercase letter-spacing--loose black">Events</div>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+  {% for entry in entries %}
+    {% include "_includes/blocks/event--single" %}
   {% endfor %}
   </div>
   {% endif %}
