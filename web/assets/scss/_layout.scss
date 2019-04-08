@@ -517,3 +517,14 @@ transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   top: 0;
   left: 0;
 }
+
+.button.clear.navigation {
+  font-family: $sans-bold;
+  font-size: $small-font-size;
+  text-transform: uppercase;
+  letter-spacing: $prototype-wide-letter-spacing;
+  color: $primary-color;
+  &:hover {
+    color: $secondary-color;   
+  }
+}

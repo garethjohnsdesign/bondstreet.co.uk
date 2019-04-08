@@ -9759,3 +9759,12 @@ p a {
   position: absolute;
   top: 0;
   left: 0; }
+
+.button.clear.navigation {
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 75%;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  color: #1D2033; }
+  .button.clear.navigation:hover {
+    color: #FFCCCB; }
