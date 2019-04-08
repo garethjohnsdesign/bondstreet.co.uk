@@ -6,12 +6,13 @@
   <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
     <div class="small-12 cell text-center">
       <h1>{{ entry.title }}</h1>
+      {% include "_includes/blocks/tags" %}   
     </div>
   </div>
 
   <div class="grid-x grid-padding-x grid-padding-y">
     <div class="small-12 cell">
-      {{ entry.body }}
+      {{ entry.description }}
     </div>
   </div>
 </div>

@@ -9728,6 +9728,9 @@ p a {
   text-transform: uppercase;
   letter-spacing: 0.125rem; }
 
+.caption {
+  font-size: 75%; }
+
 .excerpt {
   position: relative; }
 

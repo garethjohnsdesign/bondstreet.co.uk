@@ -474,6 +474,9 @@ transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   letter-spacing: $prototype-wide-letter-spacing;
 }
 
+.caption {
+  font-size: $small-font-size;
+}
 .excerpt  {
   position: relative;
 }

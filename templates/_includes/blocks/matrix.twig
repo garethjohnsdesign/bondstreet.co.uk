@@ -1,4 +1,3 @@
-<article>
 {% for matrixBlock in entry.article.all() %}
 {% switch matrixBlock.type %}
     
@@ -11,7 +10,7 @@
     </div>
     {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
     <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
-      <div class="small-12 medium-9 cell">
+      <div class="small-12 medium-8 cell">
         {{ matrixBlock.text | markdown }}
       </div>
     </div>
@@ -31,19 +30,44 @@
       </div>
     </div>
     {% endif %}
+
+    {% case "quote" %}    
+    {% if matrixBlock.position == 'full' %}
+    <div class="grid-x grid-padding-y">
+      <div class="small-12 cell">
+        <blockquote>
+          <h3>{{ matrixBlock.quote| markdown }}</h3>
+          <cite>{{ matrixBlock.cite| markdown }}</cite>
+        </blockquote>
+
+      </div>
+    </div>
+    {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+      <div class="small-12 medium-9 cell">
+        <blockquote>
+          <h3>{{ matrixBlock.quote| markdown }}</h3>
+          <cite>{{ matrixBlock.cite| markdown }}</cite>
+        </blockquote>
+      </div>
+    </div>
+    {% endif %}
     
     
     {% case "image" %}
     {% if matrixBlock.position == 'full' %}
     <div class="grid-x grid-padding-y">
       <div class="small-12 cell">
-        {{ matrixBlock.image[0].getImg() }}
+       <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
+       {% if matrixBlock.caption %}<div class="caption margin-top-1">{{ matrixBlock.caption }}</div>{% endif %}
       </div>
     </div>
     {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
     <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
-      <div class="small-12 medium-9 cell">
-        {{ matrixBlock.image[0].getImg() }}
+      <div class="small-12 medium-10 cell">
+      {% set image = matrixBlock.image.one() %}
+      <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
+      {% if matrixBlock.caption %}<div class="caption margin-top-1">{{ matrixBlock.caption }}</div>{% endif %}
       </div>
     </div>
     {% endif %}
@@ -136,4 +160,3 @@
     
 {% endswitch %}
 {% endfor %}
-</article>
