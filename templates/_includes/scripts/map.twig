@@ -115,6 +115,15 @@ map.getCanvas().style.cursor = '';
 popup.remove();
 });
 
+document.getElementById('fly').addEventListener('click', function () {
+map.flyTo({
+center: [
+-0.15,
+51.512
+]
+});
+});
+
 {#
     // When a click event occurs on a feature in the places layer, open a popup at the
     // location of the feature, with description HTML from its properties.

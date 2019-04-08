@@ -4,16 +4,25 @@
 
 <div class="grid-container">
 
-  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
-    <div class="small-12 cell text-center">
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2 align-center">
+    <div class="small-12 medium-8 cell text-center">
       <h1>{{ entry.title }}</h1>
       {% include "_includes/blocks/tags" %}   
     </div>
   </div>
 
-  <div class="grid-x grid-padding-x grid-padding-y">
-    <div class="small-12 cell">
-      {{ entry.body }}
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell">
+      {% set image = entry.image.one() %}
+      <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}>
+        <div class="content"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell">
+      {{ entry.description }}
     </div>
   </div>
 
