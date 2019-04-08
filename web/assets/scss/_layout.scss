@@ -528,3 +528,12 @@ transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
     color: $secondary-color;   
   }
 }
+
+.grid-y.medium-grid-frame {
+@include breakpoint(small only) {
+height: auto;
+}
+@include breakpoint(medium) {
+height: 75vh;
+}
+}

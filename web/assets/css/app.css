@@ -9768,3 +9768,11 @@ p a {
   color: #1D2033; }
   .button.clear.navigation:hover {
     color: #FFCCCB; }
+
+@media screen and (max-width: 39.9375em) {
+  .grid-y.medium-grid-frame {
+    height: auto; } }
+
+@media print, screen and (min-width: 40em) {
+  .grid-y.medium-grid-frame {
+    height: 75vh; } }

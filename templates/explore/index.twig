@@ -24,11 +24,28 @@
 
 {% set entries = craft.entries.section('explore').all() %}
 
-<div class="grid-x grid-padding-x grid-padding-y align-center">
-<div class="small-12 cell">
-<div id="map" style="width: 100%; height: 50vh;"></div>
+<div class="grid-y medium-grid-frame margin-vertical-2">
+  <div class="small-12 cell medium-auto medium-cell-block-container">
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-shrink cell medium-cell-block-y">
+       {% for entry in entries %}
+          <h5>{{ entry.title}}</h5>
+          <p>{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</p>
+        {% endfor %}
+      </div>
+      <div class="small-12 medium-auto cell medium-cell-block-y">
+      <div id="map" style="width: 100%; height: 75vh;">
+      </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
+
+
+
+
+
+
 
 
 <div class="grid-container">
