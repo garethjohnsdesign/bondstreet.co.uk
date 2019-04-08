@@ -9,8 +9,12 @@ center: [
 -0.144,
 51.512
 ],
+{#
 pitch: 60, // pitch in degrees
 bearing: -60, // bearing in degrees
+#}
+pitch: 0, // pitch in degrees
+bearing: 0, // bearing in degrees
 scrollZoom: false,
 });
 
@@ -23,6 +27,7 @@ var places = {
     type: 'Feature',
     "properties": {
       "description": "{{entry.title}}",
+      "url": "{{entry.url}}",
       "phone": "{{ entry.phone }}",
       "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
       "postalCode": "{{ entry.location.parts.postcode }}",
@@ -64,8 +69,22 @@ map.on('load', function () {
       }
     });
 
+var markerHeight = 25, markerRadius = 15, linearOffset = 25;
+var popupOffsets = {
+ 'top': [0, markerHeight],
+ 'top-left': [0,0],
+ 'top-right': [0,0],
+ 'bottom': [0, -markerHeight],
+ 'bottom-left': [linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+ 'bottom-right': [-linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+ 'left': [markerRadius, (markerHeight - markerRadius) * -1],
+ 'right': [-markerRadius, (markerHeight - markerRadius) * -1]
+ };
+
 // Create a popup, but don't add it to the map yet.
 var popup = new mapboxgl.Popup({
+offset: popupOffsets,
+className: 'my-class',
 closeButton: false,
 closeOnClick: false
 });

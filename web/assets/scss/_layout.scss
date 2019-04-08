@@ -405,23 +405,45 @@ letter-spacing: $prototype-wide-letter-spacing;
 }
 
 
-.mapboxgl-popup {
-max-width: 400px;
+
+.my-class .mapboxgl-popup-content {
+background-color: $primary-color;
+max-width: 150px;
 font-family: $sans-bold;
-font-size: 14px;
+font-size: 12px;
 text-transform: uppercase;
 letter-spacing: 1px;
+color: $white;
+text-align: center;
+line-height: 1.2;
+padding-bottom: 10px;
 }
 
-.button.clear.navigation {
-  font-family: $sans-bold;
-  font-size: $small-font-size;
-  text-transform: uppercase;
-  letter-spacing: $prototype-wide-letter-spacing;
-  color: $primary-color;
-  &:hover {
-    color: $secondary-color;   
-  }
+
+.my-class.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+    border-top-color: $primary-color;
+}
+.my-class.mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
+    border-bottom-color: $primary-color;
+}
+.my-class.mapboxgl-popup-anchor-left .mapboxgl-popup-tip{
+    border-right-color: $primary-color;
+}
+.my-class.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
+    border-left-color: $primary-color;
+}
+
+.my-class.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip{
+    border-bottom-color: $primary-color;
+}
+.my-class.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip{
+    border-bottom-color: $primary-color;
+}
+.my-class.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip{
+    border-top-color: $primary-color;
+}
+.my-class.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip{
+    border-top-color: $primary-color;
 }
 
 .search input {
