@@ -9731,6 +9731,9 @@ p a {
 .caption {
   font-size: 75%; }
 
+.map-entry:hover {
+  background-color: #F9F7F2; }
+
 .excerpt {
   position: relative; }
 

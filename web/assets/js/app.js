@@ -28,11 +28,13 @@ $("#cookiesPolicy").foundation("open");
 });
 
 
+/*
 $(document).on('opened.zf.offcanvas', function () {
     console.log('asdfasdfsadf')
     var modal = $(this);
     modal.find('[autofocus]').focus();
 });
+*/
 
 // 2. Animate on Scroll
 // --------------------

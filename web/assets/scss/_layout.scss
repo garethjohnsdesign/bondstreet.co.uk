@@ -477,6 +477,12 @@ transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 .caption {
   font-size: $small-font-size;
 }
+
+.map-entry:hover {
+background-color: #F9F7F2;
+}
+
+
 .excerpt  {
   position: relative;
 }

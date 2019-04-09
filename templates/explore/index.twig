@@ -28,13 +28,16 @@
   <div class="small-12 cell medium-auto medium-cell-block-container">
     <div class="grid-x grid-padding-x">
       <div class="small-12 medium-shrink cell medium-cell-block-y">
-      <ul class="menu vertical">
-       {% for entry in entries %}
-       <a href="{{ entry.url}}">
-          <h5>{{ entry.title}}</h5>
-          <p>{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</p>
-       {% endfor %}
-      </a>
+        <ul class="menu vertical">
+           {% for entry in entries %}
+           <li>
+           <a href="{{ entry.url}}" class="map-entry">
+              <h5>{{ entry.title}}</h5>
+              {{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}
+           </a>
+           </li>
+           {% endfor %}
+        </ul>
       </div>
       <div class="small-12 medium-auto cell medium-cell-block-y">
       <div id="map" style="width: 100%; height: 75vh;">
