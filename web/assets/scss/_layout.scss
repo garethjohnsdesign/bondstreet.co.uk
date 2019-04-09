@@ -245,7 +245,12 @@ $max_font: 200px;
 }
 
 .image--square {
-  @include aspect-ratio (4, 4);
+  @include breakpoint(small) {
+  @include aspect-ratio (7, 5);
+  }
+  @include breakpoint(medium) {
+  @include aspect-ratio (1, 1);
+  }
   background-size: cover; 
   background-position: 50%;
   background-color: $medium-gray;
@@ -259,7 +264,12 @@ $max_font: 200px;
 }
 
 .image--panorama {
+  @include breakpoint(small) {
+  @include aspect-ratio (7, 5);
+  }
+  @include breakpoint(medium) {
   @include aspect-ratio (16, 9);
+  }
   background-size: cover; 
   background-position: 50%;
 }
