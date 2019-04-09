@@ -84,7 +84,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
   spring-wood: #F9F7F2,
-  tietary: #F9F7F2, // Bianca 
+  tietary: #F2EDE2, // Bianca 
   background: #FDFDFD
 );
 // $light-gray: #e6e6e6;
@@ -583,7 +583,8 @@ $offcanvas-sizes: (
 );
 $offcanvas-vertical-sizes: (
 //   small: 250px,
-  small: 125px,
+  small: 75px,
+  medium: 125px,
 );
 // $offcanvas-background: $light-gray;
 $offcanvas-background: $body-background;

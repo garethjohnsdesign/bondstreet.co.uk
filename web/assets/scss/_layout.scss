@@ -220,7 +220,7 @@ p a {
 
 $min_width: 320px;
 $max_width: 1440px;
-$min_font: 16px;
+$min_font: 32px;
 $max_font: 200px;
 
 .hero {
@@ -462,10 +462,15 @@ padding-bottom: 10px;
   background: transparent;
   border-bottom: 1px solid black;
   font-family: $serif-regular;
+  -webkit-border-radius:0px;
+-webkit-appearance:none;
+border-radius: 0;
+  @include breakpoint(medium) {
   font-size: 2rem;
   height: 3.9375rem;
   margin: 0 0 1rem;
   padding: 0.5rem;
+  }
 }
 
 .search [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus {
@@ -475,6 +480,9 @@ border-bottom: 1px solid black;
 background-color: #FFFFFF;
 box-shadow: 0;
 transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+-webkit-border-radius:0px;
+-webkit-appearance:none;
+border-radius: 0;
 }
 
 .read-more {
@@ -488,9 +496,16 @@ transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   font-size: $small-font-size;
 }
 
-.map-entry:hover {
-background-color: #F9F7F2;
+
+.map-entry {
+@include button(true, get-color(background), get-color(tietary), $black, solid);
+padding: 0.85rem;
+text-align: left;
+font-family: $serif-regular;
+font-size: rem-calc(24);
+margin-bottom: 0rem;
 }
+
 
 
 .excerpt  {
