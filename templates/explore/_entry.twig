@@ -118,6 +118,23 @@
 </div>
 <!-- End Details -->
 
+<!-- Payment Methods -->
+{% if entry.payment|length %}
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-8 cell text-center">
+      <div class="small serif-bold text-uppercase letter-spacing--loose black">Payment Methods</div>
+        <ul class="menu align-center padding-vertical-1">
+          {% for type in entry.payment %}
+          <li class="menu-text"><svg class="icon icon-payment icon-{{ type.value }}"><use xlink:href="/assets/icons/symbol-defs.svg#icon-{{ type.value }}"></use></svg></a></li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+</div>
+{% endif %}
+<!-- End Services -->
+
 <!-- Services -->
 {% if entry.services|length %}
 <div class="grid-container">
