@@ -9756,6 +9756,7 @@ p a {
   font-size: 75%; }
 
 .tiny {
+  font-size: 75%;
   letter-spacing: 2px; }
 
 .image--portrait {
@@ -10172,3 +10173,7 @@ p a {
     color: #FFFFFF; }
   .tag:hover {
     color: #FFCCCB; }
+
+.button.primary:hover, .button.primary:focus {
+  background-color: #FFCCCB;
+  color: #FFFFFF; }

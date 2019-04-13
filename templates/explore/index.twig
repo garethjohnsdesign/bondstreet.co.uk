@@ -4,7 +4,7 @@
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-8 large-8 cell text-center">
+    <div class="small-12 medium-8 large-6 cell text-center">
       <h1>Use the interactive map to explore Bond Street</h1>
     </div>
   </div>
@@ -42,6 +42,12 @@
         </div>
         
         <div class="show-for-medium">
+          <div class="grid-x primary-background-colour">
+            <div class="small-12 cell padding-1">
+            <h5 class="margin-bottom-0">Directory</h5>
+            </div>
+          </div>
+
          {% for entry in entries %}
          <div id="{{ entry.title | kebab}}" data-coordinates="{{ entry.location.lng }}, {{ entry.location.lat }}">
          <a href="{{ entry.url}}" class="map-entry">

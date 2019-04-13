@@ -232,6 +232,7 @@ $max_font: 200px;
 }
 
 .tiny {
+  font-size: $small-font-size;
   letter-spacing: 2px;
 }
 
@@ -596,4 +597,9 @@ letter-spacing: $prototype-wide-letter-spacing;
 &:hover {
       color: $secondary-color;   
     }
+}
+
+.button.primary:hover, .button.primary:focus {
+background-color: $secondary-color;
+color: #FFFFFF;
 }
