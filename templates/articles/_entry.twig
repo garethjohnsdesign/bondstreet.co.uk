@@ -11,28 +11,28 @@
     </div>
   </div>
 
-{#
-  <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-10 cell">
-      {% set image = entry.image.one() %}
-      <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}>
-        <div class="content"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-10 large-8 cell">
-      {{ entry.description }}
-    </div>
-  </div>
-#}
-
   <div class="grid-x grid-padding-x grid-padding-y">
     <div class="small-12 cell">
       {% include "_includes/blocks/matrix" %}    
     </div>
   </div>
+
+  <!-- Recent Articles -->
+  {% set entries = craft.entries
+  .section('articles')
+  .limit(3)
+  .all() %}
+  
+  {% if entries|length %}
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+      {% for entry in entries %}
+        {% include "_includes/blocks/article" %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+  <!-- End Recent Articles -->
 
 </div>
 
