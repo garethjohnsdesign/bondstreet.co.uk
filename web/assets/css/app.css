@@ -10151,6 +10151,9 @@ p a {
   .grid-y.medium-grid-frame {
     height: 75vh; } }
 
+.tags {
+  font-size: 6px; }
+
 .tag {
   display: inline-block;
   vertical-align: middle;

@@ -594,6 +594,10 @@ height: 75vh;
 }
 }
 
+.tags {
+font-size: 6px;
+}
+
 .tag {
 @include button(false, $primary-color, $primary-color, $white, solid);
 text-transform: uppercase;
