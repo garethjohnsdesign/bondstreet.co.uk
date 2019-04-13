@@ -28,7 +28,7 @@
 <div class="grid-y medium-grid-frame margin-vertical-2">
   <div class="small-12 cell medium-auto medium-cell-block-container">
     <div class="grid-x grid-padding-x medium-padding-collapse">
-      <div class="small-12 medium-4 large-3 cell medium-cell-block-y">
+      <div class="small-12 medium-4 large-3 cell medium-cell-block-y white-background-colour">
 
         <div class="show-for-small-only">
         <label>
@@ -51,7 +51,8 @@
          {% for entry in entries %}
          <div id="{{ entry.title | kebab}}" data-coordinates="{{ entry.location.lng }}, {{ entry.location.lat }}">
          <a href="{{ entry.url}}" class="map-entry">
-            {{ entry.title }}
+          <h4>{{ entry.title }}</h4>
+          <div class="text-uppercase tiny">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
          </a>
          </div>
          {% endfor %}

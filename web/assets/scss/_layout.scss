@@ -142,6 +142,11 @@ html.is-animating .swup-transition-color {
   color: get-color(secondary);
 }
 
+
+.white-background-colour {
+  background-color: $white;
+}
+
 .primary-background-colour {
   background-color: get-color(primary);
   color: $white;
@@ -513,11 +518,9 @@ border-radius: 0;
 
 
 .map-entry {
-@include button(true, get-color(background), get-color(tietary), $black, solid);
+@include button(true, $white, get-color(tietary), $black, solid);
 padding: 0.85rem;
 text-align: left;
-font-family: $serif-regular;
-font-size: rem-calc(24);
 margin-bottom: 0rem;
 }
 
