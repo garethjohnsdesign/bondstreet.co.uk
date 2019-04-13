@@ -336,6 +336,12 @@ url('/assets/img/arrow-right@3x.png') 3x
 
 .navigation .navigation__left, .navigation .navigation__right {
 z-index: 15;
+@include breakpoint(small) {
+padding: 1rem;
+}
+@include breakpoint(medium) {
+padding: 3rem;
+}
 }
 
 .navigation__left {

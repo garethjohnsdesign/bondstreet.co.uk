@@ -9663,7 +9663,11 @@ p a {
   display: none; }
 
 .navigation .navigation__left, .navigation .navigation__right {
-  z-index: 15; }
+  z-index: 15;
+  padding: 1rem; }
+  @media print, screen and (min-width: 40em) {
+    .navigation .navigation__left, .navigation .navigation__right {
+      padding: 3rem; } }
 
 .navigation__left {
   font-family: "Maison Neue Bold", sans-serif;
