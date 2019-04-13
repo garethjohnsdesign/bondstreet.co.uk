@@ -498,6 +498,14 @@ border-radius: 0;
   letter-spacing: $prototype-wide-letter-spacing;
 }
 
+.section-header {
+  font-family: $serif-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: $prototype-wide-letter-spacing;
+  color: $black;
+}
+
 .caption {
   font-size: $small-font-size;
 }
@@ -576,4 +584,16 @@ height: auto;
 @include breakpoint(medium) {
 height: 75vh;
 }
+}
+
+.tag {
+@include button(false, $primary-color, $primary-color, $white, solid);
+text-transform: uppercase;
+margin-bottom: 0rem;
+font-family: $sans-bold;
+font-size: 0.6rem;
+letter-spacing: $prototype-wide-letter-spacing;
+&:hover {
+      color: $secondary-color;   
+    }
 }

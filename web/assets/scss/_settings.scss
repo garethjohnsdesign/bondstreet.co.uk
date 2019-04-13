@@ -65,7 +65,7 @@
 // 1. Global
 // ---------
 
-$global-font-size: 90%;
+$global-font-size: 15px;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 /*
@@ -962,7 +962,8 @@ $grid-margin-gutters: (
 */
 $grid-margin-gutters: (
   small: 32px,
-  medium: 48px
+  medium: 48px,
+  large: 64px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

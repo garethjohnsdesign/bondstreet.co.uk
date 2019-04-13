@@ -5,11 +5,7 @@
     
       <!-- Tags -->
       <div class="tags">
-        {% if entry.tags|length %}
-          {% for tag in entry.tags %}
-            <a class="button tiny sans-bold text-uppercase margin-bottom-0" href="{{ siteUrl }}tags/{{ tag.title | kebab }}">{{ tag.title }}</a>
-          {% endfor %}
-        {% endif %}
+        {% include "_includes/blocks/tags" %}
       </div>
       <!-- End Tags -->
       
