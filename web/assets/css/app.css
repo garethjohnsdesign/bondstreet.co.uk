@@ -9921,6 +9921,11 @@ p a {
 .no-js .navigation {
   display: none; }
 
+.navigation a {
+  color: #757575; }
+  .navigation a:hover {
+    color: #FFCCCB; }
+
 .navigation .navigation__left, .navigation .navigation__right {
   z-index: 15;
   padding: 1rem; }
