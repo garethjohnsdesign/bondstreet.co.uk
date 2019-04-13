@@ -614,3 +614,7 @@ letter-spacing: $prototype-wide-letter-spacing;
 background-color: $secondary-color;
 color: #FFFFFF;
 }
+
+.explore-categories {
+  @include links($medium-gray, $secondary-color)
+}

@@ -10186,3 +10186,8 @@ p a {
 .button.primary:hover, .button.primary:focus {
   background-color: #FFCCCB;
   color: #FFFFFF; }
+
+.explore-categories a {
+  color: #A6A6A6; }
+  .explore-categories a:hover {
+    color: #FFCCCB; }
