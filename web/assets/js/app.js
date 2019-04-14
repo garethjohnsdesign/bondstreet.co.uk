@@ -30,14 +30,10 @@ $("#cookiesPolicy").foundation("open");
 // 3. Swiper
 // ---------
 
-var swiper = new Swiper('.swiper-container--instagram', {
+var swiper = new Swiper('.swiper-container', {
   slidesPerView: 5,
   spaceBetween: 0,
   loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
   navigation: {
     nextEl: '.test-next',
     prevEl: '.test-prev',

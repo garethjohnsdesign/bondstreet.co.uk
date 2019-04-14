@@ -134,16 +134,10 @@
   </div>
 </div>
 
-{#
-<div class="grid-x small-up-5 medium-up-5 large-up-5">
-{% set entries = craft.instagram.getFeed() %}
-{% for entry in entries %}
-{% include "_includes/blocks/instagram" %}
-{% endfor %}
-</div>
-#}
+<div class="grid-x">
+<div class="small-12 cell">
 
-<div class="swiper-container--instagram">
+<div class="swiper-container">
   <div class="swiper-wrapper">
     {% set entries = craft.instagram.getFeed() %}
     {% for entry in entries %}
@@ -175,9 +169,10 @@
   </div>
 
 </div>
-
 </div>
 
+</div>
+</div>
 
 <!-- End Instagram -->
 
