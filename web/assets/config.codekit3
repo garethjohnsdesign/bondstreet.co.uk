@@ -41,7 +41,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "/bower_components/animejs/anime.min.js",
 		"oF": 0,
 		"sC": 3,
@@ -8630,13 +8630,13 @@
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "/bower_components/jquery.cookie/jquery.cookie.js",
+			"linkedFileAbbreviatedPath": "/bower_components/foundation-sites/dist/js/foundation.min.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "/bower_components/foundation-sites/dist/js/foundation.min.js",
+			"linkedFileAbbreviatedPath": "/bower_components/jquery.cookie/jquery.cookie.js",
 			"position": 2,
 			"type": 0
 			},
@@ -8654,26 +8654,20 @@
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "/bower_components/animejs/anime.min.js",
+			"linkedFileAbbreviatedPath": "/bower_components/svgxuse/svgxuse.js",
 			"position": 5,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "/bower_components/svgxuse/svgxuse.js",
+			"linkedFileAbbreviatedPath": "/bower_components/lightgallery/dist/js/lightgallery.min.js",
 			"position": 6,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "/bower_components/lightgallery/dist/js/lightgallery.min.js",
-			"position": 7,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "/bower_components/lightgallery/modules/lg-video.js",
-			"position": 8,
+			"position": 7,
 			"type": 0
 			}
 		]

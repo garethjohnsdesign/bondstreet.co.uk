@@ -126,4 +126,22 @@
 </div>
 <!-- End Container -->
 
+<!-- Instagram -->
+
+<div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+  <div class="small-12 cell text-center">
+    <div class="section-header">Instagram</div>
+  </div>
+</div>
+
+<div class="grid-x small-up-5 medium-up-5 large-up-5">
+{% set entries = craft.instagram.getFeed() %}
+{% for entry in entries %}
+{% include "_includes/blocks/instagram" %}
+{% endfor %}
+</div>
+
+<!-- End Instagram -->
+
+
 {% endblock %}
