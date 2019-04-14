@@ -9833,7 +9833,8 @@ p a {
   color: #FFFFFF; }
 
 .caption {
-  font-size: 75%; }
+  font-size: 75%;
+  margin-top: 0.5rem; }
 
 .map-entry {
   display: inline-block;
