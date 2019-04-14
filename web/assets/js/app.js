@@ -27,6 +27,36 @@ $("#cookiesPolicy").foundation("open");
   }
 });
 
+// 3. Swiper
+// ---------
+
+var swiper = new Swiper('.swiper-container--instagram', {
+  slidesPerView: 5,
+  spaceBetween: 0,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.test-next',
+    prevEl: '.test-prev',
+  },
+  breakpoints: {
+    1440: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 1,
+    }
+  }
+});
 
 /*
 $(document).on('opened.zf.offcanvas', function () {

@@ -134,12 +134,50 @@
   </div>
 </div>
 
+{#
 <div class="grid-x small-up-5 medium-up-5 large-up-5">
 {% set entries = craft.instagram.getFeed() %}
 {% for entry in entries %}
 {% include "_includes/blocks/instagram" %}
 {% endfor %}
 </div>
+#}
+
+<div class="swiper-container--instagram">
+  <div class="swiper-wrapper">
+    {% set entries = craft.instagram.getFeed() %}
+    {% for entry in entries %}
+    <div class="cell swiper-slide">
+        
+        <!-- Image and Text -->
+        <a href="https://www.instagram.com/p/{{ entry.shortcode }}/" target="_blank">
+          <div class="image--square" {% if image %}data-interchange="[{{ entry.src }}, small], [{{ entry.src }}, medium], [{{ entry.src }}, large]"{% endif %}>
+            <div class="content"></div>
+          </div> 
+        </a>
+        <!-- End Image and Text -->
+      
+    </div>
+    {% endfor %}
+  </div>
+
+<div class="grid-x grid-padding-x grid-padding-y align-justify">
+
+  <div class="shrink cell">
+    <ul class="menu">
+      <li class="test-prev menu-text"><svg class="icon icon-arrow-left"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-left"></use></svg></li>
+      <li class="test-next menu-text"><svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></li>
+    </ul>
+  </div>
+
+  <div class="shrink cell align-middle">
+    <a href="https://www.instagram.com/bondstreet/" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg><spam class="padding-left-1 text-uppercase sans-bold tiny">Follow Us</span></a>
+  </div>
+
+</div>
+
+</div>
+
 
 <!-- End Instagram -->
 

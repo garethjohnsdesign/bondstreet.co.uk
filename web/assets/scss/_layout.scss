@@ -516,6 +516,14 @@ border-radius: 0;
   color: $black;
 }
 
+.section-header--white {
+  font-family: $serif-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: $prototype-wide-letter-spacing;
+  color: $white;
+}
+
 .caption {
   font-size: $small-font-size;
 }
