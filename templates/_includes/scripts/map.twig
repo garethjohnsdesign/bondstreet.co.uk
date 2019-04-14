@@ -95,6 +95,7 @@ map.getCanvas().style.cursor = 'pointer';
  
 var coordinates = e.features[0].geometry.coordinates.slice();
 var description = e.features[0].properties.description;
+var link = e.features[0].properties.url;
  
 // Ensure that if the map is zoomed out such that multiple
 // copies of the feature are visible, the popup appears
@@ -102,6 +103,10 @@ var description = e.features[0].properties.description;
 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
 coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 }
+
+map.on('click', 'places', function() {
+window.location = (link);
+});
  
 // Populate the popup and set its coordinates
 // based on the feature found.
@@ -122,7 +127,7 @@ document.getElementById('{{entry.title | kebab}}').addEventListener('mouseover',
 
 map.flyTo({
 center: [{{ entry.location.lng }}, {{ entry.location.lat }}],
-zoom: 16,
+zoom: 18,
 speed: 1, // make the flying slow
 curve: 1, // change the speed at which it zooms out
 easing: function (t) {
