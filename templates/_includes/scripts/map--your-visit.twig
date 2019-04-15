@@ -1,0 +1,25 @@
+mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
+ 
+/* Map: This represents the map on the page. */
+var map = new mapboxgl.Map({
+container: "map",
+style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1",
+zoom: 15,
+center: [
+-0.144,
+51.512
+],
+pitch: 0, // pitch in degrees
+bearing: 0, // bearing in degrees
+scrollZoom: false,
+});
+
+
+map.addControl(new mapboxgl.NavigationControl());
+
+map.addControl(new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+}));

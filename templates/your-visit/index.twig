@@ -3,17 +3,49 @@
 {% block main %}
 
 <div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+
+  <div class="grid-x grid-padding-x grid-padding-y">
     <div class="small-12 cell text-center">
       <h1>{{ entry.title }}</h1>
     </div>
   </div>
 
-  <div class="grid-x grid-padding-x grid-padding-y">
-    <div class="small-12 cell">
+  <div class="grid-x grid-padding-x align-center">
+    <div class="small-12 medium-10 cell text-center">
       {{ entry.description }}
     </div>
   </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y align-center" data-equalizer>
+
+    <!-- Details -->
+    <div class="small-12 medium-6 cell" data-equalizer-watch>
+
+      <div class="grid-x">
+        {% for matrixBlock in entry.details %}
+        <div class="small-12 cell padding-bottom-1">
+          <h4>{{ matrixBlock.header }}</h4>
+          {{ matrixBlock.text | markdown }}
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+    <!-- End Details -->
+
+    <!-- Map -->
+    <div class="small-12 medium-6 cell" data-equalizer-watch>
+        <div id="map" style="width: 100%; height: 100%;"></div>
+    </div>
+    <!-- End Map -->
+
+  </div>
+
+
 </div>
+
+{% js %}
+{% include "_includes/scripts/map--your-visit" %}
+{% endjs %}
 
 {% endblock %}

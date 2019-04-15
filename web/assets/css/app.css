@@ -9683,10 +9683,10 @@ p a {
 
 .navigation .navigation__left, .navigation .navigation__right {
   z-index: 15;
-  padding: 1rem; }
+  padding: 1rem 1rem 1rem 1rem; }
   @media print, screen and (min-width: 40em) {
     .navigation .navigation__left, .navigation .navigation__right {
-      padding: 3rem; } }
+      padding: 3rem 3rem 1rem 3rem; } }
 
 .navigation__left {
   font-family: "Maison Neue Bold", sans-serif;
