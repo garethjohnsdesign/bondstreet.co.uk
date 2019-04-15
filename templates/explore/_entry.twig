@@ -165,6 +165,7 @@
 <!-- Recent Articles -->
 {% set entries = craft.entries
 .section('articles')
+.limit(3)
 .all() %}
 
 {% if entries|length %}
