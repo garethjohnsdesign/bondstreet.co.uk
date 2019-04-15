@@ -1,18 +1,32 @@
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-  <div class="orbit-wrapper">
+<!-- Carousel -->
+<div class="grid-x">
+  <div class="small-12 cell">
+  
+    <div class="swiper-container carousel--explore">
+      <div class="swiper-wrapper">
+        {% for image in entry.carousel %}
+        <div class="swiper-slide">
+            
+          <!-- Image and Text -->
+          <div class="image--default" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"></div>
+          <!-- End Image and Text -->
+          
+        </div>
+        {% endfor %}
+      </div>
 
-    <div class="orbit-controls">
-      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+      <!-- Carousel Navigation -->
+      <div class="grid-x grid-padding-x grid-padding-y align-justify">
+        <div class="shrink cell">
+          <ul class="menu">
+            <li class="test-prev menu-text"><svg class="icon icon-arrow-left"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-left"></use></svg></li>
+            <li class="test-next menu-text"><svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Carousel Navigation -->
     </div>
-
-    <ul class="orbit-container">
-    {% for image in entry.carousel %}
-      <li class="is-active orbit-slide">
-        <div class="image--panorama" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}">
-      </li>
-    {% endfor %}
-    </ul>
-
+  
   </div>
 </div>
+<!-- End Carousel -->

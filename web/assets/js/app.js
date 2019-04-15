@@ -30,10 +30,42 @@ $("#cookiesPolicy").foundation("open");
 // 3. Swiper
 // ---------
 
-var swiper = new Swiper('.swiper-container', {
+$(document).ready(function () {
+
+var swiper = new Swiper('.carousel--explore', {
+  slidesPerView: 2,
+  spaceBetween: 0,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: '.test-next',
+    prevEl: '.test-prev',
+  },
+  breakpoints: {
+    1440: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 1,
+    }
+  }
+})
+
+});
+
+$(document).ready(function () {
+
+var swiper = new Swiper('.carousel--instagram', {
   slidesPerView: 5,
   spaceBetween: 0,
   loop: true,
+  loopFillGroupWithBlank: true,
   navigation: {
     nextEl: '.test-next',
     prevEl: '.test-prev',
@@ -52,7 +84,10 @@ var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
     }
   }
+})
+
 });
+
 
 /*
 $(document).on('opened.zf.offcanvas', function () {
