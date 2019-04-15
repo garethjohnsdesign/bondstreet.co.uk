@@ -73,81 +73,118 @@
     {% endif %}
     
     
-    {% case "portraitImage" %}
-    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
-      <div class="small-12 medium-6 cell">
-        {{ matrixBlock.image[0].getImg() }}
-      </div>
-    </div>
-    
     {% case "portraitPair" %}
     {% if matrixBlock.position == 'left' %}
-    <div class="grid-x grid-padding-y">
-      <div class="small-12 medium-6 cell align-self-middle">
+    <div class="grid-x grid-padding-y align-center">
+      <div class="small-12 medium-5 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
           <div class="small-12 medium-10 cell align-self-middle">
-            {{ matrixBlock.image[0].getImg() }}  
+            {% set image = matrixBlock.images[0] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
           </div>
         </div>
               
       </div>
       
-      <div class="small-12 medium-6 cell align-self-middle">
+      <div class="small-12 medium-5 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
           <div class="small-12 medium-8 cell align-self-middle">
-            {{ matrixBlock.image[1].getImg() }}  
+            {% set image = matrixBlock.images[1] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
           </div>
         </div>   
         
       </div>
     </div>
     {% elseif matrixBlock.position == 'center' %}
-    <div class="grid-x grid-padding-y">
-      <div class="small-12 medium-6 cell align-self-middle">
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 medium-5 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
-          <div class="small-12 medium-10 cell align-self-middle">
-            {{ matrixBlock.image[0].getImg() }}  
+          <div class="small-12 medium-12 cell align-self-middle">
+            {% set image = matrixBlock.images[0] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
           </div>
         </div>
               
       </div>
       
-      <div class="small-12 medium-6 cell align-self-middle">
+      <div class="small-12 medium-5 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
-          <div class="small-12 medium-10 cell align-self-middle">
-            {{ matrixBlock.image[1].getImg() }}  
+          <div class="small-12 medium-12 cell align-self-middle">
+            {% set image = matrixBlock.images[1] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
           </div>
         </div>   
         
       </div>
     </div>
     {% elseif matrixBlock.position == 'right' %}
-    <div class="grid-x grid-padding-y">
-      <div class="small-12 medium-6 cell align-self-middle">
+    <div class="grid-x grid-padding-y align-center">
+      <div class="small-12 medium-5 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
           <div class="small-12 medium-8 cell align-self-middle">
-            {{ matrixBlock.image[0].getImg() }}  
+            {% set image = matrixBlock.images[0] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
           </div>
         </div>
               
       </div>
       
-      <div class="small-12 medium-6 cell align-self-middle">
+      <div class="small-12 medium-5 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
           <div class="small-12 medium-10 cell align-self-middle">
-            {{ matrixBlock.image[1].getImg() }}  
+            {% set image = matrixBlock.images[1] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
           </div>
         </div>   
         
       </div>
     </div>
     {% endif %}
+
+
+    {% case "portraitTrio" %}
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 medium-4 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-12 cell align-self-middle">
+            {% set image = matrixBlock.images[0] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-6-cell" %}"{% endif %}></div>
+          </div>
+        </div>
+              
+      </div>
+      
+      <div class="small-12 medium-4 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-12 cell align-self-middle">
+            {% set image = matrixBlock.images[1] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-6-cell" %}"{% endif %}></div>
+          </div>
+        </div>   
+        
+      </div>
+
+      <div class="small-12 medium-4 cell align-self-middle">
+        
+        <div class="grid-x grid-padding-y align-center">
+          <div class="small-12 medium-12 cell align-self-middle">
+            {% set image = matrixBlock.images[2] %}
+            <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-6-cell" %}"{% endif %}></div>
+          </div>
+        </div>   
+        
+      </div>
+    </div>
+  
     
     {% case "video" %}
     <div class="grid-x grid-padding-y align-center">
