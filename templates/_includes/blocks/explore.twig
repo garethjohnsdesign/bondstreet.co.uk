@@ -10,7 +10,7 @@
     <!-- Image and Text -->
     <a href="{{ entry.url}}" class="">
     
-      {% set image = entry.image.one() %}
+      {% set image = entry.thumb.one() %}
       <div class="image--square" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}"{% endif %}>
         <div class="content"></div>
       </div>
