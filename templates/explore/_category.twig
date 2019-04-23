@@ -44,7 +44,7 @@
 
           <div class="grid-x primary-background-colour">
             <div class="small-12 cell padding-1">
-            <h5 class="margin-bottom-0">Directory</h5>
+            <h5 class="margin-bottom-0">{{ category.title }} Directory</h5>
             </div>
           </div>
 
@@ -70,7 +70,7 @@
 <!-- End Map -->
 
 <div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-4">
   {% for entry in entries %}
     {% include "_includes/blocks/explore" %}
   {% endfor %}
