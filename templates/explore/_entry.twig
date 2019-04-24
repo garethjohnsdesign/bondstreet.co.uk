@@ -22,7 +22,6 @@
 
 <!-- About -->
 <div class="grid-container padding-vertical-2">
-
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 cell text-center">
       <div class="small serif-bold text-uppercase letter-spacing--loose black">About</div>
@@ -34,7 +33,6 @@
     {{entry.description}}
     </div>
   </div>
-
 </div>
 <!-- End About -->
 
@@ -63,7 +61,24 @@
 
     <div class="padding-vertical-1"> 
       <button type="button" class="expanded button hollow">Open Now</button>
-      <button type="button" class="expanded button hollow">Request a Booking</button>
+
+      {% for block in entry.booking.all() %}
+      {% switch block.type %}
+      
+        {% case "room" %}
+
+            <a href="{{block.bookingLink}}" target="_blank" class="expanded button hollow">Request a room</a>
+      
+        {% case "appointment" %}
+        
+            <a href="{{block.bookingLink}}" target="_blank" class="expanded button hollow">Request an appointment</a>
+      
+        {% case "table" %}
+        
+            <a href="{{block.bookingLink}}" target="_blank" class="expanded button hollow">Request a table</a>
+      
+      {% endswitch %}
+      {% endfor %}
     </div>
 
     </div>
