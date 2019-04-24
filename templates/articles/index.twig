@@ -20,19 +20,57 @@
   </div>
 </div>
 
-{# Recent Articles #}
-{% set entries = craft.entries
-.section('articles')
-.all() %}
+{% for block in entry.articleMatrix.all() %}
+{% switch block.type %}
 
-{% if entries|length %}
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
-    {% for entry in entries %}
-      {% include "_includes/blocks/article" %}
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
-{# Recent Articles #}
+  {% case "small" %}
+  
+  {% set entries = block.entries %}
+  
+  {% if entries|length %}
+    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-4">
+      {% for entry in entries %}
+        {% include "_includes/blocks/article" %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% case "medium" %}
+  
+  {% set entries = block.entries %}
+
+  {% if entries|length %}
+    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3">
+      {% for entry in entries %}
+        {% include "_includes/blocks/article" %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% case "large" %}
+  
+  {% set entries = block.entries %}
+
+  {% if entries|length %}
+    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-2">
+      {% for entry in entries %}
+        {% include "_includes/blocks/article" %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% case "featured" %}
+  
+  {% set entries = block.entries %}
+
+  {% if entries|length %}
+    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-1 large-up-1">
+      {% for entry in entries %}
+        {% include "_includes/blocks/feature" %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+{% endswitch %}
+{% endfor %}
 {% endblock %}

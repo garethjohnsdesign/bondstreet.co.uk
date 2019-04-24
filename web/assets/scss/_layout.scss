@@ -245,7 +245,12 @@ $max_font: 200px;
 // ---------
 
 .image--portrait {
+  @include breakpoint(small) {
+  @include aspect-ratio (7, 5);
+  }
+  @include breakpoint(medium) {
   @include aspect-ratio (5, 7);
+  }
   background-size: cover; 
   background-position: 50%;
 }

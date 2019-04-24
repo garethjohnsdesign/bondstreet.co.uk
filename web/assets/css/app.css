@@ -9525,7 +9525,7 @@ p a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 140%; }
+    padding-top: 71.4285714286%; }
   .image--portrait .content {
     transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
     z-index: 1;
@@ -9536,6 +9536,24 @@ p a {
     bottom: 0;
     height: 100%;
     width: 100%; }
+  @media print, screen and (min-width: 40em) {
+    .image--portrait {
+      position: relative; }
+      .image--portrait:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 140%; }
+      .image--portrait .content {
+        transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%; } }
 
 .image--square {
   position: relative;
