@@ -2,13 +2,14 @@
 
 {% block main %}
 
-<!-- Hero -->
+
+<!-- Video Hero -->
 <section class="site__hero">
 <div class="grid-x">
   <div class="small-12 cell text-center">
 
     {% set image = entry.image.first() %}
-    <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}">
+    <div class="image--hero align-center-middle" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}{% endif %}">
 
       <div class="grid-y grid-padding-x height-100 align-center content">
         <div class="shrink cell text-center white">
@@ -17,12 +18,20 @@
         </div>
       </div>
 
+      {% if entry.videoBackground | length %}
+        {% set video = entry.videoBackground.first() %}
+        <video playsinline autoplay muted loop class="video" poster="{{images.domain}}{{ image.filename }}">
+          <source src="http://storage.googleapis.com/bond-street/{{ video.filename }}" type="video/mp4">
+        </video>
+      {% endif %}
+
+
     </div>
 
   </div>
 </div>
 </section>
-<!-- End Hero -->
+<!-- End Video Hero -->
 
 <!-- Container -->
 <div class="grid-container">
@@ -145,7 +154,7 @@
         
         <!-- Image and Text -->
         <a href="https://www.instagram.com/p/{{ entry.shortcode }}/" target="_blank">
-          <div class="image--square" {% if image %}data-interchange="[{{ entry.src }}, small], [{{ entry.src }}, medium], [{{ entry.src }}, large]"{% endif %}>
+          <div class="image--square" data-interchange="[{{ entry.src }}, small], [{{ entry.src }}, medium], [{{ entry.src }}, large]">
             <div class="content"></div>
           </div> 
         </a>
