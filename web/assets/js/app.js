@@ -14,18 +14,7 @@ $(document).foundation();
 // 2. Cookies Policy
 // -----------------
 
-$(function() {
-  if($.cookie('showed_modal') !== "true") {
 
-setTimeout(
-  function() 
-  {
-$("#cookiesPolicy").foundation("open");
-  }, 2000);
-
-    $.cookie('showed_modal', 'true', { expires: 365 }); 
-  }
-});
 
 // 3. Swiper
 // ---------
@@ -88,14 +77,6 @@ var swiper = new Swiper('.carousel--instagram', {
 
 });
 
-
-/*
-$(document).on('opened.zf.offcanvas', function () {
-    console.log('asdfasdfsadf')
-    var modal = $(this);
-    modal.find('[autofocus]').focus();
-});
-*/
 
 // 2. Animate on Scroll
 // --------------------
