@@ -257,7 +257,7 @@ $max_font: 200px;
 
 .image--square {
   @include breakpoint(small) {
-  @include aspect-ratio (7, 5);
+  @include aspect-ratio (1, 1);
   }
   @include breakpoint(medium) {
   @include aspect-ratio (1, 1);

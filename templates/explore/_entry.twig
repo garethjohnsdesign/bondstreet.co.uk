@@ -59,8 +59,9 @@
       </div>
     {% endfor %}
 
-    <div class="padding-vertical-1"> 
-      <button type="button" class="expanded button hollow">Open Now</button>
+    <div class="padding-vertical-1">
+
+      <button type="button" class="expanded button hollow">{{ entry.openingHours[now|date('w')].open < now and entry.openingHours[now|date('w')].close > now ? 'Open now' : 'Closed' }}</button>
 
       {% for block in entry.booking.all() %}
       {% switch block.type %}
