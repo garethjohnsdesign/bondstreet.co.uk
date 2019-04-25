@@ -20,6 +20,7 @@
   </div>
 </div>
 
+<div class="grid-container">
 {% for block in entry.articleMatrix.all() %}
 {% switch block.type %}
 
@@ -73,4 +74,5 @@
 
 {% endswitch %}
 {% endfor %}
+</div>
 {% endblock %}
