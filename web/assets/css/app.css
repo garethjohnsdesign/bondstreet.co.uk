@@ -9345,7 +9345,8 @@ button.swiper-pagination-bullet {
   height: 1em;
   stroke-width: 0;
   stroke: currentColor;
-  fill: currentColor; }
+  fill: currentColor;
+  vertical-align: sub; }
 
 /* ==========================================
 Single-colored icons can be modified like so:
