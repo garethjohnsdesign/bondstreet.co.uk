@@ -586,7 +586,12 @@ margin-bottom: 0rem;
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
+
+
 
 .button.clear.navigation {
   font-family: $sans-bold;
