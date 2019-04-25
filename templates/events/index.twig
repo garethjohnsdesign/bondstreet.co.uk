@@ -22,9 +22,7 @@
 {% set end = now|date_modify('+1 month')|atom %}
 
 {% set entries = craft.entries.section('events')
-
-
-.eventStart(['and', '>= start', '< end'])
+    .eventStart (['and',  ">= #{start}", "<= #{end}"])
     .order('eventStart')
     .all() %}
 
