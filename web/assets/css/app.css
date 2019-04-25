@@ -9346,7 +9346,7 @@ button.swiper-pagination-bullet {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-  vertical-align: sub; }
+  vertical-align: middle; }
 
 /* ==========================================
 Single-colored icons can be modified like so:
@@ -9516,7 +9516,8 @@ p a {
 
 .tiny {
   font-size: 75%;
-  letter-spacing: 2px; }
+  letter-spacing: 1px;
+  color: #757575; }
 
 .image--portrait {
   position: relative;

@@ -238,7 +238,8 @@ $max_font: 200px;
 
 .tiny {
   font-size: $small-font-size;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  color: $dark-gray
 }
 
 // 6. Layout
