@@ -1,15 +1,11 @@
 {% extends "_layouts/site" %}
 
 {% block main %}
-<div class="grid-x grid-padding-x grid-padding-y">
-  <div class="small-12 cell text-center">
-    <h1>Articles</h1>
-  </div>
-</div>
 
 <div class="grid-container">
-  <div class="grid-x grid-padding-x align-center">
+  <div class="grid-x grid-padding-x padding-vertical-3 align-center">
     <div class="small-12 medium-8 large-8 cell text-center">
+    <h1>Articles</h1>
       <ul class="menu align-center explore-categories">
         <li class="active"><a href="/articles" class="small sans-bold text-uppercase letter-spacing--loose ">All</a></li>
         {% nav category in craft.categories.group('articles') %}
@@ -53,7 +49,7 @@
   {% set entries = block.entries %}
 
   {% if entries|length %}
-    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-2">
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
       {% for entry in entries %}
         {% include "_includes/blocks/article" %}
       {% endfor %}
@@ -65,7 +61,7 @@
   {% set entries = block.entries %}
 
   {% if entries|length %}
-    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-1 large-up-1">
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
       {% for entry in entries %}
         {% include "_includes/blocks/feature" %}
       {% endfor %}
