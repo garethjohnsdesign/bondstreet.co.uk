@@ -10,7 +10,7 @@
   </div>
 </div>
 
-{% set entries = craft.entries.section('events').order('start') %}
+{% set entries = craft.entries.section('events').order('eventStart') %}
 
 <div class="grid-container">
   {% for entry in entries %}

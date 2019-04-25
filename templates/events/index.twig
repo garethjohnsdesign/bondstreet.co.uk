@@ -18,7 +18,17 @@
   </div>
 </div>
 
-{% set entries = craft.entries.section('events').order('start') %}
+{% set start = now|atom %}
+{% set end = now|date_modify('+1 month')|atom %}
+
+{% set entries = craft.entries.section('events')
+
+
+.eventStart(['and', '>= start', '< end'])
+    .order('eventStart')
+    .all() %}
+
+
 <div class="grid-container">
   {% for entry in entries %}
     {% include "_includes/blocks/event" %}
