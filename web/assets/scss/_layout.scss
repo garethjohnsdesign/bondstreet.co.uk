@@ -341,7 +341,7 @@ url('/assets/img/arrow-right@3x.png') 3x
 
 .no-js {
   .navigation {
-  display: none;
+  opacity: 0;
   }
 }
 
@@ -631,6 +631,10 @@ color: #FFFFFF;
 
 .explore-categories {
   @include links($medium-gray, $secondary-color)
+}
+
+.explore-categories .active > a {
+background: $secondary-color;
 }
 
 .video {
