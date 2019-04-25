@@ -12,6 +12,7 @@
         <div class="shrink cell text-center">
           <h1 class="hero white">{{entry.title}}</h1>
           <div class="white">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
+          <div class="padding-vertical-1">{% include "_includes/blocks/tags" %}</div>
         </div>
       </div>
     </div>
@@ -24,7 +25,7 @@
 <div class="grid-container padding-vertical-2">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 cell text-center">
-      <div class="small serif-bold text-uppercase letter-spacing--loose black">About</div>
+      <div class="small serif-bold text-uppercase letter-spacing--loose black">About {{entry.title}}</div>
     </div>
   </div>
 
@@ -97,9 +98,9 @@
     </div>
     <div class="small-12 medium-4 cell text-center">
       <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Contact</div>
-      <div>{{ entry.phone }}</div>
-      <div>{{ entry.website }}</div>
-      <div>{{ entry.email }}</div>
+      {% if entry.phone|length %}<div>{{ entry.phone }}</div>{% endif %} 
+      {% if entry.website|length %}<div><a href="{{entry.website}}">{{ entry.website |replace({'https://': '', 'www.': '', '/': ''})}}</a></div>{% endif %}
+      {% if entry.email|length %}<div><a href="mailto:{{entry.email}}">{{ entry.email }}</a></div>{% endif %}
     </div>
     
     {% if entry.socials|length %}

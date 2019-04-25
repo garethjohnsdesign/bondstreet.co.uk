@@ -9503,13 +9503,15 @@ p a {
   font-family: "Canela Bold", serif; }
 
 .hero {
-  font-size: 32px; }
-  @media screen and (min-width: 320px) {
-    .hero {
-      font-size: calc(32px + 168 * ((100vw - 320px) / 1120)); } }
-  @media screen and (min-width: 1440px) {
-    .hero {
-      font-size: 200px; } }
+  line-height: 1; }
+  .hero {
+    font-size: 32px; }
+    @media screen and (min-width: 320px) {
+      .hero {
+        font-size: calc(32px + 168 * ((100vw - 320px) / 1120)); } }
+    @media screen and (min-width: 1440px) {
+      .hero {
+        font-size: 200px; } }
 
 .small {
   font-size: 75%; }
