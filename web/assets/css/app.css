@@ -9518,8 +9518,7 @@ p a {
 
 .tiny {
   font-size: 75%;
-  letter-spacing: 1px;
-  color: #757575; }
+  letter-spacing: 1px; }
 
 .image--portrait {
   position: relative;

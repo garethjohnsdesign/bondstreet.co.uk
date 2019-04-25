@@ -1,0 +1,46 @@
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="small-12 medium-12 cell">
+    <ul class="menu align-center">
+
+      <li class="padding-1">
+        <a href="/events/">
+          <h3>All</h3>
+          {% set allEventsCount = craft.entries.section('events').count() %}
+          <h6 class="sans-regular">{{ allEventsCount }} Events</h6>
+        </a>
+      </li>
+
+      <li class="padding-1">
+        <a href="/events/this-month">
+          <h3>This Month</h3>
+
+          {% set thisMonthEventsCount = craft.entries.section('events')
+              .eventStart (['and',  ">= #{now | atom}", "<= #{now | date_modify('+1 month') | atom}"])
+              .count() %}
+          <h6 class="sans-regular">{{ thisMonthEventsCount }} Events</h6>
+        </a>
+      </li>
+
+      <li class="padding-1">
+        <a href="/events/next-month">
+          <h3>Next Month</h3>
+          {% set nextMonthsEventsCount = craft.entries.section('events')
+              .eventStart (['and',  ">= #{now | atom}", "<= #{now | date_modify('+1 month') | atom}"])
+              .count() %}
+          <h6 class="sans-regular">{{ nextMonthsEventsCount }} Events</h6>
+        </a>
+      </li>
+
+      <li class="padding-1">
+        <a href="/events/after-that">
+          <h3>After That</h3>
+          {% set afterThatEventsCount = craft.entries.section('events')
+              .eventStart (['and',  ">= #{now | atom}", "<= #{now | date_modify('+1 year') | atom}"])
+              .count() %}
+          <h6 class="sans-regular">{{ afterThatEventsCount }} Events</h6>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
