@@ -2,10 +2,7 @@
 
 {% block main %}
 
-<h3>All</h3>
-
 {% include "_includes/blocks/events--types" %}
-
 
 {% set entries = craft.entries.section('events')
     .order('eventStart')
