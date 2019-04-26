@@ -56,8 +56,8 @@
     
     {% case "image" %}
     {% if matrixBlock.position == 'full' %}
-    <div class="grid-x grid-padding-y">
-      <div class="small-12 cell">
+    <div class="grid-x grid-padding-y align-center">
+      <div class="small-12 {% if matrixBlock.aspectRatio.label | kebab == 'portrait' %}medium-6{% endif %} cell">
       {% set image = matrixBlock.image.one() %}
        <div class="image--{{ matrixBlock.aspectRatio.label | kebab }}" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
        {% if matrixBlock.caption %}<div class="caption">{{ matrixBlock.caption }}</div>{% endif %}
@@ -65,7 +65,7 @@
     </div>
     {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
     <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
-      <div class="small-12 medium-10 cell">
+      <div class="small-12 {% if matrixBlock.aspectRatio.label | kebab == 'portrait' %}medium-6{% else %}medium-10{% endif %} cell">
       {% set image = matrixBlock.image.one() %}
       <div class="image--{{ matrixBlock.aspectRatio.label | kebab }}" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}></div>
       {% if matrixBlock.caption %}<div class="caption">{{ matrixBlock.caption }}</div>{% endif %}
