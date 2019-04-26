@@ -194,9 +194,11 @@
       {% set image = matrixBlock.image.one() %}
       <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}>
         <div class="grid-y height-100 align-center content">
-            <div class="shrink cell text-center text-lowercase padding-2">
+            <div class="shrink cell text-center text-lowercase padding-2" id="video-gallery">
+<a href="{{ matrixBlock.embed }}">
               <h1 class="white"><svg class="icon icon-play"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play"></use></svg></h1>
               <div class="white sans-bold text-uppercase tiny">Play Video</div>
+</a>
             </div>
         </div>
       </div>

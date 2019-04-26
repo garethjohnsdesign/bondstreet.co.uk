@@ -11,6 +11,21 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
 $(document).foundation();
 
 
+$('#video-gallery').lightGallery({
+   counter : false,
+    vimeoPlayerParams: {
+        byline : 0,
+        portrait : 0,
+        color : '272A67'
+    },
+    youtubePlayerParams: {
+        modestbranding: 1,
+        showinfo: 0,
+        rel: 0,
+        controls: 0
+    }
+}); 
+
 // 2. Cookies Policy
 // -----------------
 
