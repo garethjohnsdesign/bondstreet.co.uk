@@ -100,7 +100,7 @@
     </div>
     <div class="small-12 medium-4 cell text-center">
       <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Contact</div>
-      {% if entry.phone|length %}<div>{{ entry.phone }}</div>{% endif %} 
+      {% if entry.phone|length %}<div><a href="tel:{{entry.phone}}">{{ entry.phone }}</a></div>{% endif %} 
       {% if entry.website|length %}<div><a href="{{entry.website}}">{{ entry.website |replace({'https://': '', 'www.': '', '/': ''})}}</a></div>{% endif %}
       {% if entry.email|length %}<div><a href="mailto:{{entry.email}}">{{ entry.email }}</a></div>{% endif %}
     </div>
