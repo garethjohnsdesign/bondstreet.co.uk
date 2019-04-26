@@ -53,7 +53,7 @@
          <div id="{{ entry.title | kebab }}" data-coordinates="{{ entry.location.lng }}, {{ entry.location.lat }}">
          <a href="{{ entry.url}}" class="map-entry">
           <h4>{{ entry.title }}</h4>
-          <div class="text-uppercase tiny">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
+          <div class="text-uppercase tiny dark-gray">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
          </a>
          </div>
          {% endfor %}

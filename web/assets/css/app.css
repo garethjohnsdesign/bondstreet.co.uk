@@ -9453,6 +9453,13 @@ html.is-animating .swup-transition-color {
   .secondary-background-colour a:hover {
     color: #252529; }
 
+.dark-gray {
+  color: #757575; }
+  .dark-gray a {
+    color: #757575; }
+    .dark-gray a:hover {
+      color: #1D2033; }
+
 .medium-gray {
   color: #A6A6A6; }
   .medium-gray a {
