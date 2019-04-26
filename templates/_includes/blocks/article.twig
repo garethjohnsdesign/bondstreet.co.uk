@@ -12,7 +12,7 @@
     
       {% set image = entry.image.one() %}
       <div class="image--square" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}"{% endif %}>
-        <div class="grid-y height-100 align-center content">
+        <div class="grid-y height-100 align-right align-bottom content">
 
         {% set videoBlock = entry.article.type('video').one() %}
         {% if videoBlock %}
