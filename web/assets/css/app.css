@@ -9668,6 +9668,13 @@ p a {
   background-size: cover;
   background-position: 50%; }
 
+.image--explore {
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%; }
+  .image--explore .content {
+    background-color: rgba(29, 32, 51, 0.2); }
+
 /*
 .image--hero {
   height: 100

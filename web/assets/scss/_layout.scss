@@ -297,6 +297,15 @@ $max_font: 200px;
   background-size: cover; 
   background-position: 50%;
 }
+
+.image--explore {
+  height: 100vh;
+  background-size: cover; 
+  background-position: 50%;
+ .content {
+  background-color: rgba($primary-color, 0.2);
+  }
+}
 /*
 .image--hero {
   height: 100
