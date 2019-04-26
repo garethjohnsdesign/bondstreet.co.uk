@@ -3,7 +3,7 @@
       
       <div class="cell medium-auto">
         <ul class="vertical menu text-center">
-          <li class="small sans-bold text-uppercase letter-spacing--loose">Explore</li>
+          <li><a href="/explore" class="small sans-bold text-uppercase letter-spacing--loose">Explore</a></li>
             {% nav category in craft.categories.group('explore') %}
               <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
             {% endnav %}
@@ -12,17 +12,17 @@
       
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
-          <li class="small sans-bold text-uppercase letter-spacing--loose">Events</li>
-            {% nav category in craft.categories.group('events') %}
-              <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
-            {% endnav %}
+          <li><a href="/events" class="small sans-bold text-uppercase letter-spacing--loose">Events</a></li>
+          <li><a href="/events/this-month" class="small sans-bold text-uppercase letter-spacing--loose">This Month</a></li>
+          <li><a href="/events/next-month" class="small sans-bold text-uppercase letter-spacing--loose">Next Month</a></li>
+          <li><a href="/events/after-that" class="small sans-bold text-uppercase letter-spacing--loose">Next Month</a></li>
         </ul>
       </div>
       
   
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
-          <li class="small sans-bold text-uppercase letter-spacing--loose">Articles</li>
+          <li><a href="/articles" class="small sans-bold text-uppercase letter-spacing--loose">Articles</a></li>
             {% nav category in craft.categories.group('articles') %}
               <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
             {% endnav %}
@@ -32,9 +32,9 @@
       
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
-          <li class="small sans-bold text-uppercase letter-spacing--loose">Your Visit</li>
-          <li><a href="/your-visit/" class="small sans-bold text-uppercase letter-spacing--loose">History</a></li>
-          <li><a href="/your-visit/" class="small sans-bold text-uppercase letter-spacing--loose">By Appointment</a></li>
+          <li><a href="/your-visit" class="small sans-bold text-uppercase letter-spacing--loose">Your Visit</a></li>
+          <li><a href="/your-visit" class="small sans-bold text-uppercase letter-spacing--loose">History</a></li>
+          <li><a href="/your-visit" class="small sans-bold text-uppercase letter-spacing--loose">By Appointment</a></li>
         </ul>
       </div>
       
