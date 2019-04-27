@@ -10277,6 +10277,44 @@ p a {
   font-size: 75%;
   letter-spacing: 1px; }
 
+.image--explore-thumb {
+  position: relative;
+  background-size: cover;
+  background-position: 50%; }
+  .image--explore-thumb:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 71.4285714286%; }
+  .image--explore-thumb .content {
+    transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%; }
+  @media print, screen and (min-width: 40em) {
+    .image--explore-thumb {
+      position: relative; }
+      .image--explore-thumb:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 140%; }
+      .image--explore-thumb .content {
+        transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%; } }
+
 .image--portrait {
   position: relative;
   background-size: cover;
@@ -10285,7 +10323,7 @@ p a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 71.4285714286%; }
+    padding-top: 140%; }
   .image--portrait .content {
     transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
     z-index: 1;
@@ -10303,7 +10341,7 @@ p a {
         display: block;
         content: "";
         width: 100%;
-        padding-top: 120%; }
+        padding-top: 140%; }
       .image--portrait .content {
         transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
         z-index: 1;
