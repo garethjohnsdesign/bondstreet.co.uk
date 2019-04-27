@@ -10792,7 +10792,7 @@ p a {
   min-height: 100%;
   z-index: -1; }
 
-.swiper-slide {
+.carousel--matrix .swiper-slide {
   width: auto; }
 
 .carousel--matrix .swiper-slide {
