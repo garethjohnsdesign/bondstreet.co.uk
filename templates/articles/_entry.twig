@@ -19,12 +19,14 @@
 
   <!-- Recent Articles -->
   {% set tag = entry.tags %}
+  {% set id = entry.id %}
   
   {% set entries = craft
   .entries
   .section('articles')
   .relatedTo(tag)
-  .all() %}
+  .id( 'not ' ~ id)
+   %}
   
   {% if entries|length %}
 
