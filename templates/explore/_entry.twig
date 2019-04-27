@@ -27,7 +27,7 @@
 <div class="grid-container padding-vertical-2">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 cell text-center">
-      <div class="small serif-bold text-uppercase letter-spacing--loose black">About {{entry.title}}</div>
+      <div class="serif-bold text-uppercase letter-spacing--loose black">About {{entry.title}}</div>
     </div>
   </div>
 
@@ -44,7 +44,7 @@
 
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 cell text-center">
-      <div class="small serif-bold text-uppercase letter-spacing--loose black">Details</div>
+      <div class="serif-bold text-uppercase letter-spacing--loose black">Details</div>
     </div>
   </div>
 
@@ -146,7 +146,7 @@
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 large-8 cell text-center">
-      <div class="small serif-bold text-uppercase letter-spacing--loose black">Payment Methods</div>
+      <div class="small sans-bold text-uppercase letter-spacing--loose black">Payment Methods</div>
         <ul class="menu align-center padding-vertical-1">
           {% for type in entry.payment %}
           <li class="menu-text"><svg class="icon icon-payment icon-{{ type.value }}"><use xlink:href="/assets/icons/symbol-defs.svg#icon-{{ type.value }}"></use></svg></a></li>
@@ -163,7 +163,7 @@
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 large-8 cell text-center">
-      <div class="small serif-bold text-uppercase letter-spacing--loose black">Services</div>
+      <div class="small sans-bold text-uppercase letter-spacing--loose black">Services</div>
         <ul class="menu align-center padding-vertical-1">
           {% for row in entry.services %}
             <li class="menu-text">{{ row.service }}</li>
