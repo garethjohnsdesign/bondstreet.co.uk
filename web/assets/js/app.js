@@ -36,29 +36,15 @@ $('#video-gallery').lightGallery({
 
 $(document).ready(function () {
 
-var swiper = new Swiper('.carousel--explore', {
-  slidesPerView: 2,
-  spaceBetween: 0,
+var swiper = new Swiper('.carousel--matrix', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 16,
   loop: true,
-  loopFillGroupWithBlank: true,
   navigation: {
     nextEl: '.test-next',
     prevEl: '.test-prev',
   },
-  breakpoints: {
-    1440: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 2,
-    },
-    640: {
-      slidesPerView: 1,
-    }
-  }
 })
 
 });

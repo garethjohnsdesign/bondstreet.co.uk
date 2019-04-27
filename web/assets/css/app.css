@@ -10791,3 +10791,12 @@ p a {
   min-width: 100%;
   min-height: 100%;
   z-index: -1; }
+
+.swiper-slide {
+  width: auto; }
+
+.carousel--matrix .swiper-slide {
+  height: 400px; }
+
+.carousel--matrix .swiper-slide img {
+  height: 100%; }
