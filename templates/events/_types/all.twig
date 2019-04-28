@@ -4,12 +4,12 @@
 
 {% include "_includes/blocks/events--types" %}
 
-{% set afterThatEvents = craft.entries.section('events')
-    .eventStart (">= #{now | date_modify('last day of next month') | atom}"	)
+{% set allEvents = craft.entries.section('events')
+.order('eventStart asc')
 %}     
 
 <div class="grid-container">
-  {% for entry in afterThatEvents %}
+  {% for entry in allEvents %}
     {% include "_includes/blocks/event" %}
   {% endfor %}
 </div>

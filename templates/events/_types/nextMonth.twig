@@ -5,7 +5,8 @@
 {% include "_includes/blocks/events--types" %}
 
 {% set nextMonthsEvents = craft.entries.section('events')
-    .eventStart (['and',  "> #{now | date_modify('last day of this month') | atom}", "<= #{now | date_modify('last day of next month') | atom}"])
+.eventStart (['and',  "> #{now | date_modify('last day of this month') | atom}", "<= #{now | date_modify('last day of next month') | atom}"])
+.order('eventStart asc')
 %}
 
 <div class="grid-container">

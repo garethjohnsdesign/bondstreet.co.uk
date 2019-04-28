@@ -1,0 +1,18 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+{% include "_includes/blocks/events--types" %}
+
+{% set afterThatEvents = craft.entries.section('events')
+.eventStart (">= #{now | date_modify('last day of next month') | atom}"	)
+.order('eventStart asc')  
+%}     
+
+<div class="grid-container">
+  {% for entry in afterThatEvents %}
+    {% include "_includes/blocks/event" %}
+  {% endfor %}
+</div>
+
+{% endblock %}

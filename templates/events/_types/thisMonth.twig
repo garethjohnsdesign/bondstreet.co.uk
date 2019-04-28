@@ -6,6 +6,7 @@
 
 {% set thisMonthsEvents = craft.entries.section('events')
 .eventStart (['and',  ">= #{now | date_modify('first day of this month') | atom}", "<= #{now | date_modify('last day of this month') | atom}"])
+.order('eventStart asc')
 %}
 
 <div class="grid-container">
