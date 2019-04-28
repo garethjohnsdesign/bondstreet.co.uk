@@ -24,7 +24,7 @@
 </div>
 
 
-{% set order = craft.request.getParam('order', 'lft asc')  %}
+{% set order = craft.request.getParam('order', 'title asc')  %}
 {% set entries = craft.entries.section('explore').order(order) %}
 
 <!-- Map -->
@@ -48,6 +48,11 @@
           <div class="grid-x primary-background-colour">
             <div class="small-12 cell padding-1">
             <h5 class="margin-bottom-0">Directory</h5>
+              <ul class="menu simple padding-top-1">
+                <li class="active"><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="lft asc">Most Popular</a></li>
+                <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="title asc">A-Z</a></li>
+                <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="title desc">Z-A</a></li>
+              </ul>
             </div>
           </div>
 
@@ -97,7 +102,7 @@
     <div class="small-12 medium-6 large-shrink cell">
       <ul class="menu">
         <li class="menu-text text-uppercase small sans-bold text-uppercase letter-spacing--loose">Filter</li>
-        <li class="active"><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose" data-filter="structure">Most Popular</a></li>
+        <li class="active"><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose" data-filter="lft asc">Most Popular</a></li>
         <li><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose" data-filter="title asc">A-Z</a></li>
         <li><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose" data-filter="title desc">Z-A</a></li>
       </ul>
