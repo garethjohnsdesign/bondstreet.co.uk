@@ -2,7 +2,7 @@
   <div class="small-12 medium-12 cell">
     <ul class="vertical medium-horizontal menu text-center medium-text-left align-center">
 
-      <li class="padding-1">
+      <li class="padding-horizontal-1">
         <a href="/events">
           <h4>All</h4>
           {% set allEventsCount = craft.entries.section('events').count() %}
@@ -10,7 +10,7 @@
         </a>
       </li>
 
-      <li class="padding-1">
+      <li class="padding-horizontal-1">
         <a href="/events/this-month">
           <h4>This Month</h4>
           {% set thisMonthEventsCount = craft.entries.section('events')
@@ -20,7 +20,7 @@
         </a>
       </li>
 
-      <li class="padding-1">
+      <li class="padding-horizontal-1">
         <a href="/events/next-month">
           <h4>Next Month</h4>
           {% set nextMonthsEventsCount = craft.entries.section('events')
@@ -30,7 +30,7 @@
         </a>
       </li>
 
-      <li class="padding-1">
+      <li class="padding-horizontal-1">
         <a href="/events/after-that">
           <h4>After That</h4>
           {% set afterThatEventsCount = craft.entries.section('events')
