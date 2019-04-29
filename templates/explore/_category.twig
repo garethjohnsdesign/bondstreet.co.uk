@@ -15,7 +15,7 @@
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-8 large-8 cell text-center">
-      <ul class="menu align-center explore-categories">
+      <ul class="menu vertical medium-horizontal align-center explore-categories">
         <li><a href="/explore" class="small sans-bold text-uppercase letter-spacing--loose">All</a></li>
         {% nav menu in craft.categories.group('explore') %}
           <li class="{{ menu.slug == category.slug ? 'active' }}"><a href="{{ menu.url }}" class="small sans-bold text-uppercase letter-spacing--loose ">{{ menu.title }}</a></li>

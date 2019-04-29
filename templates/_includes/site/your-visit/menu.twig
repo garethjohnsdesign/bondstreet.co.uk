@@ -1,0 +1,15 @@
+{% set entry = entry is defined ? entry : null %}
+{% set category = category is defined ? category : null %}
+
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x padding-bottom-2 align-center">
+      <div class="small-12 medium-8 large-8 cell text-center">
+        <ul class="menu vertical medium-horizontal text-center align-center">
+          <li {% if entry.type and (entry.type == 'discover') %} class="active"{% endif %}><a href="/your-visit/discover-the-area" class="small sans-bold text-uppercase letter-spacing--loose">Discover the area</a></li>
+          <li {% if entry.type and (entry.type == 'heritage') %} class="active"{% endif %}><a href="/your-visit/heritage" class="small sans-bold text-uppercase letter-spacing--loose">Heritage</a></li>
+          <li {% if entry.type and (entry.type == 'appointment') %} class="active"{% endif %}><a href="/your-visit/by-appointment" class="small sans-bold text-uppercase letter-spacing--loose">By Appointment</a></li>
+          <li {% if entry.type and (entry.type == 'contact') %} class="active"{% endif %}><a href="/your-visit/contact" class="small sans-bold text-uppercase letter-spacing--loose">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
