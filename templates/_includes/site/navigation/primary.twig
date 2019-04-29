@@ -21,7 +21,9 @@
 {% endfor %}
 
 
-<div class="grid-x grid-padding-x align-justify navigation{% if entry.navigation is defined and entry.navigation %} navigation--light{% endif %}">
+{% set entry = entry is defined ? entry : null %}
+{% set category = category is defined ? category : null %}
+<div class="grid-x grid-padding-x align-justify navigation {% if entry.type is defined and (entry.type == 'home' or entry.type == 'explore' or entry.type == 'street') %} navigation--light{% endif %}">
   <div class="shrink cell navigation__left">
 
     <div class="hide-for-large"><button data-toggle="offCanvasMenu" class="button clear navigation"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></button></div>

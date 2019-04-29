@@ -1,0 +1,139 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<div class="grid-container">
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell text-center">
+      <h1>{{ entry.title }}</h1>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x align-center">
+    <div class="small-12 medium-10 cell text-center">
+      {{ entry.description }}
+    </div>
+  </div>
+
+
+
+  <form method="post" action="" accept-charset="UTF-8">
+      {{ csrfInput() }}
+
+      <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+        <div class="small-12 cell text-center">
+          <div class="section-header">About You</div>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-6 cell">
+          <label>First Name
+            <input type="text" name="First Name">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Last Name
+            <input type="text" name="Last Name">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Email
+            <input type="email" name="fromEmail">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Phone Number
+            <input type="text" name="Phone">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Country
+            <input type="text" name="Location">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Age
+            <input type="text" name="Location">
+          </label>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+          <div class="small-12 cell text-center">
+            <div class="section-header">Your Visit</div>
+          </div>
+        </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-6 cell">
+          <label>I'll be in London on
+            <input type="text" name="First Name">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Length of stay
+            <input type="text" name="Last Name">
+          </label>
+        </div>
+
+        <div class="small-12 medium-6 cell">
+          <label>Visiting On
+            <select name="Visiting On">
+              <option value="business">Business</option>
+              <option value="vacation">Vacation</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="small-12 medium-6 cell">
+          <label>Travelling Style
+            <select name="Travelling Style">
+              <option value="authentic-local">Authentic / Local</option>
+              <option value="stylish-hip">Stylish / Hip</option>
+              <option value="luxury">Luxury</option>
+              <option value="explorer-off-beat">Explorer / Off-beat</option>
+            </select>
+          </label>
+        </div>
+
+
+      </div>
+
+      <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+        <div class="small-12 cell text-center">
+          <div class="section-header">I'm interested in</div>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class="small-12 cell text-center">
+          <input id="checkbox1" type="checkbox"><label for="checkbox1">Fashion - Classic</label>
+          <input id="checkbox2" type="checkbox"><label for="checkbox2">Fashion - Forward</label>
+          <input id="checkbox3" type="checkbox"><label for="checkbox3">Art</label>
+          <input id="checkbox3" type="checkbox"><label for="checkbox3">Antiques</label>
+        </fieldset>
+      </div>
+      
+      <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-12 cell">
+        <label>Tell Us More
+          <textarea rows="12" name="message" placeholder="Message"></textarea>
+        </label>
+      </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-12 cell">
+        <input type="submit" class="button expanded" value="Send">
+        </div>
+      </div>
+
+
+
+  </form>
+
+</div>
+
+{% endblock %}

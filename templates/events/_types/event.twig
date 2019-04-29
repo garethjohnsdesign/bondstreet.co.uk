@@ -1,0 +1,60 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<div class="grid-container">
+
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-8 cell text-center">
+      <h1 class="margin-bottom-3">{{ entry.title }}</h1>
+      {% include "_includes/blocks/tags" %}   
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x align-center">
+    <div class="small-12 cell text-center">
+      <ul class="menu align-center">
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ entry.url|url_encode }}" target="blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+        <li><a href="https://twitter.com/intent/tweet?text={{ entry.title }}&url={{ entry.url|url_encode }}" target="blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell">
+      {% include "_includes/blocks/matrix" %}    
+    </div>
+  </div>
+
+  <!-- Recent Articles -->
+  {% set tag = entry.tags %}
+  {% set id = entry.id %}
+  
+  {% set entries = craft
+  .entries
+  .section('articles')
+  .relatedTo(tag)
+  .id( 'not ' ~ id)
+   %}
+  
+  {% if entries|length %}
+
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+    <div class="small-12 cell text-center">
+      <div class="section-header">Related Articles</div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+      {% for entry in entries %}
+        {% include "_includes/blocks/article" %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+  <!-- End Recent Articles -->
+
+</div>
+
+{% endblock %}

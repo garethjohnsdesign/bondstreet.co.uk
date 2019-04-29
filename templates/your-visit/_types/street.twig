@@ -2,20 +2,79 @@
 
 {% block main %}
 
-<div class="grid-container">
+<!-- Hero -->
+<div class="grid-x">
+  <div class="small-12 cell text-center">
 
-  <div class="grid-x grid-padding-x grid-padding-y">
-    <div class="small-12 cell text-center">
-      <h1>{{ entry.title }}</h1>
+    {% set image = entry.image.first() %}
+    <div class="image--explore align-center-middle" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}">
+      <div class="grid-y height-100 align-center content">
+        <div class="shrink cell text-center padding-3">
+
+          <h1 class="hero white">{{entry.title}}</h1>
+          <div class="white">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
+          <div class="padding-vertical-1">{% include "_includes/blocks/tags" %}</div>
+
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="grid-x grid-padding-x align-center">
-    <div class="small-12 medium-10 cell text-center">
-      {{ entry.description }}
-    </div>
   </div>
-
 </div>
+<!-- End Hero -->
+
+<!-- About -->
+<div class="grid-container padding-vertical-2">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell text-center">
+      <div class="serif-bold text-uppercase letter-spacing--loose black">About {{entry.title}}</div>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell text-center">
+    {{entry.description}}
+    </div>
+  </div>
+</div>
+<!-- End About -->
+
+<!-- Carousel -->
+{% if entry.carousel|length %}
+<div class="grid-x grid-padding-y align-center">
+  <div class="small-12 cell text-center">
+    {% include "_includes/blocks/carousel" %}
+  </div>
+</div>
+{% endif %}
+<!-- End Carousel -->
+
+<!-- Recent Articles -->
+{% set tag = entry.brand %}
+
+{% set entries = craft
+.entries
+.section('articles')
+.relatedTo(tag)
+.all() %}
+
+{% if entries|length %}
+
+<div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+  <div class="small-12 cell text-center">
+    <div class="section-header">Related Articles</div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+    {% for entry in entries %}
+      {% include "_includes/blocks/article" %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+<!-- End Recent Articles -->
+
 
 {% endblock %}
