@@ -24,7 +24,7 @@
 <!-- End Hero -->
 
 <!-- About -->
-<div class="grid-container padding-vertical-2">
+<div class="grid-container padding-top-2">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 cell text-center">
       <div class="serif-bold text-uppercase letter-spacing--loose black">About {{entry.title}}</div>
@@ -39,42 +39,29 @@
 </div>
 <!-- End About -->
 
-<!-- Carousel -->
-{% if entry.carousel|length %}
-<div class="grid-x grid-padding-y align-center">
-  <div class="small-12 cell text-center">
-    {% include "_includes/blocks/carousel" %}
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-12 cell">
+      <div id="map" style="width: 100%; height: 50vh;"></div>
+    </div>
   </div>
 </div>
-{% endif %}
-<!-- End Carousel -->
 
-<!-- Recent Articles -->
-{% set tag = entry.brand %}
 
-{% set entries = craft
-.entries
-.section('articles')
-.relatedTo(tag)
-.all() %}
-
-{% if entries|length %}
-
-<div class="grid-x grid-padding-x grid-padding-y margin-top-2">
-  <div class="small-12 cell text-center">
-    <div class="section-header">Related Articles</div>
-  </div>
-</div>
+{% set order = craft.request.getParam('order', 'title asc')  %}
+{% set entries = entry.directory %}
 
 <div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
-    {% for entry in entries %}
-      {% include "_includes/blocks/article" %}
-    {% endfor %}
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-4">
+  {% for entry in entries %}
+    {% include "_includes/blocks/explore" %}
+  {% endfor %}
   </div>
 </div>
-{% endif %}
-<!-- End Recent Articles -->
+
+{% js %}
+{% include "_includes/scripts/map--street" %}
+{% endjs %}
 
 
 {% endblock %}
