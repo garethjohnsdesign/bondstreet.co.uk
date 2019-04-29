@@ -1,0 +1,29 @@
+<div class="cell">
+  <div class="excerpt">
+  
+    <!-- Tags -->
+{#
+    <div class="tags">
+      {% include "_includes/blocks/tags" %}
+    </div>
+#}
+    <!-- End Tags -->
+    
+    <!-- Image and Text -->
+    <a href="{{ entry.url}}" class="">
+    
+      {% set image = entry.thumb.one() %}
+      <div class="image--square" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}"{% endif %}>
+        <div class="content"></div>
+      </div>
+    
+      <div class="margin-top-1">
+      <h4>{{ entry.title}}</h4>
+      <div class="read-more">Learn More <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
+      </div>
+    
+    </a>
+    <!-- End Image and Text -->
+  
+  </div>
+</div>
