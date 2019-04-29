@@ -37,7 +37,7 @@
         <div class="show-for-small-only">
         <label>
           <select name="select-location" onchange="location = this.value;">
-           <option value="">Directory</option>
+           <option value="">{{ category.title }} Directory</option>
            {% for entry in entries %}
            <option value="{{ entry.url}}">{{ entry.title}}</option>
            {% endfor %}
