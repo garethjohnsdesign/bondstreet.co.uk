@@ -1,30 +1,19 @@
-{% extends "_layouts/site" %}
-
-{% block main %}
-
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-8 large-8 cell text-center">
-      <h1>Use the interactive map to explore {{category.title | lower}} on Bond Street</h1>
-    </div>
-  </div>
-</div>
-
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-8 large-8 cell text-center">
       <ul class="menu align-center explore-categories">
-        <li><a href="/explore" class="small sans-bold text-uppercase letter-spacing--loose">All</a></li>
-        {% nav menu in craft.categories.group('explore') %}
-          <li class="{{ menu.slug == category.slug ? 'active' }}"><a href="{{ menu.url }}" class="small sans-bold text-uppercase letter-spacing--loose ">{{ menu.title }}</a></li>
+        <li class="active"><a href="/explore" class="small sans-bold text-uppercase letter-spacing--loose">All</a></li>
+        {% nav category in craft.categories.group('explore') %}
+          <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
         {% endnav %}
       </ul>
     </div>
   </div>
 </div>
 
+
 {% set order = craft.request.getParam('order', 'title asc')  %}
-{% set entries = craft.entries.relatedTo(category).order(order) %}
+{% set entries = craft.entries.section('explore').order(order) %}
 
 <!-- Map -->
 <div class="grid-y medium-grid-frame margin-vertical-2">
@@ -44,20 +33,19 @@
         </div>
         
         <div class="show-for-medium">
-
           <div class="grid-x primary-background-colour">
             <div class="small-12 cell padding-1">
-            <h5 class="margin-bottom-0">{{ category.title }} Directory</h5>
+            <h5 class="margin-bottom-0">Directory</h5>
               <ul class="menu simple padding-top-1">
+                <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="lft asc">Most Popular</a></li>
                 <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="title asc">A-Z</a></li>
                 <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="title desc">Z-A</a></li>
-                <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="lft asc">Most Popular</a></li>
               </ul>
             </div>
           </div>
 
          {% for entry in entries %}
-         <div id="{{ entry.title | kebab }}" data-coordinates="{{ entry.location.lng }}, {{ entry.location.lat }}">
+         <div id="{{ entry.title | kebab}}" data-coordinates="{{ entry.location.lng }}, {{ entry.location.lat }}">
          <a href="{{ entry.url}}" class="map-entry">
           <h4>{{ entry.title }}</h4>
           <div class="text-uppercase tiny dark-gray">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
@@ -76,6 +64,10 @@
   </div>
 </div>
 <!-- End Map -->
+
+
+
+
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y">
@@ -100,13 +92,15 @@
     <div class="small-12 medium-6 large-shrink cell">
       <ul class="menu">
         <li class="menu-text text-uppercase small sans-bold text-uppercase letter-spacing--loose">Filter</li>
+        <li {% if order == 'lft asc' %}class="active"{% endif %}><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose active" data-filter="lft asc">Most Popular</a></li>
         <li {% if order == 'title asc' %}class="active"{% endif %}><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose" data-filter="title asc">A-Z</a></li>
         <li {% if order == 'title desc' %}class="active"{% endif %}><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose" data-filter="title desc">Z-A</a></li>
-        <li {% if order == 'lft asc' %}class="active"{% endif %}><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose active" data-filter="lft asc">Most Popular</a></li>
       </ul>
     </div>
   </div>
 </div>
+
+
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-4">
@@ -127,5 +121,3 @@ $(".filter-simple-button").click(function() {
   document.location.href = '{{ craft.request.getUrl() }}?order=' + filter;
 });
 {% endjs %}
-
-{% endblock %}

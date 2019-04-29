@@ -49,9 +49,9 @@
             <div class="small-12 cell padding-1">
             <h5 class="margin-bottom-0">Directory</h5>
               <ul class="menu simple padding-top-1">
-                <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="lft asc">Most Popular</a></li>
                 <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="title asc">A-Z</a></li>
                 <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="title desc">Z-A</a></li>
+                <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="lft asc">Most Popular</a></li>
               </ul>
             </div>
           </div>
@@ -85,8 +85,10 @@
   <div class="grid-x grid-padding-x grid-padding-y">
     <div class="small-12 cell">
 
-    {% set categoriesGroup = entries|group('title|slice(0, 
-    1)|replace("/[^a-zA-Z]/", "0-9") | upper') %}
+    {% set alphabeticalEntries = craft.entries.section('explore').order('title asc') %}
+    {% set categoriesGroup = alphabeticalEntries|group('title|slice(0, 
+1)|replace("/[^a-zA-Z]/", "0-9") | upper') %}
+
     <ul class="menu align-center">
     {% for letter, categoriesInGroup in categoriesGroup %}
     <li><a href="">{{ letter }}</a></li>
