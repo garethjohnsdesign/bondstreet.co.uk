@@ -41,5 +41,15 @@ return [
       // When transforming external images, Imager might have to download the external file to be
       // able to figure out what the size of the transformed file is. Disable for even better performance.
       'imgixGetExternalImageDimensions' => true,
+
+      'storages' => ['gcs'],
+      'storageConfig' => [
+          'gcs' => [
+              'keyFile' => '/assets/key/natural-nimbus-235813-b4926ee8d86b.json',
+              'bucket' => 'bond-street',
+              'folder' => '',
+          ]
+            
+      ]
  
 ];
