@@ -11,7 +11,7 @@
     <a href="{{ entry.url}}" class="">
     
       {% set image = entry.image.one() %}
-      <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}"{% endif %}>
+      <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/contained/16-9/interchange-img-small-12-medium-12" %}"{% endif %}>
         <div class="grid-y height-100 align-right align-bottom content">
 
         {% set videoBlock = entry.article.type('video').one() %}
