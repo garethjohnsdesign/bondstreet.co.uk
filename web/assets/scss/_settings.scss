@@ -510,8 +510,10 @@ $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
-$input-background: $white;
+// $input-background: $white;
+$input-background: transparent;
 $input-background-focus: $white;
+$input-background-focus: transparent;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $medium-gray;
 $input-border-focus: 1px solid $dark-gray;
@@ -582,11 +584,10 @@ $offcanvas-sizes: (
 );
 $offcanvas-vertical-sizes: (
 //   small: 250px,
-  small: 75px,
-  medium: 125px,
+  small: 100vh,
 );
 // $offcanvas-background: $light-gray;
-$offcanvas-background: $body-background;
+$offcanvas-background: get-color(tietary);
 // $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-shadow: 0;
 // $offcanvas-inner-shadow-size: 20px;

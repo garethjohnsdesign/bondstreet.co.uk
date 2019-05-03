@@ -525,12 +525,16 @@ border-radius: 0;
 outline: none;
 border: 0px;
 border-bottom: 1px solid black;
-background-color: #FFFFFF;
+background: transparent;
 box-shadow: 0;
 transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 -webkit-border-radius:0px;
 -webkit-appearance:none;
 border-radius: 0;
+}
+
+.search .icon {
+  font-size: 2rem;
 }
 
 .read-more {
