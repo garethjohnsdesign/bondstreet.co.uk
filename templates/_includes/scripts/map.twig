@@ -4,7 +4,7 @@ mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
 var map = new mapboxgl.Map({
 container: "map",
 style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1",
-zoom: 15,
+zoom: 16,
 center: [
 -0.144,
 51.512
@@ -63,7 +63,7 @@ map.on('load', function () {
         data: places
       },
       layout: {
-        'icon-image': 'location',
+        'icon-image': 'marker-15',
         'icon-size': 1,
         'icon-allow-overlap': true,
       }
