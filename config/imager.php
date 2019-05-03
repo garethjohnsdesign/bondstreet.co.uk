@@ -2,6 +2,8 @@
 
 return [
 
+      'useForCpThumbs' => true,
+
       'transformer' => 'imgix',
 
       'imagerUrl' => 'http://storage.googleapis.com/bond-street/',
