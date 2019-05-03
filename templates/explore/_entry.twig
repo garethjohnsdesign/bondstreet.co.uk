@@ -107,9 +107,9 @@
           {% if entry.openingHours|length %}
             {% set today = entry.openingHours.today %}
             {% if today.isBlank %}
-                <div class="small sans-bold text-uppercase letter-spacing--loose black">Closed Now</div>
+                <div class="small sans-bold text-uppercase letter-spacing--loose black">Closed Today</div>
             {% else %}
-                <div class="small sans-bold text-uppercase letter-spacing--loose black">Open Now</div>
+                <div class="small sans-bold text-uppercase letter-spacing--loose black">Open Today</div>
             {% endif %}
           {% endif %}
         </div>
