@@ -28,7 +28,7 @@
 
     <div class="hide-for-large"><button data-toggle="offCanvasMenu" class="button clear navigation"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></button></div>
 
-    <ul class="dropdown menu show-for-large" data-dropdown-menu>
+    <ul class="dropdown menu show-for-large" data-dropdown-menu data-click-open="true">
       <li class="margin-right-1{% if craft.request.getUrl() == siteUrl %} active {% endif %}"><a href="{{ siteUrl }}">Home</a></li>
     {% for item in primaryNav %}
         {% if not item.level2 %}
@@ -38,7 +38,7 @@
             {% if childrenOfThisItem|length %}
                 <li class="is-dropdown-submenu-parent margin-horizontal-1{% if item.link == craft.app.request.segments|first %} active {% endif %}">
                     <a href="{{ siteUrl }}{{ item.link }}">{{ item.label }}</a>
-                    <ul class="menu">
+                    <ul class="menu vertical">
                         {% for child in childrenOfThisItem %}
                             <li><a href="{{ siteUrl }}{{ child.link }}">{{ child.label }}</a></li>
                         {% endfor %}

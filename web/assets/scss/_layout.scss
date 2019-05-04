@@ -697,3 +697,41 @@ background: $secondary-color;
 .navigation__right .menu a {
 padding: 0.5rem 0.5rem;
 }
+
+
+.dropdown.menu>li.opens-right>.is-dropdown-submenu {
+top: 100%;
+right: auto;
+left: 0;
+width: 900px;
+padding-top: 0.5rem;
+}
+
+.dropdown.menu>li.opens-left>.is-dropdown-submenu {
+top: 100%;
+right: auto;
+left: 0;
+width: 900px;
+padding-top: 0.5rem;
+}
+
+.dropdown .is-dropdown-submenu a {
+padding: 0.7rem 0.7rem;
+}
+
+.dropdown .is-dropdown-submenu a {
+display: inline;
+width: 900px;
+}
+
+.is-dropdown-submenu>li {
+width: 200px;
+display: inline;
+}
+
+.is-dropdown-submenu-parent.opens-inner>.is-dropdown-submenu {
+top: 100%;
+left: auto;
+width: 900px;
+padding-top: 0.5em;
+}
