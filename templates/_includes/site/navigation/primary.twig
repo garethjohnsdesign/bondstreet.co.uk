@@ -28,7 +28,7 @@
 
     <div class="hide-for-large"><button data-toggle="offCanvasMenu" class="button clear navigation"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></button></div>
 
-    <ul class="dropdown menu show-for-large" data-dropdown-menu data-click-open="true">
+    <ul class="dropdown menu show-for-large" data-dropdown-menu>
       <li class="margin-right-1{% if craft.request.getUrl() == siteUrl %} active {% endif %}"><a href="{{ siteUrl }}">Home</a></li>
     {% for item in primaryNav %}
         {% if not item.level2 %}
