@@ -3,6 +3,13 @@
 {% set asset = seo.seoImage.one() %}
 {% set seoImage = craft.imager.transformImage(asset, { width: 1200, height: 630, dpr: 1, position: asset.getFocalPoint() }) %}
 
+{# Tell the browser to cache this page for 30 days #}
+{% set expiry = now|date_modify('+1 days') %}
+
+{% header "Cache-Control: max-age=" ~ (expiry.timestamp - now.timestamp) %}
+{% header "Pragma: cache" %}
+{% header "Expires: " ~ expiry|date('D, d M Y H:i:s', 'GMT') ~ " GMT" %}
+
 {%- minify -%}
 <!DOCTYPE html>
 <html lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js" dir="ltr">
