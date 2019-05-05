@@ -18,7 +18,7 @@
 <meta property="og:url" content="{{ craft.app.request.absoluteUrl }}">
 <meta property="og:site_name" content="{{ siteName }}">
 
-<meta property="og:image" content="{{images.domain}}{% if seoImage is defined %}{{ seoImage }}{% else %}{{ seoImage }}{% endif %}">
+<meta property="og:image" content="{% if image is defined %}{{ image }}{% else %}{{ seoImage }}{% endif %}">
 <!-- Next tags are optional but recommended -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
