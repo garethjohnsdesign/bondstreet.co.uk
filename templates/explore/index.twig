@@ -3,6 +3,11 @@
 {% set title = "Explore" %}
 {% set description = "Use the interactive map to explore Bond Street" %}
 
+{% block head_map %}
+<!-- Mapbox -->
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js"></script>
+<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css" rel="stylesheet" />
+{% endblock %}
 
 {% block main %}
 
@@ -126,11 +131,11 @@
   </div>
 </div>
 
-{% js %}
+{% js at endBody %}
 {% include "_includes/scripts/map" %}
 {% endjs %}
 
-{% js %}
+{% js at endBody %}
 $(".filter-simple-button").click(function() {
   var filter = $(this).attr('data-filter');
   

@@ -3,7 +3,7 @@ mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
 /* Map: This represents the map on the page. */
 var map = new mapboxgl.Map({
 container: "map",
-style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1",
+style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1?optimize=true",
 zoom: 15,
 center: [
 {{ entry.location.lng }},
