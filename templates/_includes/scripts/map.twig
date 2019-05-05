@@ -1,3 +1,4 @@
+{% minify js %}
 mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
  
 /* Map: This represents the map on the page. */
@@ -139,3 +140,5 @@ easing: function (t) {
 {% endfor %}
 
 });
+
+{% endminify %}

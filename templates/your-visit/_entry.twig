@@ -1,4 +1,4 @@
 {% set title = entry.title %}
-{% set description = entry.description %}
+{% set description = entry.description |striptags|slice(0, 120) %}
 
 {% include "your-visit/_types/" ~ entry.type %}

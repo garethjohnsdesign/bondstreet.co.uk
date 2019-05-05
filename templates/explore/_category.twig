@@ -1,6 +1,7 @@
 {% extends "_layouts/site" %}
 
 {% set title = category.title %}
+{% set description = category.description |striptags|slice(0, 120) %}
 
 {% block head_map %}
 <!-- Mapbox -->
@@ -13,7 +14,7 @@
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-8 large-8 cell text-center">
-      <h1>Use the interactive map to explore {{category.title | lower}} on Bond Street</h1>
+      <h1>{{category.description |striptags}}</h1>
     </div>
   </div>
 </div>

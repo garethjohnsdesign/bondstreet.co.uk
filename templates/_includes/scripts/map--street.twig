@@ -1,3 +1,4 @@
+{% minify js %}
 mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
  
 /* Map: This represents the map on the page. */
@@ -61,3 +62,4 @@ map.on('load', function () {
     }); 
 
 });
+{% endminify %}
