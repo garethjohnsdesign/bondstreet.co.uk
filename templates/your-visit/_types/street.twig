@@ -1,5 +1,10 @@
 {% extends "_layouts/site" %}
 
+{% set title = entry.title %}
+{% set description = entry.description |striptags|slice(0, 120) %}
+{% set asset = entry.image.first() %}
+{% set image = craft.imager.transformImage(asset, { width: 1200, height: 630, dpr: 1, position: asset.getFocalPoint() }) %}
+
 {% block head_map %}
 <!-- Mapbox -->
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js"></script>
