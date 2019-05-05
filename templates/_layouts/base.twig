@@ -44,11 +44,13 @@
     
     <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
 
+    {% include "_includes/site/analytics" %}
+    {% include "_includes/site/scripts" %}
+
+    <!-- Mapbox -->
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js"></script>
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css" rel="stylesheet" />
     
-    {% include "_includes/site/analytics" %}
-    {% include "_includes/site/scripts" %}
 
 	{% endblock %}
 </head>
