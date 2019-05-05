@@ -2,6 +2,7 @@
 {% set seoDescription = seo.seoDescription %}
 {% set seoImage = seo.seoImage.one().filename %}
 
+{%- minify -%}
 <!DOCTYPE html>
 <html lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js" dir="ltr">
 <head>
@@ -58,3 +59,4 @@
 	{% block body %}{% endblock %}
 	</body>
 </html>
+{%- endminify -%}
