@@ -312,7 +312,6 @@ $max_font: 200px;
   height: 100vh;
   background-size: cover; 
   background-position: 50%;
-  background-color: $primary-color;
 }
 
 .image--explore {
@@ -323,6 +322,10 @@ $max_font: 200px;
  .content {
   background-color: rgba($black, 0.2);
   }
+}
+
+.site__hero {
+z-index: 0;
 }
 /*
 .image--hero {
@@ -687,6 +690,7 @@ background: $secondary-color;
   min-width: 100%; 
   min-height: 100%;
   z-index: -1;
+  background-color: $primary-color;
 }
 
 .carousel--matrix .swiper-slide {
