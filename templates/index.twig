@@ -12,9 +12,15 @@
     <div class="image--hero align-center-middle" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}{% endif %}">
 
       <div class="grid-y grid-padding-x height-100 align-center content">
-        <div class="shrink cell text-center white">
-          <svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg>
-          <h5 class="sans-regular white padding-vertical-1">The home of luxury shopping in London</h5>
+        <div class="shrink cell">
+
+          <div class="grid-x">
+            <div class="small-12 cell text-center white">
+            <svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg>
+            <h5 class="sans-regular white padding-vertical-2">The home of luxury shopping in London</h5>
+            </div>
+          </div>
+
         </div>
       </div>
 

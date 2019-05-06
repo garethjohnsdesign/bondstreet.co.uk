@@ -178,6 +178,11 @@ html.is-animating .swup-transition-color {
   @include links($medium-gray, $primary-color)
 }
 
+.light-gray {
+  color: $light-gray;
+  @include links($light-gray, $primary-color)
+}
+
 .black {
   color: $black;
   @include links($black, $primary-color)

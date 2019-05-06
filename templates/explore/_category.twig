@@ -86,17 +86,26 @@
 </div>
 <!-- End Map -->
 
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y">
+<div class="grid-container show-for-large">
+  <div class="grid-x grid-padding-x">
     <div class="small-12 cell">
 
-    {% set alphabeticalEntries = craft.entries.section('explore').order('title asc') %}
-    {% set categoriesGroup = alphabeticalEntries|group('title|slice(0, 
-1)|replace("/[^a-zA-Z]/", "0-9") | upper') %}
-
+    {% set range = range('a','z') %}
+    {% set alphabeticalEntries = entries.order('title asc') %}
+    {% set categoriesGroup = alphabeticalEntries|group('title|slice(0, 1)|replace("/[^a-zA-Z]/", "0-9") | lower') %}
+    
     <ul class="menu align-center">
-    {% for letter, categoriesInGroup in categoriesGroup %}
-    <li><a href="">{{ letter }}</a></li>
+    {% for l in range %}
+      {% set letter_found = 0 %}
+      {% for letter, categoriesInGroup in categoriesGroup %}
+       {% if l == letter %}
+          <li><button type="button" class="clear button filter-testing-button small sans-bold text-uppercase letter-spacing--loose" data-filter="letter-{{ letter }}">{{ letter }}</button></li>
+          {% set letter_found = 1 %}
+        {% endif %}
+      {% endfor %}
+      {% if letter_found == 0 %}
+        <li><button type="button" class="clear button disabled small sans-bold text-uppercase letter-spacing--loose light-gray" disabled>{{ l }}</button></li>
+      {% endif %}
     {% endfor %}
     </ul>
 
@@ -125,15 +134,25 @@
   </div>
 </div>
 
-{% js %}
+{% js at endBody %}
 {% include "_includes/scripts/map" %}
 {% endjs %}
 
-{% js %}
+{% js at endBody %}
 $(".filter-simple-button").click(function() {
   var filter = $(this).attr('data-filter');
   
   document.location.href = '{{ craft.request.getUrl() }}?order=' + filter;
+});
+
+$(".filter-testing-button").click(function() {
+  var value = $(this).attr('data-filter');
+  if(value === "all") {
+    $('.filter-simple-item').show('1000');
+  } else {
+    $(".filter-simple-item").not('.'+value).hide('0');
+    $('.filter-simple-item').filter('.'+value).show('0');
+  }
 });
 {% endjs %}
 
