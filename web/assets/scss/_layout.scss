@@ -287,14 +287,14 @@ $max_font: 200px;
   }
   background-size: cover; 
   background-position: 50%;
-  background-color: $medium-gray;
+  background-color: $primary-color;
 }
 
 .image--default {
   @include aspect-ratio (7, 5);
   background-size: cover; 
   background-position: 50%;
-  background-color: $medium-gray;
+  background-color: $primary-color;
 }
 
 .image--panorama {
