@@ -59,7 +59,7 @@
     <div class="grid-x grid-padding-y align-center">
       <div class="small-12 {% if matrixBlock.aspectRatio.label | kebab == 'portrait' %}medium-6{% endif %} cell">
       {% set image = matrixBlock.image.one() %}
-       <div class="image--{{ matrixBlock.aspectRatio.label | kebab }}" {% if image %}data-interchange="{% include "_includes/images/contained/5-7/interchange-img-small-12-medium-12" %}"{% endif %}></div>
+       <div class="image--{{ matrixBlock.aspectRatio.label | kebab }}" {% if image %}data-interchange="{% include "_includes/images/contained/{% if matrixBlock.aspectRatio.label | kebab == 'default' %}7-5{% elseif matrixBlock.aspectRatio.label | kebab == 'square' %}1-1{% elseif matrixBlock.aspectRatio.label | kebab == 'portrait' %}5-7{% elseif matrixBlock.aspectRatio.label | kebab == 'panorama' %}16-9{% else %}7-5{% endif %}/interchange-img-small-12-medium-12" %}"{% endif %}></div>
        {% if matrixBlock.caption %}<div class="caption">{{ matrixBlock.caption }}</div>{% endif %}
       </div>
     </div>
@@ -67,7 +67,7 @@
     <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
       <div class="small-12 {% if matrixBlock.aspectRatio.label | kebab == 'portrait' %}medium-6{% else %}medium-10{% endif %} cell">
       {% set image = matrixBlock.image.one() %}
-      <div class="image--{{ matrixBlock.aspectRatio.label | kebab }}" {% if image %}data-interchange="{% include "_includes/images/contained/5-7/interchange-img-small-12-medium-12" %}"{% endif %}></div>
+      <div class="image--{{ matrixBlock.aspectRatio.label | kebab }}" {% if image %}data-interchange="{% include "_includes/images/contained/{% if matrixBlock.aspectRatio.label | kebab == 'default' %}7-5{% elseif matrixBlock.aspectRatio.label | kebab == 'square' %}1-1{% elseif matrixBlock.aspectRatio.label | kebab == 'portrait' %}5-7{% elseif matrixBlock.aspectRatio.label | kebab == 'panorama' %}16-9{% else %}7-5{% endif %}/interchange-img-small-12-medium-12" %}"{% endif %}></div>
       {% if matrixBlock.caption %}<div class="caption">{{ matrixBlock.caption }}</div>{% endif %}
       </div>
     </div>
