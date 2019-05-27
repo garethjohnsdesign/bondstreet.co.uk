@@ -113,6 +113,14 @@
 		"oAP": "/config/minify.php",
 		"oF": 0
 		},
+	"/config/redactor/Custom.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/config/redactor/Custom-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/config/redactor/Simple.json": {
 		"ft": 524288,
 		"oA": 1,
