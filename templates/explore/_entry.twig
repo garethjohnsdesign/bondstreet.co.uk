@@ -111,6 +111,7 @@
     <div class="small-12 medium-6 cell">
     <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Opening Hours</div>
 
+{#
       <div class="grid-x grid-padding-x padding-vertical-1">
         <div class="small-12 cell">
           {% if entry.openingHours|length %}
@@ -123,6 +124,7 @@
           {% endif %}
         </div>
       </div>
+#}
 
 
     {% for day in entry.openingHours %}
