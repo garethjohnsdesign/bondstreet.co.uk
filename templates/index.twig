@@ -4,45 +4,53 @@
 
 
 <!-- Video Hero -->
-<section class="site__hero">
-<div class="grid-x">
-  <div class="small-12 cell text-center">
+{% set image = entry.image.first() %}
+<div class="image--hero align-center-middle" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}{% endif %}">
 
-    {% set image = entry.image.first() %}
-    <div class="image--hero align-center-middle" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}{% endif %}">
+  <div class="grid-y grid-padding-x height-100 align-center content">
+    <div class="shrink cell">
 
-      <div class="grid-y grid-padding-x height-100 align-center content">
-        <div class="shrink cell">
-
-          <div class="grid-x">
-            <div class="small-12 cell text-center white">
-            <svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg>
-            {% if entry.description | length %}
-            <h5 class="sans-regular white padding-vertical-2">{{ entry.description }}</h5>
-            {% endif %}
-            </div>
-          </div>
-
+      <div class="grid-x">
+        <div class="small-12 cell text-center white">
+        <svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg>
+        {% if entry.description | length %}
+        <h5 class="sans-regular white padding-vertical-2">{{ entry.description }}</h5>
+        {% endif %}
         </div>
       </div>
 
-      {% if entry.videoBackground | length %}
-        {% set video = entry.videoBackground.first() %}
-        <video playsinline autoplay muted loop class="video" poster="{{images.domain}}{{ image.filename }}">
-          <source src="http://storage.googleapis.com/bond-street/{{ video.filename }}" type="video/mp4">
-        </video>
-      {% endif %}
+    </div>
+  </div>
 
+  {% if entry.videoBackground | length %}
+    {% set video = entry.videoBackground.first() %}
+    <video playsinline autoplay muted loop class="video" poster="{{images.domain}}{{ image.filename }}">
+      <source src="http://storage.googleapis.com/bond-street/{{ video.filename }}" type="video/mp4">
+    </video>
+  {% endif %}
+
+
+  <div class="grid-y grid-padding-x height-100 align-right scrollarrow">
+    <div class="shrink cell">
+
+      <div class="grid-x padding-vertical-2">
+        <div class="small-12 cell text-center white">
+        <svg class="icon icon-arrow-down"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-down"></use></svg>
+        </div>
+      </div>
 
     </div>
-
   </div>
+
+
+
+
+
 </div>
-</section>
 <!-- End Video Hero -->
 
 <!-- Container -->
-<div class="grid-container">
+<div class="grid-container" id="page__content">
 
   <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
     <div class="small-12 cell text-center">
