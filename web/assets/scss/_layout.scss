@@ -312,7 +312,7 @@ $max_font: 200px;
   background-position: 50%;
  .scrollarrow {
     transition: $primary-transition;
-    z-index: 10;
+    z-index: 2;
     position: absolute;
     top: 0;
     left: 0;
@@ -330,6 +330,17 @@ $max_font: 200px;
   background-color: $primary-color;
  .content {
   background-color: rgba($black, 0.2);
+  }
+ .scrollarrow {
+    transition: $primary-transition;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
   }
 }
 

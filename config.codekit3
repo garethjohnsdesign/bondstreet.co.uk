@@ -228,6 +228,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/smooth-scroll/dist/smooth-scroll.polyfills-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/node_modules/swiper/dist/js/swiper.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1241,6 +1252,16 @@
 		"oAP": "/web/assets/fonts/maison-neue-book.woff2",
 		"oF": 0
 		},
+	"/web/assets/icons/symbol-defs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/icons/symbol-defs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/web/assets/img/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1262,25 +1283,14 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/web/assets/js/app-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/web/assets/js/app-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/web/assets/js/app.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/web/assets/js/app-min.js",
-		"oF": 0,
+		"oAP": "/web/assets/js/min/app-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
