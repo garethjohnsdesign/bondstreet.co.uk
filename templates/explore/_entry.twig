@@ -92,7 +92,7 @@
 
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     <div class="small-12 medium-10 cell text-center">
-    {{entry.description}}
+    <h6 class="sans-regular dark-gray">{{entry.description}}</h5>
     </div>
   </div>
 </div>
@@ -111,7 +111,6 @@
     <div class="small-12 medium-6 cell">
     <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Opening Hours</div>
 
-{#
       <div class="grid-x grid-padding-x padding-vertical-1">
         <div class="small-12 cell">
           {% if entry.openingHours|length %}
@@ -124,7 +123,6 @@
           {% endif %}
         </div>
       </div>
-#}
 
 
     {% for day in entry.openingHours %}
@@ -172,14 +170,14 @@
         <a href="https://www.google.com/maps/search/?api=1&query={{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }} " target="_blank">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</a>
       </div>
 
-    {% if entry.phone|length or entry.website|length or entry.email|length  %}
-    <div class="small-12 medium-4 cell text-center">
-      <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Contact</div>
-      {% if entry.phone|length %}<div><a href="tel:{{entry.phone}}">{{ entry.phone }}</a></div>{% endif %} 
-      {% if entry.website|length %}<div><a href="{{entry.website}}">{{ entry.website |replace({'https://': '', 'www.': '', '/': ''})}}</a></div>{% endif %}
-      {% if entry.email|length %}<div><a href="mailto:{{entry.email}}">{{ entry.email }}</a></div>{% endif %}
-    </div>
-    {% endif %} 
+      {% if entry.phone|length or entry.website|length or entry.email|length  %}
+      <div class="small-12 medium-4 cell text-center">
+        <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Contact</div>
+        {% if entry.phone|length %}<div><a href="tel:{{entry.phone}}"><svg class="icon icon-phone"><use xlink:href="/assets/icons/symbol-defs.svg#icon-phone"></use></svg> {{ entry.phone }}</a></div>{% endif %} 
+        {% if entry.website|length %}<div><a href="{{entry.website}}"><svg class="icon icon-external-link"><use xlink:href="/assets/icons/symbol-defs.svg#icon-external-link"></use></svg> {{ entry.website |replace({'https://': '', 'www.': '', '/': ''})}}</a></div>{% endif %}
+        {% if entry.email|length %}<div><a href="mailto:{{entry.email}}"><svg class="icon icon-mail"><use xlink:href="/assets/icons/symbol-defs.svg#icon-mail"></use></svg> {{ entry.email }}</a></div>{% endif %}
+      </div>
+      {% endif %} 
     
     {% if entry.socials|length %}
     <div class="small-12 medium-4 cell text-center">
