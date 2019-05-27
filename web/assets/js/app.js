@@ -1,3 +1,11 @@
+// @codekit-prepend "/node_modules/jquery/dist/jquery.js";
+// @codekit-prepend "/node_modules/foundation-sites/dist/js/foundation.js";
+// @codekit-prepend "/node_modules/motion-ui/dist/motion-ui.js";
+// @codekit-prepend "/node_modules/what-input/dist/what-input.js";
+// @codekit-prepend "/node_modules/swiper/dist/js/swiper.js";
+// @codekit-prepend "/node_modules/lightgallery/dist/js/lightgallery-all.js";
+// @codekit-prepend "/node_modules/aos/dist/aos.js";
+
 $(document).ready(function() {
 
 // 1. Foundation

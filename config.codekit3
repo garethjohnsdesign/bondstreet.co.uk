@@ -41,20 +41,6 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
-	"/bower.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/bower-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/bower_components": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/bower_components",
-		"oF": 0
-		},
 	"/composer.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -172,6 +158,97 @@
 		"oA": 1,
 		"oAP": "/build/modules",
 		"oF": 0
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/node_modules/aos/dist/aos.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/aos/dist/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/foundation-sites/dist/js/foundation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/foundation-sites/dist/js/foundation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/jquery/dist/jquery.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/jquery/dist/jquery-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/lightgallery/dist/js/lightgallery-all.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/lightgallery/dist/js/lightgallery-all-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/motion-ui/dist/motion-ui.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/motion-ui/dist/motion-ui-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/swiper/dist/js/swiper.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/swiper/dist/js/swiper-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/what-input/dist/what-input.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/what-input/dist/what-input-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/README.md": {
 		"cB": 0,
@@ -1186,6 +1263,17 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/web/assets/js/app-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/assets/js/app-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/web/assets/js/app.js": {
 		"bF": 0,
@@ -2509,7 +2597,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/web/assets/scss/hamburgers/hamburgers.css",
 		"oF": 0,
 		"oS": 0,
@@ -2925,6 +3013,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/web/web.config",
+		"oF": 0
+		},
+	"/yarn.lock": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/yarn.lock",
 		"oF": 0
 		}
 	},
