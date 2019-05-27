@@ -5,38 +5,24 @@
       <li class="padding-horizontal-1">
         <a href="/events">
           <h4>All</h4>
-          {% set allEventsCount = craft.entries.section('events').count() %}
-          <h6 class="sans-regular medium-gray">{{ allEventsCount }} Events</h6>
         </a>
       </li>
 
       <li class="padding-horizontal-1">
         <a href="/events/this-month">
           <h4>This Month</h4>
-          {% set thisMonthEventsCount = craft.entries.section('events')
-              .eventStart (['and',  ">= #{now | date_modify('first day of this month') | atom}", "<= #{now | date_modify('last day of this month') | atom}"])
-              .count() %}
-          <h6 class="sans-regular medium-gray">{{ thisMonthEventsCount }} Events</h6>
         </a>
       </li>
 
       <li class="padding-horizontal-1">
         <a href="/events/next-month">
           <h4>Next Month</h4>
-          {% set nextMonthsEventsCount = craft.entries.section('events')
-              .eventStart (['and',  "> #{now | date_modify('last day of this month') | atom}", "<= #{now | date_modify('last day of next month') | atom}"])
-              .count() %}
-          <h6 class="sans-regular medium-gray">{{ nextMonthsEventsCount }} Events</h6>
         </a>
       </li>
 
       <li class="padding-horizontal-1">
         <a href="/events/after-that">
           <h4>After That</h4>
-          {% set afterThatEventsCount = craft.entries.section('events')
-              .eventStart (">= #{now | date_modify('last day of next month') | atom}"	)
-              .count() %}
-          <h6 class="sans-regular medium-gray">{{ afterThatEventsCount }} Events</h6>
         </a>
       </li>
 
