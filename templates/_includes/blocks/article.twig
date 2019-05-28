@@ -8,7 +8,7 @@
     <!-- End Tags -->
     
     <!-- Image and Text -->
-    <a href="{{ entry.url}}" class="">
+    <a {% if entry.noLink %}href="#" onclick="return false;"{% else %}href="{{ entry.url}}"{% endif %}>
     
       {% set image = entry.image.one() %}
       <div class="image--square" {% if image %}data-interchange="{% include "_includes/images/contained/1-1/interchange-img-small-12-medium-4" %}"{% endif %}>
@@ -26,8 +26,15 @@
     
       <div class="margin-top-1">
       <h4>{{ entry.title}}</h4>
+      {% if entry.noLink %}
+      <p>{{ entry.description |striptags }}</p>
+      {% else %}
       <p>{{ entry.description |striptags|slice(0,100)|default('Read more') }}...</p>
+      {% endif %}
+
+      {% if not entry.noLink %}
       <div class="read-more">Read More <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
+      {% endif %}
       </div>
     
     </a>

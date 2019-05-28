@@ -14,7 +14,7 @@
       <!-- End Tags -->
       
       <!-- Image and Text -->
-      <a href="{{ entry.url}}" class="">
+      <a {% if entry.noLink %}href="#" onclick="return false;"{% else %}href="{{ entry.url}}"{% endif %}>
         {% set image = entry.image.one() %}
         <div class="image--default" {% if image %}data-interchange="{% include "_includes/images/contained/5-7/interchange-img-small-12-medium-4" %}"{% endif %}>
           <div class="content"></div>
@@ -28,12 +28,16 @@
 
   <div class="small-12 medium-7 cell small-order-2 {% if loop.index is even %}medium-order-1{% endif %} white-background-colour">
     <div class="excerpt padding-2">
-    <a href="{{ entry.url}}">
+    <a {% if entry.noLink %}href="#" onclick="return false;"{% else %}href="{{ entry.url}}"{% endif %}>
     <h5 class="medium-gray">{{ entry.eventStart|date("j F")}} — {{ entry.eventEnd|date("j F")}}</h5>
     <h4>{{ entry.title}}</h4>
     <p>{{ entry.description |striptags |default('Read more') }}</p>
 
+    {% if not entry.noLink %}
     <div class="read-more">{% if entry.customMoreText|length %}{{ entry.customMoreText }}{% else %}Learn More{% endif %} <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
+    {% endif %}
+
+
     </a>
     </div>
   </div>
