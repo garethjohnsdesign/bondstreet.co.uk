@@ -32,7 +32,8 @@
     <h5 class="medium-gray">{{ entry.eventStart|date("j F")}} — {{ entry.eventEnd|date("j F")}}</h5>
     <h4>{{ entry.title}}</h4>
     <p>{{ entry.description |striptags |default('Read more') }}</p>
-    <div class="read-more">Learn More <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
+
+    <div class="read-more">{% if entry.customMoreText|length %}{{ entry.customMoreText }}{% else %}Learn More{% endif %} <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
     </a>
     </div>
   </div>
