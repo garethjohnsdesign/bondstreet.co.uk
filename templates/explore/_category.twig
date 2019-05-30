@@ -59,7 +59,7 @@
             <h5 class="margin-bottom-0">{{ category.title }} Directory</h5>
               <ul class="menu simple padding-top-1">
                 <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="title asc">A-Z</a></li>
-                <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="title desc">Z-A</a></li>
+                <li><a class="tiny sans-bold text-uppercase letter-spacing--loose" data-toggle="offCanvasSearch"><svg class="icon icon-search-outline"><use xlink:href="/assets/icons/symbol-defs.svg#icon-search-outline"></use></svg></a></li>
                 <li><a class="filter-simple-button tiny sans-bold text-uppercase letter-spacing--loose" data-filter="lft asc">Most Popular</a></li>
               </ul>
             </div>
@@ -119,7 +119,7 @@
       <ul class="menu align-center">
         <li class="menu-text text-uppercase small sans-bold text-uppercase letter-spacing--loose">Filter</li>
         <li {% if order == 'title asc' %}class="active"{% endif %}><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose" data-filter="title asc">A-Z</a></li>
-        <li {% if order == 'title desc' %}class="active"{% endif %}><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose" data-filter="title desc">Z-A</a></li>
+        <li><a class="small sans-bold text-uppercase letter-spacing--loose" data-toggle="offCanvasSearch"><svg class="icon icon-search-outline"><use xlink:href="/assets/icons/symbol-defs.svg#icon-search-outline"></use></svg></a></li>
         <li {% if order == 'lft asc' %}class="active"{% endif %}><a class="filter-simple-button small sans-bold text-uppercase letter-spacing--loose active" data-filter="lft asc">Most Popular</a></li>
       </ul>
     </div>
