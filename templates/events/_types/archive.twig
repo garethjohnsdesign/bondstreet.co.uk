@@ -1,0 +1,21 @@
+{% extends "_layouts/site" %}
+
+{% set title = entry.title %}
+{% set description = entry.description |striptags|slice(0, 120) %}
+
+{% block main %}
+
+{% include "_includes/blocks/events--types" %}
+
+{% set thisMonthsEvents = craft.entries.section('events')
+.eventStart (['and',  ">= #{now | date_modify('first day of this month') | atom}", "<= #{now | date_modify('last day of this month') | atom}"])
+.order('eventStart asc')
+%}
+
+<div class="grid-container">
+  {% for entry in thisMonthsEvents %}
+    {% include "_includes/blocks/event" %}
+  {% endfor %}
+</div>
+
+{% endblock %}
