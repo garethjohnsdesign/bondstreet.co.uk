@@ -29,7 +29,11 @@
   <div class="small-12 medium-7 cell small-order-2 {% if loop.index is even %}medium-order-1{% endif %} white-background-colour">
     <div class="excerpt padding-2">
     <a {% if entry.noLink %}href="#" onclick="return false;"{% else %}href="{{ entry.url}}"{% endif %}>
-    <h5 class="medium-gray">{{ entry.eventStart|date("j F")}} — {{ entry.eventEnd|date("j F")}}</h5>
+{% if entry.eventStart|date("j F") == entry.eventEnd|date("j F") %}
+<h5 class="medium-gray">{{ entry.eventStart|date("j F")}} — {{ entry.eventStart|time("gA")}}</h5>
+{% else %}
+<h5 class="medium-gray">{{ entry.eventStart|date("j F")}} — {{ entry.eventEnd|date("j F")}}</h5>
+{% endif %}
     <h4>{{ entry.title}}</h4>
     <p>{{ entry.description }}</p>
 
