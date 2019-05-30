@@ -765,3 +765,22 @@ left: auto;
 width: 900px;
 padding-top: 0.5em;
 }
+
+.footer__subscribe {
+::placeholder {
+    color: $white;
+  }
+[type='email'] {
+border: 1px solid transparent;
+color: $white;
+}
+[type='email']:focus {
+border: 1px solid $white;
+color: $white;
+}
+label {
+color: $white;
+}
+}
+
+
