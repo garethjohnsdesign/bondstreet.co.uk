@@ -23,7 +23,7 @@
   <h1 class="hero white">{{entry.title}}</h1>
   <div class="white show-for-small-only">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
 
-  <div class="grid-x grid-padding-x padding-top-2 align-center show-for-large white show-for-xlarge">
+  <div class="grid-x grid-padding-x padding-top-2 align-center show-for-large white show-for-large">
     <div class="small-12 medium-4 cell text-center">
       <div class="small sans-bold text-uppercase letter-spacing--loose white padding-bottom-1">Address</div>
         <a href="https://www.google.com/maps/search/?api=1&query={{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }} " target="_blank">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</a>
