@@ -13,9 +13,8 @@
     <a href="{{ entry.url}}" class="">
     
       {% set image = entry.thumb.one() ?? entry.image.one() %}
-      <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/contained/5-7/interchange-img-small-12-medium-4" %}"{% endif %}>
-        <div class="content"></div>
-      </div>
+      <div class="image--default show-for-small-only" {% if image %}data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-4" %}"{% endif %}></div>
+      <div class="image--portrait show-for-medium" {% if image %}data-interchange="{% include "_includes/images/contained/5-7/interchange-img-small-12-medium-4" %}"{% endif %}></div>
     
       <div class="margin-top-1">
       <h4>{{ entry.title}}</h4>
