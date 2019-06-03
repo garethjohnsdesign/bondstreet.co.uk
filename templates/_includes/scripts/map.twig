@@ -52,6 +52,33 @@ enableHighAccuracy: true
 },
 trackUserLocation: true
 }));
+
+function forwardGeocoder(query) {
+var matchingFeatures = [];
+for (var i = 0; i < places.features.length; i++) {
+var feature = places.features[i];
+// handle queries with different capitalization than the source data by calling toLowerCase()
+if (feature.properties.description.toLowerCase().search(query.toLowerCase()) !== -1) {
+// add a tree emoji as a prefix for custom data results
+// using carmen geojson format: https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
+feature['place_name'] = feature.properties.description;
+feature['center'] = feature.geometry.coordinates;
+feature['place_type'] = ['park'];
+matchingFeatures.push(feature);
+}
+}
+return matchingFeatures;
+}
+
+var nav = new MapboxGeocoder({
+accessToken: mapboxgl.accessToken,
+localGeocoder: forwardGeocoder,
+zoom: 20,
+placeholder: "Enter search e.g. Gucci",
+mapboxgl: mapboxgl
+});
+
+map.addControl(nav, 'top-left');
  
 map.on('load', function () {
   // Add the data to your map as a layer
