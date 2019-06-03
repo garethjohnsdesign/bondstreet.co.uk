@@ -10,19 +10,33 @@
     <!-- End Tags -->
     
     <!-- Image and Text -->
-    <a href="{{ entry.url}}" class="">
+    <a href="{{ entry.url}}">
     
       {% set image = entry.thumb.one() ?? entry.image.one() %}
       <div class="image--default show-for-small-only" {% if image %}data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-4" %}"{% endif %}></div>
       <div class="image--portrait show-for-medium" {% if image %}data-interchange="{% include "_includes/images/contained/5-7/interchange-img-small-12-medium-4" %}"{% endif %}></div>
+
+    </a>
     
-      <div class="margin-top-1">
+
+<div class="grid-x margin-top-1 align-justify">
+<div class="auto cell">
+
+<a href="{{ entry.url}}">
       <h4>{{ entry.title}}</h4>
       <p>{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</p>
       <div class="read-more show-for-medium">Learn More <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
-      </div>
+</a>
+
+</div>
+
+<div class="shrink cell show-for-small-only">
+<a href="tel:{{entry.phone}}"><svg class="icon icon-phone"><use xlink:href="/assets/icons/symbol-defs.svg#icon-phone"></use></svg></a>
+</div>
+
+</div>
     
-    </a>
+
     <!-- End Image and Text -->
   
   </div>
