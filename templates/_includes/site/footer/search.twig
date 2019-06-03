@@ -7,20 +7,13 @@
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-8 large-8 cell">
+    <div class="small-12 medium-8 large-8 cell text-center">
       <ul class="vertical menu">
         {% nav category in craft.categories.group('explore') %}
           {% set entryCount = craft.entries.relatedTo(category).count() %}
           <li class="footer_search_link">
-            <a href="{{ category.url }}">
-              <div class="grid-x grid-padding-x grid-padding-y align-justify">
-                <div class="shrink cell h2">
-                  {{ category.title }}
-                </div>
-                <div class="shrink cell align-self-bottom h6 sans-regular">
-                  <div class="read-more">See More</div>
-                </div>
-              </div>
+            <a href="{{ category.url }}" class="h2">
+            {{ category.title }}
             </a>
           </li>
         {% endnav %}
