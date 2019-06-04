@@ -12,19 +12,23 @@
 
 <div class="grid-container">
 
-  <div class="grid-x grid-padding-x grid-padding-y">
+<!-- Title -->
+  <div class="grid-x grid-padding-x grid-padding-y" data-aos="fade-in">
     <div class="small-12 cell text-center">
       <h1>{{ entry.title }}</h1>
     </div>
   </div>
+<!-- End Title -->
 
 {% include "_includes/site/your-visit/menu" %}
 
-  <div class="grid-x grid-padding-x align-center">
+<!-- Description -->
+  <div class="grid-x grid-padding-x align-center" data-aos="fade-in">
     <div class="small-12 medium-10 cell text-center">
       <h6 class="sans-regular dark-gray">{{entry.description}}</h6>
     </div>
   </div>
+<!-- End Description -->
 
   <div class="grid-x grid-padding-x grid-padding-y align-center" data-equalizer>
 
@@ -33,7 +37,7 @@
 
       <div class="grid-x">
         {% for matrixBlock in entry.details %}
-        <div class="small-12 cell padding-bottom-1">
+        <div class="small-12 cell padding-bottom-1" data-aos="fade-in">
           <h4>{{ matrixBlock.header }}</h4>
           {{ matrixBlock.text | markdown }}
         </div>
@@ -50,7 +54,6 @@
     <!-- End Map -->
 
   </div>
-
 
 </div>
 
