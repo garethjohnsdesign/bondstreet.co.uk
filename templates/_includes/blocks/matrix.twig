@@ -3,13 +3,13 @@
     
     {% case "text" %}    
     {% if matrixBlock.position == 'full' %}
-    <div class="grid-x grid-padding-y">
+    <div class="grid-x grid-padding-y" data-aos="fade-in">
       <div class="small-12 cell">
         {{ matrixBlock.text | markdown }}
       </div>
     </div>
     {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
-    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}" data-aos="fade-in">
       <div class="small-12 medium-8 cell">
         {{ matrixBlock.text | markdown }}
       </div>
@@ -18,13 +18,13 @@
     
     {% case "heading" %}    
     {% if matrixBlock.position == 'full' %}
-    <div class="grid-x grid-padding-y">
+    <div class="grid-x grid-padding-y" data-aos="fade-in">
       <div class="small-12 cell">
         {{ matrixBlock.heading | markdown }}
       </div>
     </div>
     {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
-    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}" data-aos="fade-in">
       <div class="small-12 medium-9 cell">
         {{ matrixBlock.heading | markdown }}
       </div>
@@ -33,7 +33,7 @@
 
     {% case "quote" %}    
     {% if matrixBlock.position == 'full' %}
-    <div class="grid-x grid-padding-y">
+    <div class="grid-x grid-padding-y" data-aos="fade-in">
       <div class="small-12 cell">
         <blockquote>
           <h3>{{ matrixBlock.quote| markdown }}</h3>
@@ -43,7 +43,7 @@
       </div>
     </div>
     {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
-    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}" data-aos="fade-in">
       <div class="small-12 medium-9 cell">
         <blockquote>
           <h3>{{ matrixBlock.quote| markdown }}</h3>
@@ -56,7 +56,7 @@
     
     {% case "image" %}
     {% if matrixBlock.position == 'full' %}
-    <div class="grid-x grid-padding-y align-center">
+    <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
       <div class="small-12 {% if matrixBlock.aspectRatio.label | kebab == 'portrait' %}medium-6{% endif %} cell">
       {% set image = matrixBlock.image.one() %}
       <div class="image--{{ matrixBlock.aspectRatio.label | kebab }}" 
@@ -71,7 +71,7 @@
       </div>
     </div>
     {% elseif matrixBlock.position in ['left', 'right', 'center'] %}
-    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}">
+    <div class="grid-x grid-padding-y align-{{ matrixBlock.position }}" data-aos="fade-in">
       <div class="small-12 {% if matrixBlock.aspectRatio.label | kebab == 'portrait' %}medium-6{% else %}medium-10{% endif %} cell">
       {% set image = matrixBlock.image.one() %}
       <div class="image--{{ matrixBlock.aspectRatio.label | kebab }}" 
@@ -90,7 +90,7 @@
     
     {% case "portraitPair" %}
     {% if matrixBlock.position == 'left' %}
-    <div class="grid-x grid-padding-y align-center">
+    <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
       <div class="small-12 medium-5 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
@@ -104,7 +104,7 @@
       
       <div class="small-12 medium-5 cell align-self-middle">
         
-        <div class="grid-x grid-padding-y align-center">
+        <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
           <div class="small-12 medium-8 cell align-self-middle">
             {% set image = matrixBlock.images[1] %}
             <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}"{% endif %}></div>
@@ -114,7 +114,7 @@
       </div>
     </div>
     {% elseif matrixBlock.position == 'center' %}
-    <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="grid-x grid-padding-x grid-padding-y align-center" data-aos="fade-in">
       <div class="small-12 medium-5 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
@@ -128,7 +128,7 @@
       
       <div class="small-12 medium-5 cell align-self-middle">
         
-        <div class="grid-x grid-padding-y align-center">
+        <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
           <div class="small-12 medium-12 cell align-self-middle">
             {% set image = matrixBlock.images[1] %}
             <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}"{% endif %}></div>
@@ -138,10 +138,10 @@
       </div>
     </div>
     {% elseif matrixBlock.position == 'right' %}
-    <div class="grid-x grid-padding-y align-center">
+    <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
       <div class="small-12 medium-5 cell align-self-middle">
         
-        <div class="grid-x grid-padding-y align-center">
+        <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
           <div class="small-12 medium-8 cell align-self-middle">
             {% set image = matrixBlock.images[0] %}
             <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}"{% endif %}></div>
@@ -152,7 +152,7 @@
       
       <div class="small-12 medium-5 cell align-self-middle">
         
-        <div class="grid-x grid-padding-y align-center">
+        <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
           <div class="small-12 medium-10 cell align-self-middle">
             {% set image = matrixBlock.images[1] %}
             <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}"{% endif %}></div>
@@ -165,7 +165,7 @@
 
 
     {% case "portraitTrio" %}
-    <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="grid-x grid-padding-x grid-padding-y align-center" data-aos="fade-in">
       <div class="small-12 medium-4 cell align-self-middle">
         
         <div class="grid-x grid-padding-y align-center">
@@ -179,7 +179,7 @@
       
       <div class="small-12 medium-4 cell align-self-middle">
         
-        <div class="grid-x grid-padding-y align-center">
+        <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
           <div class="small-12 medium-12 cell align-self-middle">
             {% set image = matrixBlock.images[1] %}
             <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-4" %}"{% endif %}></div>
@@ -190,7 +190,7 @@
 
       <div class="small-12 medium-4 cell align-self-middle">
         
-        <div class="grid-x grid-padding-y align-center">
+        <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
           <div class="small-12 medium-12 cell align-self-middle">
             {% set image = matrixBlock.images[2] %}
             <div class="image--portrait" {% if image %}data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-4" %}"{% endif %}></div>
@@ -202,7 +202,7 @@
   
     
     {% case "video" %}
-    <div class="grid-x grid-padding-y align-center">
+    <div class="grid-x grid-padding-y align-center" data-aos="fade-in">
       <div class="small-12 medium-10 cell">
 
       {% set image = matrixBlock.image.one() %}
@@ -231,7 +231,7 @@
 
     {% case "carousel" %}
 
-    <div class="grid-x grid-padding-y">
+    <div class="grid-x grid-padding-y" data-aos="fade-in">
       <div class="small-12 cell">
       
         <div class="swiper-container carousel--matrix">

@@ -1,4 +1,4 @@
-<div class="small-12 large-11 cell">
+<div class="small-12 large-11 cell" data-aos="fade-in">
   <div class="excerpt">
   
     <!-- Tags -->
@@ -9,27 +9,25 @@
     
     <!-- Image and Text -->
     <a href="{{ entry.url}}" class="">
-    
       {% set image = entry.image.one() %}
       <div class="image--panorama" {% if image %}data-interchange="{% include "_includes/images/contained/16-9/interchange-img-small-12-medium-12" %}"{% endif %}>
         <div class="grid-y height-100 align-right align-bottom content">
 
         {% set videoBlock = entry.article.type('video').one() %}
         {% if videoBlock %}
-            <div class="shrink cell text-center text-lowercase padding-2">
-              <h3 class="white"><svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg></h3>
-            </div>
+        <div class="shrink cell text-center text-lowercase padding-2">
+          <h3 class="white"><svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg></h3>
+        </div>
         {% endif %}
 
         </div>
       </div>
     
       <div class="margin-top-1 text-center">
-      <h4>{{ entry.title}}</h4>
-      <p>{{ entry.description |striptags|slice(0,100)|default('Read more') }}...</p>
-      <div class="read-more">Read More <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
+        <h4>{{ entry.title}}</h4>
+        <p>{{ entry.description |striptags|slice(0,100)|default('Read more') }}...</p>
+        <div class="read-more">Read More <svg class="icon icon-plus"><use xlink:href="/assets/icons/symbol-defs.svg#icon-plus"></use></svg></div>
       </div>
-    
     </a>
     <!-- End Image and Text -->
   

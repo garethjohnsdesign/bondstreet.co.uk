@@ -2,12 +2,11 @@
 
 {% block main %}
 
-
 <!-- Video Hero -->
 {% set image = entry.image.first() %}
 <div class="image--hero align-center-middle" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}{% endif %}">
 
-  <div class="grid-y grid-padding-x height-100 align-center content">
+  <div class="grid-y grid-padding-x height-100 align-center content" data-aos="fade-in">
     <div class="shrink cell">
 
       <div class="grid-x">
@@ -29,7 +28,7 @@
     </video>
   {% endif %}
 
-  <div class="grid-y grid-padding-x height-100 align-right scrollarrow">
+  <div class="grid-y grid-padding-x height-100 align-right scrollarrow" data-aos="fade-in">
     <div class="shrink cell">
 
       <div class="grid-x padding-vertical-2">
@@ -44,20 +43,20 @@
 </div>
 <!-- End Video Hero -->
 
-<!-- Container -->
+<!-- Articles and Events -->
 <div class="grid-container" id="page__content">
 
-  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+<!-- Articles -->
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2" data-aos="fade-in">
     <div class="small-12 cell text-center">
       <div class="section-header">Recent Articles</div>
     </div>
   </div>
 
-{% for block in entry.articleMatrix.all() %}
-{% switch block.type %}
+  {% for block in entry.articleMatrix.all() %}
+  {% switch block.type %}
 
   {% case "small" %}
-
   {% set entries = block.entries %}
   
   {% if entries|length %}
@@ -69,7 +68,6 @@
   {% endif %}
 
   {% case "medium" %}
-  
   {% set entries = block.entries %}
 
   {% if entries|length %}
@@ -81,7 +79,6 @@
   {% endif %}
 
   {% case "large" %}
-  
   {% set entries = block.entries %}
 
   {% if entries|length %}
@@ -93,7 +90,6 @@
   {% endif %}
 
   {% case "featured" %}
-  
   {% set entries = block.entries %}
 
   {% if entries|length %}
@@ -106,13 +102,12 @@
 
 {% endswitch %}
 {% endfor %}
+<!-- End Articles -->
 
 <!-- Upcoming Events -->
-{% set entries = entry.events.all() %}
-{% if entries|length %}
-
-
-  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+  {% set entries = entry.events.all() %}
+  {% if entries|length %}
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2" data-aos="fade-in">
     <div class="small-12 cell text-center">
       <div class="section-header">Upcoming Events</div>
     </div>
@@ -122,7 +117,7 @@
     {% include "_includes/blocks/event" %}
   {% endfor %}
 
-  <div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="grid-x grid-padding-x grid-padding-y align-center" data-aos="fade-in">
     <div class="small-12 medium-4 cell text-center">
       <a href="{{ siteUrl }}events" class="button primary expanded">
        <div class="grid-x align-justify align-middle">
@@ -141,57 +136,53 @@
 <!-- End Upcoming Events -->
 
 </div>
-<!-- End Container -->
+<!-- End Articles and Events -->
 
 <!-- Instagram -->
-
-<div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+<div class="grid-x grid-padding-x grid-padding-y margin-top-2" data-aos="fade-in">
   <div class="small-12 cell text-center">
     <div class="section-header">Instagram</div>
   </div>
 </div>
 
 <div class="grid-x">
-<div class="small-12 cell">
-
-<div class="swiper-container carousel--instagram">
-  <div class="swiper-wrapper">
-    {% set entries = craft.instagram.getFeed() %}
-    {% for entry in entries %}
-    <div class="cell swiper-slide">
+  <div class="small-12 cell">
+  
+  <div class="swiper-container carousel--instagram">
+    <div class="swiper-wrapper">
+      {% set entries = craft.instagram.getFeed() %}
+      {% for entry in entries %}
+      <div class="cell swiper-slide">
+          
+          <!-- Image and Text -->
+          <a href="https://www.instagram.com/p/{{ entry.shortcode }}/" target="_blank">
+            <div class="image--square" data-interchange="[{{ entry.src }}, small], [{{ entry.src }}, medium], [{{ entry.src }}, large]">
+              <div class="content"></div>
+            </div> 
+          </a>
+          <!-- End Image and Text -->
         
-        <!-- Image and Text -->
-        <a href="https://www.instagram.com/p/{{ entry.shortcode }}/" target="_blank">
-          <div class="image--square" data-interchange="[{{ entry.src }}, small], [{{ entry.src }}, medium], [{{ entry.src }}, large]">
-            <div class="content"></div>
-          </div> 
-        </a>
-        <!-- End Image and Text -->
-      
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
+  
+  <div class="grid-x grid-padding-x grid-padding-y align-justify align-middle">
+  
+    <div class="shrink cell">
+      <ul class="menu">
+        <li class="test-prev menu-text"><svg class="icon icon-arrow-left"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-left"></use></svg></li>
+        <li class="test-next menu-text"><svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></li>
+      </ul>
+    </div>
+  
+    <div class="shrink cell align-middle">
+      <a href="https://www.instagram.com/bondstreet/" target="_blank"><svg class="icon icon-instagram" style="vertical-align: text-bottom;"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg><spam class="padding-left-1 text-uppercase sans-bold tiny">Follow Us</span></a>
+    </div>
+  
   </div>
-
-<div class="grid-x grid-padding-x grid-padding-y align-justify align-middle">
-
-  <div class="shrink cell">
-    <ul class="menu">
-      <li class="test-prev menu-text"><svg class="icon icon-arrow-left"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-left"></use></svg></li>
-      <li class="test-next menu-text"><svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></li>
-    </ul>
   </div>
-
-  <div class="shrink cell align-middle">
-    <a href="https://www.instagram.com/bondstreet/" target="_blank"><svg class="icon icon-instagram" style="vertical-align: text-bottom;"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg><spam class="padding-left-1 text-uppercase sans-bold tiny">Follow Us</span></a>
+  
   </div>
-
 </div>
-</div>
-
-</div>
-</div>
-
 <!-- End Instagram -->
-
-
 {% endblock %}
