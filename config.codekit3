@@ -73,14 +73,6 @@
 		"oAP": "/config/db.php",
 		"oF": 0
 		},
-	"/config/fortrabbit.production.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/config/fortrabbit.production.yaml",
-		"oF": 0
-		},
 	"/config/general.php": {
 		"cB": 0,
 		"ft": 8192,
