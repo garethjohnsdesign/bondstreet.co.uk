@@ -702,14 +702,6 @@
 		"oAP": "/templates/_includes/off-canvas/search.twig",
 		"oF": 0
 		},
-	"/templates/_includes/reveal/search.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/templates/_includes/reveal/search.twig",
-		"oF": 0
-		},
 	"/templates/_includes/scripts/map--explore.twig": {
 		"cB": 0,
 		"ft": 8192,
