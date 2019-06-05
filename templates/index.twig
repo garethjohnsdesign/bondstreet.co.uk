@@ -3,7 +3,7 @@
 {% block main %}
 
 <!-- Video Hero -->
-{% set image = entry.image.first() %}
+{% set image = entry.image.one() %}
 <div class="image--hero align-center-middle" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}{% endif %}">
 
   <div class="grid-y grid-padding-x height-100 align-center content" data-aos="fade-in">
@@ -83,7 +83,7 @@
 
   {% if entries|length %}
     <div class="grid-x grid-padding-x grid-padding-y align-center">
-      {% for entry in entries %}
+      {% for entry in entries.all() %}
         {% include "_includes/blocks/article" %}
       {% endfor %}
     </div>
@@ -94,7 +94,7 @@
 
   {% if entries|length %}
     <div class="grid-x grid-padding-x grid-padding-y align-center">
-      {% for entry in entries %}
+      {% for entry in entries.all() %}
         {% include "_includes/blocks/feature" %}
       {% endfor %}
     </div>

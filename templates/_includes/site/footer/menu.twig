@@ -4,7 +4,7 @@
       <div class="cell medium-auto">
         <ul class="vertical menu text-center">
           <li><a href="/explore" class="small sans-bold text-uppercase letter-spacing--loose">Explore</a></li>
-            {% nav category in craft.categories.group('explore') %}
+            {% nav category in craft.categories.group('explore').all() %}
               <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
             {% endnav %}
         </ul>
@@ -23,7 +23,7 @@
       <div class="cell large-auto">
         <ul class="vertical menu text-center">
           <li><a href="/articles" class="small sans-bold text-uppercase letter-spacing--loose">Articles</a></li>
-            {% nav category in craft.categories.group('articles') %}
+            {% nav category in craft.categories.group('articles').all() %}
               <li><a href="{{ category.url }}" class="small sans-bold text-uppercase letter-spacing--loose">{{ category.title }}</a></li>
             {% endnav %}
         </ul>

@@ -1,5 +1,5 @@
 {% if entry.tags|length %}
-{% for tag in entry.tags %}
+{% for tag in entry.tags.all() %}
 <a class="tag" href="{{ siteUrl }}tags/{{ tag.title | kebab }}">{{ tag.title }}</a>
 {% endfor %}
 {% endif %}
