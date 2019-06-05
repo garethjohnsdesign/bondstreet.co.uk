@@ -760,3 +760,7 @@ background: $secondary-color;
   color: $white;
   }
 }
+
+input#honeypot { 
+  display: none; 
+}
