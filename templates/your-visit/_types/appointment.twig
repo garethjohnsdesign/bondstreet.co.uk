@@ -19,9 +19,12 @@
   </div>
 
 
-
   <form method="post" action="" accept-charset="UTF-8">
       {{ csrfInput() }}
+
+      <input type="hidden" name="action" value="contact-form/send">
+      {{ redirectInput('your-visit/thanks') }}
+
 
       <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
         <div class="small-12 cell text-center">
@@ -31,33 +34,33 @@
 
       <div class="grid-x grid-padding-x">
         <div class="small-12 medium-6 cell">
-          <label>First Name
-            <input type="text" name="First Name">
+          <label>Title
+            <input type="text" name="message[Title]" value="">
           </label>
         </div>
         <div class="small-12 medium-6 cell">
-          <label>Last Name
-            <input type="text" name="Last Name">
+          <label>Your Name
+            <input type="text" name="fromName" value="{{ message.fromName ?? '' }}">
           </label>
         </div>
         <div class="small-12 medium-6 cell">
           <label>Email
-            <input type="email" name="fromEmail">
+            <input type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
           </label>
         </div>
         <div class="small-12 medium-6 cell">
           <label>Phone Number
-            <input type="text" name="Phone">
+            <input type="tel" name="message[Phone]" value="">
           </label>
         </div>
         <div class="small-12 medium-6 cell">
           <label>Country
-            <input type="text" name="Location">
+            <input type="text" name="message[Country]" value="">
           </label>
         </div>
         <div class="small-12 medium-6 cell">
           <label>Age
-            <input type="text" name="Location">
+            <input type="number" name="message[Age]">
           </label>
         </div>
       </div>
@@ -71,31 +74,31 @@
       <div class="grid-x grid-padding-x">
         <div class="small-12 medium-6 cell">
           <label>I'll be in London on
-            <input type="text" name="First Name">
+            <input type="text" name="message[Arriving]">
           </label>
         </div>
         <div class="small-12 medium-6 cell">
           <label>Length of stay
-            <input type="text" name="Last Name">
+            <input type="text" name="message[Length of Stay]">
           </label>
         </div>
 
         <div class="small-12 medium-6 cell">
           <label>Visiting On
-            <select name="Visiting On">
-              <option value="business">Business</option>
-              <option value="vacation">Vacation</option>
+            <select name="message[Visiting On][]">
+              <option value="Business">Business</option>
+              <option value="Vacation">Vacation</option>
             </select>
           </label>
         </div>
 
         <div class="small-12 medium-6 cell">
           <label>Travelling Style
-            <select name="Travelling Style">
-              <option value="authentic-local">Authentic / Local</option>
-              <option value="stylish-hip">Stylish / Hip</option>
-              <option value="luxury">Luxury</option>
-              <option value="explorer-off-beat">Explorer / Off-beat</option>
+            <select name="message[Style][]">
+              <option value="Authentic / Local">Authentic / Local</option>
+              <option value="Stylish / Hip">Stylish / Hip</option>
+              <option value="Luxury">Luxury</option>
+              <option value="Explorer / Off-beat">Explorer / Off-beat</option>
             </select>
           </label>
         </div>
@@ -111,17 +114,17 @@
 
       <div class="grid-x grid-padding-x">
         <fieldset class="small-12 cell text-center">
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Fashion - Classic</label>
-          <input id="checkbox2" type="checkbox"><label for="checkbox2">Fashion - Forward</label>
-          <input id="checkbox3" type="checkbox"><label for="checkbox3">Art</label>
-          <input id="checkbox3" type="checkbox"><label for="checkbox3">Antiques</label>
+          <input id="checkbox1" type="checkbox" name="message[Interests][]" value="Fashion - Classic"><label for="checkbox1">Fashion - Classic</label>
+          <input id="checkbox2" type="checkbox" name="message[Interests][]" value="Fashion - Forward"><label for="checkbox2">Fashion - Forward</label>
+          <input id="checkbox3" type="checkbox" name="message[Interests][]" value="Art"><label for="checkbox3">Art</label>
+          <input id="checkbox3" type="checkbox" name="message[Interests][]" value="Antiques"><label for="checkbox3">Antiques</label>
         </fieldset>
       </div>
       
       <div class="grid-x grid-padding-x">
       <div class="small-12 medium-12 cell">
-        <label>Tell Us More
-          <textarea rows="12" name="message" placeholder="Message"></textarea>
+        <label>Message
+          <textarea rows="12" name="message[body]" placeholder="Message">{{ message.message.body ?? '' }}</textarea>
         </label>
       </div>
       </div>
