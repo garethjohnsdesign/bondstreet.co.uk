@@ -1014,6 +1014,14 @@
 		"oAP": "/templates/your-visit/_types/street.twig",
 		"oF": 0
 		},
+	"/templates/your-visit/_types/thanks.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/your-visit/_types/thanks.twig",
+		"oF": 0
+		},
 	"/templates/your-visit/index.twig": {
 		"cB": 0,
 		"ft": 8192,
