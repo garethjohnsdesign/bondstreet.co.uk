@@ -8,7 +8,7 @@
 {% include "_includes/blocks/events--types" %}
 
 {% set afterThatEvents = craft.entries.section('events')
-.eventStart (">= #{now | date_modify('last day of next month') | atom}"	)
+.eventEnd ("<= #{now | atom}"	)
 .order('eventStart asc')  
 %}     
 
