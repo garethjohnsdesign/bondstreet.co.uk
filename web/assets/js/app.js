@@ -25,6 +25,11 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
 
 $(document).foundation();
 
+
+// 2. Cookies Policy
+// -----------------
+
+
 // 4. Lightgallery
 // ---------------
 
@@ -42,8 +47,6 @@ $('#video-gallery').lightGallery({
       controls: 0
   }
 }); 
-
-
 
 // 5. Swiper
 // ---------
