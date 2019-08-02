@@ -3,6 +3,7 @@
 
 // @codekit-prepend "/node_modules/jquery/dist/jquery.js";
 // @codekit-prepend "/node_modules/foundation-sites/dist/js/foundation.js";
+// @codekit-prepend "/node_modules/jquery.cookie/jquery.cookie.js";
 // @codekit-prepend "/node_modules/motion-ui/dist/motion-ui.js";
 // @codekit-prepend "/node_modules/what-input/dist/what-input.js";
 // @codekit-prepend "/node_modules/swiper/dist/js/swiper.js";
@@ -25,9 +26,6 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
 
 $(document).foundation();
 
-
-// 2. Cookies Policy
-// -----------------
 
 
 // 4. Lightgallery
@@ -132,6 +130,23 @@ $(function() {
 
 $(function() {
   window.addEventListener('load', AOS.refresh);
+});
+
+
+// 2. Newsletter
+// -------------
+
+$(function() {
+  if($.cookie('showed_modal') !== "true") {
+
+setTimeout(
+  function() 
+  {
+$("#newsletter").foundation("open");
+  }, 2000);
+
+    $.cookie('showed_modal', 'true', { expires: 365 }); 
+  }
 });
 
 
