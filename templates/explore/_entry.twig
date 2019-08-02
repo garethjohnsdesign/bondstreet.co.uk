@@ -232,6 +232,15 @@
 {% endif %}
 <!-- End Services -->
 
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x align-center">
+    <div class="small-12 medium-10 large-8 cell text-center">
+      <img src="{{entry.website |qrcode(100) }}">
+    </div>
+  </div>
+</div>
+
 <!-- Services -->
 {% if entry.services|length %}
 <div class="grid-container">

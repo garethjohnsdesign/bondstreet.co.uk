@@ -13,7 +13,8 @@
     "nystudio107/craft-minify": "1.2.9",
     "craftcms/redactor": "2.3.3.2",
     "verbb/field-manager": "2.1.0",
-    "craftcms/contact-form-honeypot": "1.0.2"
+    "craftcms/contact-form-honeypot": "1.0.2",
+    "kuriousagency/qrcode": "1.0.3"
   },
   "autoload": {
     "psr-4": {
