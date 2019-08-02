@@ -49,7 +49,7 @@
     <div class="small-12 medium-4 cell text-center">
       <div class="small sans-bold text-uppercase letter-spacing--loose white padding-bottom-1">Contact</div>
       {% if entry.phone|length %}<div><a href="tel:{{entry.phone}}"><svg class="icon icon-phone"><use xlink:href="/assets/icons/symbol-defs.svg#icon-phone"></use></svg> {{ entry.phone }}</a></div>{% endif %} 
-      {% if entry.website|length %}<div><a href="{{entry.website}}"><svg class="icon icon-external-link"><use xlink:href="/assets/icons/symbol-defs.svg#icon-external-link"></use></svg> {{ entry.website |replace({'https://': '', 'www.': '', '/': ''})}}</a></div>{% endif %}
+      {% if entry.website|length %}<div><a href="{{entry.website}}"><svg class="icon icon-external-link"><use xlink:href="/assets/icons/symbol-defs.svg#icon-external-link"></use></svg> Site</a></div>{% endif %}
       {% if entry.email|length %}<div><a href="mailto:{{entry.email}}"><svg class="icon icon-mail"><use xlink:href="/assets/icons/symbol-defs.svg#icon-mail"></use></svg> {{ entry.email }}</a></div>{% endif %}
     </div>
     {% endif %} 
@@ -176,7 +176,7 @@
       <div class="small-12 medium-4 cell text-center">
         <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Contact</div>
         {% if entry.phone|length %}<div><a href="tel:{{entry.phone}}"><svg class="icon icon-phone"><use xlink:href="/assets/icons/symbol-defs.svg#icon-phone"></use></svg> {{ entry.phone }}</a></div>{% endif %} 
-        {% if entry.website|length %}<div><a href="{{entry.website}}"><svg class="icon icon-external-link"><use xlink:href="/assets/icons/symbol-defs.svg#icon-external-link"></use></svg> {{ entry.website |replace({'https://': '', 'www.': '', '/': ''})}}</a></div>{% endif %}
+        {% if entry.website|length %}<div><a href="{{entry.website}}"><svg class="icon icon-external-link"><use xlink:href="/assets/icons/symbol-defs.svg#icon-external-link"></use></svg> Site</a></div>{% endif %}
         {% if entry.email|length %}<div><a href="mailto:{{entry.email}}"><svg class="icon icon-mail"><use xlink:href="/assets/icons/symbol-defs.svg#icon-mail"></use></svg> {{ entry.email }}</a></div>{% endif %}
       </div>
       {% endif %} 
