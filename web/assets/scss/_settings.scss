@@ -410,7 +410,8 @@ $closebutton-offset-horizontal: (
 );
 $closebutton-offset-vertical: (
   small: 0.33em,
-  medium: 0.5rem,
+//   medium: 0.5rem,
+  medium: 1rem,
 );
 $closebutton-size: (
   small: 1.5em,
@@ -418,7 +419,8 @@ $closebutton-size: (
 );
 $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;
-$closebutton-color-hover: $black;
+$closebutton-color: $white;
+$closebutton-color-hover: get-color(secondary);
 
 // 16. Drilldown
 // -------------
