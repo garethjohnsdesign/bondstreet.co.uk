@@ -136,18 +136,24 @@ $(function() {
 // 2. Newsletter
 // -------------
 
-$(function() {
-  if($.cookie('showed_modal') !== "true") {
+Foundation.MediaQuery.current
 
-setTimeout(
-  function() 
-  {
-$("#newsletter").foundation("open");
-  }, 2000);
+if (Foundation.MediaQuery.atLeast('medium')) {
 
-    $.cookie('showed_modal', 'true', { expires: 365 }); 
-  }
-});
+  $(function() {
+    if($.cookie('showed_modal') !== "true") {
+  
+  setTimeout(
+    function() 
+    {
+  $("#newsletter").foundation("open");
+    }, 2000);
+  
+      $.cookie('showed_modal', 'true', { expires: 365 }); 
+    }
+  });
+
+}
 
 
 });
