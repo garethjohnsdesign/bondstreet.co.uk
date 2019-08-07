@@ -1,15 +1,16 @@
 // 1. Packages
 // -----------
 
-// @codekit-prepend "/node_modules/jquery/dist/jquery.js";
-// @codekit-prepend "/node_modules/foundation-sites/dist/js/foundation.js";
-// @codekit-prepend "/node_modules/jquery.cookie/jquery.cookie.js";
-// @codekit-prepend "/node_modules/motion-ui/dist/motion-ui.js";
-// @codekit-prepend "/node_modules/what-input/dist/what-input.js";
-// @codekit-prepend "/node_modules/swiper/dist/js/swiper.js";
-// @codekit-prepend "/node_modules/lightgallery/dist/js/lightgallery-all.js";
-// @codekit-prepend "/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.js";
-// @codekit-prepend "/node_modules/aos/dist/aos.js";
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
+import Foundation from 'foundation-sites';
+import Cookie from 'jquery.cookie'
+import Swiper from 'swiper';
+import AOS from 'aos';
+import "lightGallery";
+import SmoothScroll from 'smooth-scroll';
+const scroll = new SmoothScroll("[data-scroll]");
+
 
 $(document).ready(function() {
 
@@ -25,7 +26,6 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
 // -------------
 
 $(document).foundation();
-
 
 
 // 4. Lightgallery
@@ -83,7 +83,7 @@ var swiper = new Swiper('.carousel--matrix', {
   navigation: {
     nextEl: '.test-next',
     prevEl: '.test-prev'
-  },
+  }
 })
 
 

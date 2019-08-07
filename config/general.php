@@ -52,7 +52,7 @@ return [
 //         'siteUrl' => getenv('SITE_URL') ?: '/',
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
-        'devMode' => true,
+        'devMode' => false,
     ],
 
     // Staging environment settings
@@ -60,6 +60,8 @@ return [
         // Base site URL
         'siteUrl' => null,
 //         'siteUrl' => getenv('SITE_URL') ?: '/',
+        // Dev Mode (see https://craftcms.com/support/dev-mode)
+        'devMode' => false,
     ],
 
     // Production environment settings
@@ -67,5 +69,7 @@ return [
         // Base site URL
 //         'siteUrl' => null,
         'siteUrl' => getenv('SITE_URL') ?: '/',
+        // Dev Mode (see https://craftcms.com/support/dev-mode)
+        'devMode' => false,
     ],
 ];

@@ -1,4 +1,4 @@
-{% minify js %}
+{% js %}
 
 
 // 1. Initial Map
@@ -29,6 +29,7 @@ var places = {
     {
     type: 'Feature',
     "properties": {
+      "id": "{{entry.title | kebab}}",
       "description": "{{entry.title}}",
       "url": "{{entry.url}}",
       "phone": "{{ entry.phone }}",
@@ -48,65 +49,76 @@ var places = {
 // 3. Markers
 // ----------
 
+var popupsMap = {};
 for (var i = 0; i < places.features.length; i++) {
-  (function(){
-  var place_closure = places.features[i]
-  var markerElement = document.createElement('div')
-  markerElement.className = 'customMarker'
-  markerElement.innerHTML = '<a href="' + place_closure.properties.url + '"><svg class="icon icon-location"><use xlink:href="/assets/icons/symbol-defs.svg#icon-location"></use></svg></a>'
-
-// 4. Pop-up
-// ---------
-
-  var markerHeight = 25, markerRadius = 15, linearOffset = 25;
-
-  var popupOffsets = {
-   'top': [0, markerHeight],
-   'top-left': [0,0],
-   'top-right': [0,0],
-   'bottom': [0, -markerHeight],
-   'bottom-left': [linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
-   'bottom-right': [-linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
-   'left': [markerRadius, (markerHeight - markerRadius) * -1],
-   'right': [-markerRadius, (markerHeight - markerRadius) * -1]
-   };
-
-  var popup = new mapboxgl.Popup({
-    offset: popupOffsets,
-    className: 'my-class',
-    closeButton: false,
-    closeOnClick: false
-  });
-
-// 5. Hover
-// --------
-
-  $(markerElement).on('mouseenter', function(e) {
-    map.getCanvas().style.cursor = 'pointer';
-     
+  (function(){ // closure over places.features[i] and associated variables is needed  in the callback functions
+    var place_closure = places.features[i];
     var coordinates = place_closure.geometry.coordinates.slice();
     var description = place_closure.properties.description;
     var phone = place_closure.properties.phone;
     var link = place_closure.properties.url;
-    console.log(e)
-    
-    map.on('click', 'places', function() {
-    window.location = (link);
+    var popupContent = '<div>' + description + '</div>' + '<div>' + phone + '</div>';
+  
+  
+    var markerElement = document.createElement('div')
+    markerElement.className = 'customMarker'
+    markerElement.innerHTML = '<a href="' + place_closure.properties.url + '"><svg class="icon icon-location"><use xlink:href="/assets/icons/symbol-defs.svg#icon-location"></use></svg></a>'
+  
+  // 4. Pop-up
+  // ---------
+  
+    var markerHeight = 25, markerRadius = 15, linearOffset = 25;
+  
+    var popupOffsets = {
+     'top': [0, markerHeight],
+     'top-left': [0,0],
+     'top-right': [0,0],
+     'bottom': [0, -markerHeight],
+     'bottom-left': [linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+     'bottom-right': [-linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+     'left': [markerRadius, (markerHeight - markerRadius) * -1],
+     'right': [-markerRadius, (markerHeight - markerRadius) * -1]
+     };
+  
+    var popup = new mapboxgl.Popup({
+      offset: popupOffsets,
+      className: 'my-class',
+      closeButton: false,
+      closeOnClick: false
+    });
+  
+  
+    popupsMap[place_closure.properties.id] = {
+      popup: popup, 
+      coordinates: coordinates,
+      content: popupContent
+    };
+  
+  // 5. Hover
+  // --------
+  
+    $(markerElement).on('mouseenter', function(e) {
+      map.getCanvas().style.cursor = 'pointer';
+       
+      console.log(e)
+       
+      map.on('click', 'places', function() {
+      window.location = (link);
+      });
+       
+      popup.setLngLat(coordinates)
+      .setHTML(popupContent).addTo(map);
     });
      
-    popup.setLngLat(coordinates)
-    .setHTML('<div>' + description + '</div>' + '<div>' + phone + '</div>').addTo(map);
-  });
-   
-  $(markerElement).on('mouseleave', function() {
-    map.getCanvas().style.cursor = '';
-    popup.remove();
-  });
-
-// 6. Add Marker to Map
-// --------------------
-
-  new mapboxgl.Marker(markerElement).setLngLat(places.features[i].geometry.coordinates).addTo(map)
+    $(markerElement).on('mouseleave', function() {
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+    });
+  
+  // 6. Add Marker to Map
+  // --------------------
+  
+    new mapboxgl.Marker(markerElement).setLngLat(places.features[i].geometry.coordinates).addTo(map)
   })();
 }
 
@@ -149,23 +161,27 @@ var nav = new MapboxGeocoder({
 
 map.addControl(nav, 'top-left');
 
+// 5.5. Hover on the side
 
-// 8. Fly to on Hover
-// ------------------
 
-{% for entry in entries %}
-document.getElementById('{{entry.title | kebab}}').addEventListener('mouseover', function () {
-
+$("#places-list > div").on('mouseenter', function() {
+  var id = this.id;
+  var popupObj = popupsMap[id];
   map.flyTo({
-    center: [{{ entry.location.lng }}, {{ entry.location.lat }}],
-    zoom: 18,
+    center: popupObj.coordinates,
+    zoom: 16,
     speed: 1,
     curve: 1,
     easing: function (t) {return t;}
   });
-
+  popupObj.popup.setLngLat(popupObj.coordinates)
+    .setHTML(popupObj.content).addTo(map);
 });
-{% endfor %}
 
+$("#places-list > div").on('mouseleave', function() {
+  var id = this.id;
+  var popupObj = popupsMap[id];
+  popupObj.popup.remove();
+});
 
-{% endminify %}
+{% endjs %}

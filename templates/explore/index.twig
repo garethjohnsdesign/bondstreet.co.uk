@@ -41,7 +41,6 @@
 <!-- End Categories -->
 
 {% set order = craft.request.getParam('order', 'title asc')  %}
-{% set testing = craft.request.getParam('testing', 'akris')  %}
 {% set entries = craft.entries.section('explore').order(order) %}
 
 <!-- Map -->
@@ -71,7 +70,7 @@
               </ul>
             </div>
           </div>
-
+          <div id="places-list">
          {% for entry in entries %}
          <div id="{{ entry.title | kebab}}" data-coordinates="{{ entry.location.lng }}, {{ entry.location.lat }}">
          <a href="{{ entry.url}}" class="map-entry">
@@ -80,6 +79,7 @@
          </a>
          </div>
          {% endfor %}
+          </div>
         </div>
 
       </div>

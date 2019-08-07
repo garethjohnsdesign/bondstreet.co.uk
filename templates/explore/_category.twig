@@ -71,7 +71,8 @@
               </ul>
             </div>
           </div>
-
+         
+         <div id="places-list">
          {% for entry in entries %}
          <div id="{{ entry.title | kebab }}" data-coordinates="{{ entry.location.lng }}, {{ entry.location.lat }}">
          <a href="{{ entry.url}}" class="map-entry">
@@ -80,6 +81,7 @@
          </a>
          </div>
          {% endfor %}
+         </div>
         </div>
 
       </div>
