@@ -767,10 +767,6 @@ input#honeypot {
 
 .customMarker {
   font-size: 1.5rem;
-  color: red;
   display: inline-block;
-}
-
-.customMarker:hover {
-  color: blue;
+  @include links($primary-color, $secondary-color)
 }
