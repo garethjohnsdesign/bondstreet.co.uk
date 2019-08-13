@@ -86,6 +86,8 @@ for (var i = 0; i < places.features.length; i++) {
       closeButton: false,
       closeOnClick: false
     });
+
+    popup._marker = markerElement;
   
   
     popupsMap[place_closure.properties.id] = {
@@ -167,6 +169,7 @@ map.addControl(nav, 'top-left');
 $("#places-list > div").on('mouseenter', function() {
   var id = this.id;
   var popupObj = popupsMap[id];
+  $(popupObj.popup._marker).children("a").addClass("onHover")
   map.flyTo({
     center: popupObj.coordinates,
     zoom: 16,
@@ -181,6 +184,7 @@ $("#places-list > div").on('mouseenter', function() {
 $("#places-list > div").on('mouseleave', function() {
   var id = this.id;
   var popupObj = popupsMap[id];
+  $(popupObj.popup._marker).children("a").removeClass("onHover")
   popupObj.popup.remove();
 });
 
