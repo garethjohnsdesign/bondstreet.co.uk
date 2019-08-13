@@ -62,7 +62,7 @@ for (var i = 0; i < places.features.length; i++) {
   
     var markerElement = document.createElement('div')
     markerElement.className = 'customMarker'
-    markerElement.innerHTML = '<a href="' + place_closure.properties.url + '"><svg class="icon icon-location"><use xlink:href="/assets/icons/symbol-defs.svg#icon-location"></use></svg></a>'
+    markerElement.innerHTML = '<a data-place-id="' + place_closure.properties.id + '" href="' + place_closure.properties.url + '"><svg class="icon icon-location"><use xlink:href="/assets/icons/symbol-defs.svg#icon-location"></use></svg></a>'
   
   // 4. Pop-up
   // ---------
@@ -165,11 +165,13 @@ map.addControl(nav, 'top-left');
 
 // 5.5. Hover on the side
 
-
 $("#places-list > div").on('mouseenter', function() {
   var id = this.id;
+
   var popupObj = popupsMap[id];
-  $(popupObj.popup._marker).children("a").addClass("onHover")
+  
+  $("a[data-place-id='" + id + "']").addClass("onHover")
+  
   map.flyTo({
     center: popupObj.coordinates,
     zoom: 16,
@@ -184,7 +186,7 @@ $("#places-list > div").on('mouseenter', function() {
 $("#places-list > div").on('mouseleave', function() {
   var id = this.id;
   var popupObj = popupsMap[id];
-  $(popupObj.popup._marker).children("a").removeClass("onHover")
+  $("[data-place-id]").removeClass("onHover")
   popupObj.popup.remove();
 });
 
