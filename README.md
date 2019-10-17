@@ -4,4 +4,4 @@ Site for Bond Street. Please go to [www.bondstreet.co.uk](https://www.bondstreet
 
 * * *
 
-Copyright (c) 2019 Gareth Johns Design + Development – info@garethjohnsdesign.com
+Copyright (c) 2020 Gareth Johns Design + Development – info@garethjohnsdesign.com
