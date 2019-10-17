@@ -14,7 +14,8 @@
     "craftcms/redactor": "2.4.0",
     "verbb/field-manager": "2.1.0",
     "craftcms/contact-form-honeypot": "1.0.2",
-    "kuriousagency/qrcode": "1.0.3"
+    "kuriousagency/qrcode": "1.0.3",
+    "fortrabbit/craft-copy": "1.0.0-RC7"
   },
   "autoload": {
     "psr-4": {

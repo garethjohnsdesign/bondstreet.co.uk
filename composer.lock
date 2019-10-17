@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "51df1fd1bab840a7d5f78a2d6683b2fb",
+    "content-hash": "6031f6d44a5d66dc9be67a4616bd2fc2",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -575,15 +575,6 @@
                 "symfony/event-dispatcher": "^4.1",
                 "symfony/process": "^4.1"
             },
-            "require-dev": {
-                "nette/utils": "^2.5",
-                "phpstan/phpstan": "^0.11",
-                "phpunit/phpunit": "^7.4",
-                "psr/log": "1.0",
-                "symfony/filesystem": "^4.1",
-                "symplify/changelog-linker": "^5.4",
-                "symplify/easy-coding-standard": "^5.4"
-            },
             "suggest": {
                 "monolog/monolog": "Enables logging of executed git commands"
             },
@@ -593,7 +584,6 @@
                     "GitWrapper\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1554,17 +1544,15 @@
         },
         {
             "name": "fortrabbit/craft-auto-migrate",
-            "version": "1.1.0",
+            "version": "2.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fortrabbit/craft-auto-migrate/zipball/432ea2eacd1c3e435061990a8a6e72d8bb756eaf",
-                "reference": "432ea2eacd1c3e435061990a8a6e72d8bb756eaf",
+                "url": "https://api.github.com/repos/fortrabbit/craft-auto-migrate/zipball/1051daf1e7bee3793d66639b925922fd8dc1e786",
+                "reference": "1051daf1e7bee3793d66639b925922fd8dc1e786",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
-                "craftcms/cms": "^3.0.0",
-                "vlucas/phpdotenv": "^2.5"
+                "composer-plugin-api": "^1.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -1590,7 +1578,67 @@
                 "craftcms",
                 "development"
             ],
-            "time": "2019-01-23T12:40:40+00:00"
+            "time": "2019-09-27T11:53:16+00:00"
+        },
+        {
+            "name": "fortrabbit/craft-copy",
+            "version": "1.0.0-RC7",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fortrabbit/craft-copy/zipball/410681cb85ecb5b41b4ba984c5dd2065aeadf297",
+                "reference": "410681cb85ecb5b41b4ba984c5dd2065aeadf297",
+                "shasum": ""
+            },
+            "require": {
+                "albertofem/rsync-lib": "^1.0.0",
+                "cpliakas/git-wrapper": "^2.0",
+                "craftcms/cms": "^3.0.0",
+                "fortrabbit/craft-auto-migrate": "^2.0",
+                "ostark/yii2-artisan-bridge": "^1.2.0",
+                "php": "^7.1.3",
+                "symfony/process": "^4.2",
+                "symfony/yaml": "^4.2",
+                "vlucas/phpdotenv": "^2.5.1 | ^3.4.0"
+            },
+            "bin": [
+                "bin/craft-copy-import-db.php",
+                "bin/craft-copy-env.php"
+            ],
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Copy",
+                "handle": "copy",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/fortrabbit/craft-copy/master/CHANGELOG.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "fortrabbit\\Copy\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Stark",
+                    "homepage": "https://www.fortrabbit.com/"
+                }
+            ],
+            "description": "Tooling for Craft on fortrabbit",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "queue"
+            ],
+            "support": {
+                "docs": "https://github.com/fortrabbit/craft-copy/blob/master/README.md",
+                "issues": "https://github.com/fortrabbit/craft-deploy-tools/issues"
+            },
+            "time": "2019-09-27T12:17:17+00:00"
         },
         {
             "name": "geoip2/geoip2",
@@ -4270,11 +4318,11 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.3.0",
+            "version": "v4.3.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/c71314cd3b9420b732e1526f33a24eff5430b5b3",
-                "reference": "c71314cd3b9420b732e1526f33a24eff5430b5b3",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/6229f58993e5a157f6096fc7145c0717d0be8807",
+                "reference": "6229f58993e5a157f6096fc7145c0717d0be8807",
                 "shasum": ""
             },
             "require": {
@@ -4321,15 +4369,15 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-28T07:50:59+00:00"
+            "time": "2019-10-01T16:40:32+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
-            "version": "v1.1.1",
+            "version": "v1.1.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/8fa2cf2177083dd59cf8e44ea4b6541764fbda69",
-                "reference": "8fa2cf2177083dd59cf8e44ea4b6541764fbda69",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/c43ab685673fb6c8d84220c77897b1d6cdbe1d18",
+                "reference": "c43ab685673fb6c8d84220c77897b1d6cdbe1d18",
                 "shasum": ""
             },
             "require": {
@@ -4373,7 +4421,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-05-22T12:23:29+00:00"
+            "time": "2019-09-17T09:54:03+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -6522,7 +6570,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "craftcms/ckeditor": 10
+        "craftcms/ckeditor": 10,
+        "fortrabbit/craft-copy": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,

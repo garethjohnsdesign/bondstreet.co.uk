@@ -1,0 +1,10 @@
+app: bondstreet-dev
+ssh_url: bondstreet-dev@deploy.eu2.frbit.com
+ssh_path: null
+git_remote: bondstreet-dev/master
+before:
+    code/up:
+        - 'echo  "Script example: " $(git rev-parse HEAD)'
+after:
+    code/down:
+        - 'php craft migrate/all'
