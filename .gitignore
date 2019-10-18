@@ -12,7 +12,6 @@
 /storage/logs/
 
 # ASSETS
-/web/assets/
 /web/cpresources/
 
 # BUILD FILES
