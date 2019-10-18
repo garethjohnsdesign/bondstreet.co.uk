@@ -19,5 +19,5 @@
  */
 
 return [
-
+ 'tags/{slug}' => 'tags/tag',
 ];

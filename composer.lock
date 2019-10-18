@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba42d370a1a1f9d1bd04c6816f97ce16",
+    "content-hash": "58da8e7d086ab245e5ae8eae7cacfb0e",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -1481,6 +1481,53 @@
                 "issues": "https://github.com/ethercreative/simplemap/issues"
             },
             "time": "2019-10-15T13:59:42+00:00"
+        },
+        {
+            "name": "ether/tags",
+            "version": "1.0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ethercreative/tags/zipball/cb8038bf257f40229f1e5763f61c88a6608e85c5",
+                "reference": "cb8038bf257f40229f1e5763f61c88a6608e85c5",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC17"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Tags",
+                "handle": "tag-manager",
+                "changelogUrl": "https://raw.githubusercontent.com/ethercreative/tags/master/CHANGELOG.md",
+                "class": "ether\\tagManager\\TagManager"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ether\\tagManager\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Ether Creative",
+                    "homepage": "https://ethercreative.co.uk"
+                }
+            ],
+            "description": "A tag manager for Craft 3",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "tags"
+            ],
+            "support": {
+                "docs": "https://github.com/ethercreative/tags/blob/master/README.md",
+                "issues": "https://github.com/ethercreative/tags/issues"
+            },
+            "time": "2019-06-26T12:04:24+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
