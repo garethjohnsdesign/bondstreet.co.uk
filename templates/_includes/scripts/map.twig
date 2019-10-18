@@ -138,31 +138,6 @@ trackUserLocation: true
 // 8. Search
 // ---------
 
-function forwardGeocoder(query) {
-var matchingFeatures = [];
-for (var i = 0; i < places.features.length; i++) {
-var feature = places.features[i];
-
-if (feature.properties.description.toLowerCase().search(query.toLowerCase()) !== -1) {
-  feature['place_name'] = feature.properties.description;
-  feature['center'] = feature.geometry.coordinates;
-  feature['place_type'] = ['park'];
-  matchingFeatures.push(feature);
-}
-}
-return matchingFeatures;
-}
-
-var nav = new MapboxGeocoder({
-  accessToken: mapboxgl.accessToken,
-  localGeocoder: forwardGeocoder,
-  zoom: 20,
-  placeholder: "Enter search e.g. Gucci",
-  mapboxgl: mapboxgl
-});
-
-map.addControl(nav, 'top-left');
-
 // 5.5. Hover on the side
 
 $("#places-list > div").on('mouseenter', function() {
