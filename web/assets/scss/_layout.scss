@@ -737,6 +737,18 @@ background: $secondary-color;
   height: 100%;
 }
 
+.carousel--explore .swiper-slide {
+  width: auto;
+}
+
+.carousel--explore .swiper-slide {
+  height: 400px;
+}
+
+.carousel--explore .swiper-slide img {
+  height: 100%;
+}
+
 .categories {
   font-family: $sans-bold;
   font-size: $small-font-size;
