@@ -12,8 +12,6 @@ import SmoothScroll from 'smooth-scroll';
 const scroll = new SmoothScroll("[data-scroll]");
 
 
-$(document).ready(function() {
-
 // 2. Foundation Queries
 // ---------------------
 
@@ -50,27 +48,12 @@ $('#video-gallery').lightGallery({
 // ---------
 
 var swiper = new Swiper('.carousel--explore', {
-  slidesPerView: 2,
-  spaceBetween: 0,
-  loop: true,
-  loopFillGroupWithBlank: true,
+  slidesPerView: 'auto',
+  loop: false,
+  centeredSlides: false,
   navigation: {
     nextEl: '.test-next',
     prevEl: '.test-prev'
-  },
-  breakpoints: {
-    1440: {
-      slidesPerView: 2
-    },
-    1200: {
-      slidesPerView: 2
-    },
-    1024: {
-      slidesPerView: 2
-    },
-    640: {
-      slidesPerView: 1
-    }
   }
 })
 
@@ -115,7 +98,7 @@ var swiper = new Swiper('.carousel--instagram', {
 // 6. Smooth Scroll
 // ----------------
 
-var scroll = new SmoothScroll('a[href*="#"]');
+// var scroll = new SmoothScroll('a[href*="#"]');
 
 // 7. Animate on Scroll
 // --------------------
@@ -154,6 +137,3 @@ if (Foundation.MediaQuery.atLeast('medium')) {
   });
 
 }
-
-
-});
