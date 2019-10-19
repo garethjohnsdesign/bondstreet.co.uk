@@ -2,7 +2,7 @@
 
 {% block main %}
 
-<!-- Video Hero -->
+<!-- Hero -->
 {% set image = entry.image.one() %}
 <div class="image--hero align-center-middle" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}{% endif %}">
 
@@ -41,7 +41,7 @@
   </div>
 
 </div>
-<!-- End Video Hero -->
+<!-- End Hero -->
 
 <!-- Articles and Events -->
 <div class="grid-container" id="page__content">
