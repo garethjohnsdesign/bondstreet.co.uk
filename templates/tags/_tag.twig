@@ -3,6 +3,7 @@
 {% block main %}
 
 {% set tag = craft.tags.slug( craft.request.segment(2) ).first() %}
+{% set title = craft.tags.slug( craft.request.segment(2) ).first() %}
 
 {% if not tag %}
 {% exit 404 %}
