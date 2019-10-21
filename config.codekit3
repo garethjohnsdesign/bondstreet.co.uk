@@ -5268,7 +5268,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://bondstreet.test",
+	"externalServerAddress": "https://bondstreet.test",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
