@@ -7,7 +7,7 @@
         {% for image in entry.carousel %}
         <div class="swiper-slide">
           <!-- Image -->
-          <img src="{{images.domain}}{{ image.filename }}?h=650&fit=crop&ch=dpr&cs=tinysrgb&dpr=2&format=compress}}">
+          <img src="{{images.domain}}{{ image.filename }}?h=650&fit=crop&ch=dpr&cs=tinysrgb&dpr=2&format=compress}}" alt="{{ image.title }}">
           <!-- End Image -->
         </div>
         {% endfor %}
