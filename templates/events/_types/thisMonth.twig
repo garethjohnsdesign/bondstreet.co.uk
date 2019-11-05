@@ -8,7 +8,7 @@
 {% include "_includes/blocks/events--types" %}
 
 {% set thisMonthsEvents = craft.entries.section('events')
-.eventStart (['and',  ">= #{now | date_modify('last day of last month') | atom}", "<= #{now | date_modify('last day of this month') | atom}"])
+.eventEnd (['and',  ">= #{now | date_modify('last day of last month') | atom}", "<= #{now | date_modify('last day of this month') | atom}"])
 .orderBy('eventStart asc')
 %}
 
