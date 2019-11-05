@@ -9,10 +9,16 @@
 
 {% set start = now|atom %}
 
-{% set entries = craft.entries.section('events')
-.eventStart (">= #{start}")
-.order('eventStart asc')
+
+{% set myEntryQuery = craft.entries
+.section('events')
+.eventEnd (">= #{start}")
+.orderBy('eventStart asc')
 %}
+
+{# Fetch the entries #}
+{% set entries = myEntryQuery.all() %}
+
 
 <div class="grid-container">
   {% for entry in entries %}

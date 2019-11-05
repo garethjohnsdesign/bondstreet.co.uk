@@ -7,7 +7,7 @@
 		"uuidString": "F7CC2255-C147-4BFE-82DC-F393990E3BD5"
 		}
 	],
-"creatorBuild": "31924",
+"creatorBuild": "31934",
 "files": {
 	"/.env": {
 		"cB": 0,
@@ -5722,7 +5722,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 1,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,

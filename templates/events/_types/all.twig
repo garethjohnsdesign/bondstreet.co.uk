@@ -5,7 +5,7 @@
 {% include "_includes/blocks/events--types" %}
 
 {% set allEvents = craft.entries.section('events')
-.order('eventStart asc')
+.orderBy('eventStart asc')
 %}     
 
 <div class="grid-container">

@@ -9,7 +9,7 @@
 
 {% set afterThatEvents = craft.entries.section('events')
 .eventEnd ("<= #{now | atom}"	)
-.order('eventStart asc')  
+.orderBy('eventStart asc')  
 %}     
 
 <div class="grid-container">
