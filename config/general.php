@@ -43,33 +43,40 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
+
+        'enableTemplateCaching' => false,
+        
+        'siteUrl'             => getenv('SITE_URL') ?: '@web',
+
+        // Set the environmental variables
+        'staticAssetsVersion' => 1,
     ],
 
     // Dev environment settings
     'dev' => [
-        // Base site URL
-        'siteUrl' => null,
-//         'siteUrl' => getenv('SITE_URL') ?: '/',
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
+        'allowUpdates' => true,
+        'enableTemplateCaching' => false,
+        // Set the environmental variables
+        'staticAssetsVersion' => time(),
     ],
 
     // Staging environment settings
     'staging' => [
-        // Base site URL
-        'siteUrl' => null,
-//         'siteUrl' => getenv('SITE_URL') ?: '/',
-        // Dev Mode (see https://craftcms.com/support/dev-mode)
+
         'devMode' => false,
+        'enableTemplateCaching' => true,
+        'allowUpdates' => false,
+        // Set the environmental variables
+         'staticAssetsVersion' => time(),
     ],
 
     // Production environment settings
     'production' => [
-        // Base site URL
-//         'siteUrl' => null,
-        'siteUrl' => getenv('SITE_URL') ?: '/',
-        // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => false,
+        'enableTemplateCaching' => true,
+        'allowUpdates' => false,
     ],
 ];
