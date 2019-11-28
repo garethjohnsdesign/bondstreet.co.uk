@@ -8,6 +8,9 @@ import Cookie from 'jquery.cookie'
 import Swiper from 'swiper';
 import AOS from 'aos';
 import "lightGallery";
+import "lg-fullscreen";
+import "lg-video";
+import "lg-autoplay";
 import SmoothScroll from 'smooth-scroll';
 const scroll = new SmoothScroll("[data-scroll]");
 

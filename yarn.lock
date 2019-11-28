@@ -180,6 +180,27 @@ kdbush@^3.0.0:
   resolved "https://registry.yarnpkg.com/kdbush/-/kdbush-3.0.0.tgz#f8484794d47004cc2d85ed3a79353dbe0abc2bf0"
   integrity sha512-hRkd6/XW4HTsA9vjVpY9tuXJYLSlelnkTmVFu4M9/7MIYQtFcHpbugAU7UbOfjOiVSVYl2fqgBuJ32JUmRo5Ew==
 
+lg-autoplay@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/lg-autoplay/-/lg-autoplay-1.0.4.tgz#2591ea2b84043a5cd5d8cb1969c502921a77ba2c"
+  integrity sha1-JZHqK4QEOlzV2MsZacUCkhp3uiw=
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-fullscreen@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lg-fullscreen/-/lg-fullscreen-1.1.0.tgz#763d54093759ea2ea9eafd5ff1275e58422291e1"
+  integrity sha512-Sh2mZMR8QYrYNgKcCwbACs3LO8OQg6puisIMDkd4ULEJicCt0zLZ9aT4YgNhcYMYBXAU2sHwbjHJjF7TxVT3hw==
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-video@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/lg-video/-/lg-video-1.2.2.tgz#f9d0a320d20bafb126a40edb35790d3aba3ef41b"
+  integrity sha1-+dCjINILr7EmpA7bNXkNOro+9Bs=
+  dependencies:
+    jquery ">=1.7.0"
+
 lightgallery@^1.6.12:
   version "1.6.12"
   resolved "https://registry.yarnpkg.com/lightgallery/-/lightgallery-1.6.12.tgz#c024428d1488969075dc551a85dddf905adb0e4b"
