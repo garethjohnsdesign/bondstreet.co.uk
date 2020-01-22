@@ -387,6 +387,19 @@ padding: 3rem 3rem 1rem 3rem;
 }
 }
 
+.navigation .navigation__right {
+z-index: 15;
+@include breakpoint(small) {
+padding: 1.3rem 1rem 1rem 1rem;
+}
+@include breakpoint(medium) {
+padding: 3.2rem 3rem 1rem 3rem;
+}
+@include breakpoint(large) {
+padding: 2.8rem 3rem 1rem 3rem;
+}
+}
+
 .navigation__left {
 font-family: $sans-bold;
 font-size: $small-font-size;
@@ -438,7 +451,11 @@ letter-spacing: $prototype-wide-letter-spacing;
 }
 
 .navigation__right .menu a {
-padding: 0.5rem 0.5rem;
+padding: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+.navigation__right .button {
+padding-top: 0.2rem;
 }
 
 .dropdown.menu>li.opens-right>.is-dropdown-submenu {
