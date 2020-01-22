@@ -296,50 +296,30 @@ $max_font: 200px;
 }
 
 .image--hero {
-  height: 100vh;
+  min-height: 600px;
+  height: 80vh;
+  height: calc(var(--vh, 1vh) * 80);
+  position: relative;
   background-size: cover; 
   background-position: 50%;
+  transform: all .35s cubic-bezier(.39, .575, .565, 1);
  .content {
     z-index: 3;
-  }
- .scrollarrow {
-    transition: $primary-transition;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
   }
 }
 
 .image--explore {
-  height: 100vh;
+  min-height: 600px;
+  height: 80vh;
+  height: calc(var(--vh, 1vh) * 80);
+  position: relative;
   background-size: cover; 
   background-position: 50%;
   background-color: $primary-color;
+  transform: all .35s cubic-bezier(.39, .575, .565, 1);
  .content {
   background-color: rgba($black, 0.2);
   z-index: 3;
-  }
- .scrollarrow {
-    transition: $primary-transition;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-  }
- .content a {
-    z-index: 3;
-  }
- .scrollarrow a {
-    z-index: 2;
   }
 }
 
@@ -781,4 +761,11 @@ input#honeypot {
   font-size: 1.5rem;
   display: inline-block;
   @include links($primary-color, $secondary-color)
+}
+
+.scrollarrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }

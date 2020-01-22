@@ -4,12 +4,12 @@
 
 <!-- Hero -->
 {% set image = entry.image.one() %}
-<div class="image--hero align-center-middle" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}{% endif %}">
+<div class="image--hero align-center-middle viewheight" {% if not entry.videoBackground | length %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}{% endif %}">
 
   <div class="grid-y grid-padding-x height-100 align-center content" data-aos="fade-in">
     <div class="shrink cell">
 
-      <div class="grid-x">
+      <div class="grid-x padding-vertical-3">
         <div class="small-12 cell text-center white">
         <svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg>
         {% if entry.description | length %}
@@ -19,6 +19,9 @@
       </div>
 
     </div>
+
+    {% include "_includes/blocks/scroll" %}
+
   </div>
 
   {% if entry.videoBackground | length %}
@@ -28,7 +31,8 @@
     </video>
   {% endif %}
 
-  <div class="grid-y grid-padding-x height-100 align-right scrollarrow" data-aos="fade-in">
+<!--
+  <div class="grid-y grid-padding-x height-100 align-right scrollarrow content" data-aos="fade-in">
     <div class="shrink cell">
 
       <div class="grid-x padding-vertical-2">
@@ -39,6 +43,7 @@
 
     </div>
   </div>
+-->
 
 </div>
 <!-- End Hero -->

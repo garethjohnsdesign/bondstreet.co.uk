@@ -15,18 +15,6 @@
 {% set image = entry.image.first() %}
 <div class="image--explore align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
 
-<div class="grid-y grid-padding-x height-100 align-right scrollarrow">
-  <div class="shrink cell">
-  
-    <div class="grid-x padding-vertical-2">
-      <div class="small-12 cell text-center white">
-      <a data-scroll href="#page__content"><svg class="icon icon-arrow-down"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-down"></use></svg></a>
-      </div>
-    </div>
-  
-  </div>
-</div>
-
 <div class="grid-y height-100 align-center content">
 <div class="shrink cell text-center padding-horizontal-3" style="z-index:3">
 
@@ -84,6 +72,9 @@
 
 
 </div>
+
+{% include "_includes/blocks/scroll" %}
+
 </div>
 
 
