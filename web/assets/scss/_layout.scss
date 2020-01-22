@@ -297,8 +297,8 @@ $max_font: 200px;
 
 .image--hero {
   min-height: 600px;
-  height: 80vh;
-  height: calc(var(--vh, 1vh) * 80);
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
   background-size: cover; 
   background-position: 50%;
@@ -310,8 +310,8 @@ $max_font: 200px;
 
 .image--explore {
   min-height: 600px;
-  height: 80vh;
-  height: calc(var(--vh, 1vh) * 80);
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
   background-size: cover; 
   background-position: 50%;
