@@ -261,17 +261,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/node_modules/mapbox-gl/dist/mapbox-gl.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/mapbox-gl/dist/mapbox-gl-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/node_modules/smooth-scroll/./dist/smooth-scroll.polyfills.min.js": {
 		"bF": 0,
 		"ft": 64,
