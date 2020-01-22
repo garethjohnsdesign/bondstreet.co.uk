@@ -49,7 +49,7 @@ return [
         'siteUrl'             => getenv('SITE_URL') ?: '@web',
 
         // Set the environmental variables
-        'staticAssetsVersion' => 1,
+        'staticAssetsVersion' => 2,
     ],
 
     // Dev environment settings
