@@ -193,9 +193,9 @@
 
 {% set qrCode = entry.qrCode.one() %}
 {% if qrCode|length %}
-<div class="grid-container">
+<div class="grid-container image--qr">
   <div class="grid-x grid-padding-x align-center">
-    <div class="small-10 medium-3 large-3 cell text-center">
+    <div class="small-10 medium-3 large-3 large-3 cell text-center" style="max-width: 250px">
     <div class="small sans-bold text-uppercase letter-spacing--loose black margin-bottom-1">Wechat</div>
     {% set image = qrCode %}
     <div class="image--square" data-interchange="{% include "_includes/images/contained/1-1/interchange-img-small-12-medium-4" %}"></div>
