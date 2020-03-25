@@ -117,7 +117,7 @@
     {% endif %}
 
 
-    <div class="faded">
+    <div {% if entry.temporarilyClosed  %}class="faded"{% endif %}>
     <div class="small sans-bold text-uppercase letter-spacing--loose black padding-bottom-1">Opening Hours</div>
 
     {% for day in entry.openingHours %}
