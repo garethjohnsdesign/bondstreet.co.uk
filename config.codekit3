@@ -442,6 +442,14 @@
 		"oAP": "/templates/_includes/global/analytics.twig",
 		"oF": 0
 		},
+	"/templates/_includes/global/announcement.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/_includes/global/announcement.twig",
+		"oF": 0
+		},
 	"/templates/_includes/global/footer.twig": {
 		"cB": 0,
 		"ft": 8192,

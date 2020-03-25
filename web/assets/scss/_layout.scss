@@ -383,7 +383,7 @@ z-index: 15;
 padding: 1rem 1rem 1rem 1rem;
 }
 @include breakpoint(medium) {
-padding: 3rem 3rem 1rem 3rem;
+padding: 2rem 3rem 1rem 3rem;
 }
 }
 
@@ -393,10 +393,10 @@ z-index: 15;
 padding: 1.3rem 1rem 1rem 1rem;
 }
 @include breakpoint(medium) {
-padding: 3.2rem 3rem 1rem 3rem;
+padding: 2.2rem 3rem 1rem 3rem;
 }
 @include breakpoint(large) {
-padding: 2.8rem 3rem 1rem 3rem;
+padding: 1.8rem 3rem 1rem 3rem;
 }
 }
 
@@ -441,7 +441,7 @@ letter-spacing: $prototype-wide-letter-spacing;
   }
 }
 
-.navigation .icon {
+.navigation__right .icon, .navigation__left .icon {
   @include breakpoint(small only) {
     font-size: 2rem;
   }
@@ -799,4 +799,12 @@ input#honeypot {
     opacity: $secondary-color;
     color: $primary-color;
   }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.announcement {
+ z-index: 15;
 }

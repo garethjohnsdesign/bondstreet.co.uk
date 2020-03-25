@@ -23,7 +23,17 @@
 
 {% set entry = entry is defined ? entry : null %}
 {% set category = category is defined ? category : null %}
-<div class="grid-x grid-padding-x align-justify navigation {% if entry.type is defined and (entry.type == 'home' or entry.type == 'explore' or entry.type == 'street') %} navigation--light{% endif %}">
+<div class="grid-x align-justify navigation {% if entry.type is defined and (entry.type == 'home' or entry.type == 'explore' or entry.type == 'street') %} navigation--light{% endif %}">
+
+<!-- Announcement -->
+{% if site.announcementText|length %}
+<div class="small-12 cell announcement">
+  <a class="button secondary expanded margin-bottom-0 small sans-bold text-uppercase letter-spacing--loose" href="{% set rel = site.announcementLink.one() %}{% if rel %}{{ rel.url }}{% endif %}">{{site.announcementText}} <svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></a>
+</div>
+{% endif %}
+<!-- End Announcement -->
+
+
   <div class="shrink cell navigation__left">
 
     <div class="hide-for-large"><button data-toggle="offCanvasMenu" class="button clear navigation"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></button></div>
