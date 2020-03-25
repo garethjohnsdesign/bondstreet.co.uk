@@ -786,3 +786,17 @@ input#honeypot {
   bottom: 0;
   width: 100%;
 }
+
+.faded {
+  opacity: 0.5;
+}
+
+.temporary {
+  cursor: default;
+  color: $primary-color;
+  background-color: $secondary-color;
+  &:hover {
+    opacity: $secondary-color;
+    color: $primary-color;
+  }
+}
