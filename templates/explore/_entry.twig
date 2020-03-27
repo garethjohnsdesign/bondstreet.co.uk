@@ -19,7 +19,7 @@
 <div class="shrink cell text-center padding-horizontal-3" style="z-index:3">
 
   {% if entry.temporarilyClosed  %}
-  <button class="button temporary small sans-bold text-uppercase letter-spacing--loose margin-bottom-2" value="Subscribe">Temporarily Closed</button>
+  <button class="button temporary announcement__text sans-bold text-uppercase letter-spacing--loose margin-bottom-2" value="Subscribe">Temporarily Closed</button>
   {% endif %}
   <h1 class="hero white">{{entry.title}}</h1>
   <div class="white hide-for-large">{{ entry.location.parts.number }} {{ entry.location.parts.address }} {{ entry.location.parts.postcode }}</div>
@@ -113,7 +113,7 @@
     <div class="small-12 medium-6 cell">
 
     {% if entry.temporarilyClosed  %}
-    <button class="button temporary expanded small sans-bold text-uppercase letter-spacing--loose margin-bottom-2" value="Subscribe">Temporarily Closed</button>
+    <button class="button temporary expanded announcement__text sans-bold text-uppercase letter-spacing--loose margin-bottom-2" value="Subscribe">Temporarily Closed</button>
     {% endif %}
 
 

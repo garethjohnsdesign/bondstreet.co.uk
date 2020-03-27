@@ -28,7 +28,7 @@
 <!-- Announcement -->
 {% if site.announcementText|length %}
 <div class="small-12 cell announcement">
-  <a class="button secondary expanded margin-bottom-0 small sans-bold text-uppercase letter-spacing--loose" href="{% set rel = site.announcementLink.one() %}{% if rel %}{{ rel.url }}{% endif %}">{{site.announcementText}} <svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></a>
+  <a class="button secondary expanded margin-bottom-0 announcement__text sans-bold text-uppercase letter-spacing--loose" href="{% set rel = site.announcementLink.one() %}{% if rel %}{{ rel.url }}{% endif %}">{{site.announcementText}} <svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></a>
 </div>
 {% endif %}
 <!-- End Announcement -->
