@@ -2,7 +2,7 @@
 
 return [
     // User name or hash tag to fetch from Instagram.
-    'instagramUser' => 'stockton_walker',
+    'instagramUser' => 'bondstreet',
 
     // Use codemonauts proxy to get the Instagram page
     'useProxy' => true,
