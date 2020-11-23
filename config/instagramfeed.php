@@ -5,16 +5,16 @@ return [
     'instagramUser' => 'stockton_walker',
 
     // Use codemonauts proxy to get the Instagram page
-    'useProxy' => false,
+    'useProxy' => true,
 
     // The proxy key to use for authentication
-    'proxyKey' => '',
+    'proxyKey' => 'aesoe1rahY4aiT5ohwie',
 
     // Timeout in seconds waiting for the Instagram page to load.
     'timeout' => 5,
 
     // Use Guzzle instead of php's file stream
-    'useGuzzle' => false,
+    'useGuzzle' => true,
 
     // Dump Instagram response to file for debugging purpose
     'dump' => false,
