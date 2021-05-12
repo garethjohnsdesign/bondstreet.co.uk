@@ -19,7 +19,7 @@
     "mapbox-gl": "^1.4.1",
     "motion-ui": "~2.0.0",
     "smooth-scroll": "^16.1.0",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "what-input": "^5.2.3"
   },
   "private": true
