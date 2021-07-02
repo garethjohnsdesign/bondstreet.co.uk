@@ -1,6 +1,6 @@
 {
   "require": {
-    "craftcms/cms": "3.4.10.1",
+    "craftcms/cms": "3.6.7",
     "vlucas/phpdotenv": "^2.4.0",
     "craftcms/contact-form": "2.2.6",
     "craftcms/store-hours": "2.1.1.1",
